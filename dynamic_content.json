@@ -22,5 +22,13 @@
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/jyotirlinga_hi.html",
     "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/jyotirlingas.webp",
     "enabled": true
+  },
+  {
+    "title": "Sacred Scriptures",
+    "title_hindi": "पवित्र ग्रंथ",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/sacred_knowledge_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/sacred_knowledge_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/sacred_knowledge.webp",
+    "enabled": true
   }
 ]
