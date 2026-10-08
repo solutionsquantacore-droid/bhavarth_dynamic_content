@@ -30,5 +30,13 @@
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/sacred_knowledge_hi.html",
     "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/sacred_knowledge.webp",
     "enabled": true
+  },
+  {
+    "title": "Surprising & Knowledge-Rich Facts",
+    "title_hindi": "रोचक और ज्ञानवर्धक तथ्य",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/30_hindu_facts_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/30_hindu_facts_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/knowledge_fact_surprise.webp",
+    "enabled": true
   }
 ]
