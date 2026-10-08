@@ -6,5 +6,13 @@
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/shakti_peeth_hi.html",
     "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/shakti_peeth.webp",
     "enabled": true
-  }
+  },
+  {
+    "title": "Navratri Puja",
+    "title_hindi": "नवरात्रि पूजा",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/navratri_puja.webp",
+    "enabled": true
+  },
 ]
