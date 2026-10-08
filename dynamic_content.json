@@ -38,5 +38,13 @@
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/30_hindu_facts_hi.html",
     "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/knowledge_fact_surprise.webp",
     "enabled": true
+  },
+  {
+    "title": "Amazing Forms of Shri Krishna",
+    "title_hindi": "भगवान श्री कृष्ण के अद्भुत स्वरूप",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/kanha_ji_names_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/kanha_ji_names_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/kanha_ji_names.webp",
+    "enabled": true
   }
 ]
