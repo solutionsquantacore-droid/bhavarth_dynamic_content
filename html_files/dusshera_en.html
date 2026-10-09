@@ -256,63 +256,8 @@
 
     </style>
 
-    <style>
-        #download-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: #ffffff;
-            z-index: 999999;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-        #download-overlay img { width: 120px; margin-bottom: 20px; border-radius: 20px; }
-        #download-overlay h2 { color: #d35400; margin-bottom: 10px; font-family: 'Mukta', sans-serif;}
-        #download-overlay p { color: #555; margin-bottom: 30px; font-size: 18px; font-family: 'Mukta', sans-serif;}
-        .download-btn {
-            background: #4CAF50;
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
-            font-family: 'Mukta', sans-serif;
-        }
-    </style>
-    <script>
-                document.addEventListener("DOMContentLoaded", function() {
-            if (navigator.userAgent.indexOf('BhavarthApp') === -1) {
-                var currentPath = encodeURIComponent(window.location.pathname); // e.g., /notification/diwali.html
-                var playStoreUrl = "https://play.google.com/store/apps/details?id=com.quantacore.bhavarth&referrer=route%3D" + currentPath;
-                var marketUrl = "market://details?id=com.quantacore.bhavarth&referrer=route%3D" + currentPath;
-
-                // Hide main content and show overlay
-                var container = document.querySelector('.container');
-                if(container) container.style.display = 'none';
-                
-                var overlay = document.createElement('div');
-                overlay.id = 'download-overlay';
-                overlay.innerHTML = `
-                    <img src="https://play-lh.googleusercontent.com/4xP2U7E1N1gX1O_FzJ8gD_2v89z1p6U5Z1V9v88f01s07S7X1V_1Y482b5l01g" alt="Bhavarth App">
-                    <h2>Bhavarth App</h2>
-                    <p>This page is available in the Bhavarth App. Please download the app.</p>
-                    <a href="${playStoreUrl}" class="download-btn">Download from Play Store</a>
-                `;
-                document.body.appendChild(overlay);
-                overlay.style.display = 'flex';
-
-                // Attempt auto-redirect
-                setTimeout(function() {
-                    window.location.href = marketUrl;
-                }, 100);
-            }
-        });
-    </script>
+    
+    
 </head>
 <body>
 
