@@ -8,72 +8,72 @@
     "enabled": false
   },
   {
-    "title": "माँ शैलपुत्री",
-    "title_hindi": "Maa Shailputri",
+    "title": "प्रथम दिन: माँ शैलपुत्री",
+    "title_hindi": "Day 1: Maa Shailputri",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_1_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_1.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_1.webp",
     "enabled": false
   },
   {
-    "title": "माँ ब्रह्मचारिणी",
-    "title_hindi": "Maa Brahmacharini",
+    "title": "द्वितीय दिन: माँ ब्रह्मचारिणी",
+    "title_hindi": "Day 2: Maa Brahmacharini",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_2_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_2.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_2.webp",
     "enabled": false
   },
   {
-    "title": "माँ चंद्रघंटा",
-    "title_hindi": "Maa Chandraghanta",
+    "title": "तृतीय दिन: माँ चंद्रघंटा",
+    "title_hindi": "Day 3: Maa Chandraghanta",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_3_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_3.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_3.webp",
     "enabled": false
   },
   {
-    "title": "माँ कूष्मांडा",
-    "title_hindi": "Maa Kushmanda",
+    "title": "चतुर्थ दिन: माँ कूष्मांडा",
+    "title_hindi": "Day 4: Maa Kushmanda",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_4_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_4.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_4.webp",
     "enabled": false
   },
   {
-    "title": "माँ स्कंदमाता",
-    "title_hindi": "Maa Skandamata",
+    "title": "पंचम दिन: माँ स्कंदमाता",
+    "title_hindi": "Day 5: Maa Skandamata",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_5_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_5.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_5.webp",
     "enabled": false
   },
   {
-    "title": "माँ कात्यायनी",
-    "title_hindi": "Maa Katyayani",
+    "title": "षष्ठम दिन: माँ कात्यायनी",
+    "title_hindi": "Day 6: Maa Katyayani",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_6_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_6.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_6.webp",
     "enabled": false
   },
   {
-    "title": "माँ कालरात्रि",
-    "title_hindi": "Maa Kalaratri",
+    "title": "सप्तम दिन: माँ कालरात्रि",
+    "title_hindi": "Day 7: Maa Kalaratri",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_7_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_7.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_7.webp",
     "enabled": false
   },
   {
-    "title": "माँ महागौरी",
-    "title_hindi": "Maa Mahagauri",
+    "title": "अष्टम दिन: माँ महागौरी",
+    "title_hindi": "Day 8: Maa Mahagauri",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_8_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_8.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_8.webp",
     "enabled": false
   },
   {
-    "title": "माँ सिद्धिदात्री",
-    "title_hindi": "Maa Siddhidatri",
+    "title": "नवम दिन: माँ सिद्धिदात्री",
+    "title_hindi": "Day 9: Maa Siddhidatri",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_9_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_9.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_9.webp",
