@@ -5,7 +5,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/Pitra_Visarjan_Amavasya_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/Pitra_Visarjan_Amavasya.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/pitra_visarjan_amavasya.webp",
-    "enabled": true
+    "enabled": false
   },
   {
     "title": "Navratri Puja",
