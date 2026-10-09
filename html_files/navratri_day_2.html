@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta property="og:title" content="नवरात्रि - दूसरा दिन: माँ ब्रह्मचारिणी">
+    <meta property="og:description" content="भावार्थ ऐप पर यह देखें!">
+    <meta property="og:image" content="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_2.webp">
+    <meta property="og:url" content="https://www.quantacoresolutions.in/notification/navratri_day_2.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नवरात्रि दूसरा दिन - माँ ब्रह्मचारिणी</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #c0392b; /* Deep Red / Durga Color */
+            --secondary: #f39c12; /* Gold / Saffron */
+            --bg-light: #fffcf5;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --card-bg: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: #f8f5f0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--bg-light);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding-bottom: 30px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 380px;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(192, 57, 43, 0.95) 0%, rgba(192, 57, 43, 0.3) 50%, rgba(0,0,0,0) 100%);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero-title {
+            font-family: 'Yatra One', cursive;
+            font-size: 42px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            color: #ffd700;
+        }
+        .hero-subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        /* Content Wrapper */
+        .content { padding: 20px; margin-top: -20px; position: relative; z-index: 10; }
+
+        /* Premium Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border: 1px solid rgba(192, 57, 43, 0.1);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed rgba(243, 156, 18, 0.4);
+            padding-bottom: 10px;
+        }
+        .card-header i {
+            font-size: 24px;
+            color: var(--primary);
+            margin-right: 12px;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Lists */
+        .vidhi-list { list-style: none; }
+        .vidhi-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+        .vidhi-list li i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--secondary);
+            font-size: 18px;
+        }
+
+        /* Mantra Box */
+        .mantra-box {
+            background: #fff3e0;
+            border-left: 5px solid var(--primary);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .mantra-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Yatra One', cursive;
+            line-height: 1.6;
+        }
+        .prarthana-text {
+            color: var(--text-muted);
+            font-size: 15px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Accordion */
+        .accordion {
+            background-color: #fff9c4;
+            color: var(--text-dark);
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid rgba(243, 156, 18, 0.5);
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.4s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .active, .accordion:hover { background-color: #fff59d; }
+        .panel {
+            padding: 0 15px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 10px 10px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+        .scroll-text { 
+            max-height: 300px; 
+            overflow-y: auto; 
+            padding: 15px 0;
+            text-align: center; 
+        }
+
+        /* Bhog Section */
+        .bhog-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .bhog-item {
+            background: #fff8e1;
+            color: #b9770e;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 1px solid #f8c471;
+        }
+
+        /* Share Card */
+        .share-card {
+            background: linear-gradient(135deg, var(--primary), #a04000);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(192, 57, 43, 0.4);
+        }
+        .share-text {
+            font-size: 18px;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Hero Banner -->
+    <div class="hero">
+        <img src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_2.webp" alt="Maa Brahmacharini">
+        <div class="hero-overlay">
+            <h1 class="hero-title">माँ ब्रह्मचारिणी</h1>
+            <div class="hero-subtitle">नवरात्रि का दूसरा दिन</div>
+        </div>
+    </div>
+
+    <div class="content">
+        
+        <!-- Intro & Swaroop -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-om"></i>
+                <h2 class="card-title">माँ ब्रह्मचारिणी का स्वरूप</h2>
+            </div>
+            <p style="color: var(--text-muted); text-align: justify; margin-bottom: 15px;">
+                नवरात्रि के दूसरे दिन माँ दुर्गा के <strong>'माँ ब्रह्मचारिणी'</strong> स्वरूप की उपासना की जाती है। 'ब्रह्म' का अर्थ है तपस्या और 'चारिणी' का अर्थ है आचरण करने वाली। इनके दाएँ हाथ में जप की माला और बाएँ हाथ में कमंडल रहता है। यह देवी तप, त्याग, वैराग्य, सदाचार और संयम की वृद्धि करती हैं।
+            </p>
+        </div>
+
+        <!-- Mantra -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-music"></i>
+                <h2 class="card-title">स्तुति एवं मंत्र</h2>
+            </div>
+            <div class="mantra-box">
+                <div class="mantra-text">
+                    ॐ देवी ब्रह्मचारिण्यै नमः॥
+                </div>
+                <div class="prarthana-text">
+                    दधाना कर पद्माभ्यामक्षमाला कमण्डलू।<br>देवी प्रसीदतु मयि ब्रह्मचारिण्यनुत्तमा॥
+                </div>
+            </div>
+        </div>
+
+        <!-- Puja Vidhi -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-hands-praying"></i>
+                <h2 class="card-title">पूजा विधि</h2>
+            </div>
+            <ul class="vidhi-list">
+                <li><i class="fa-solid fa-sun"></i> <strong>स्नान व संकल्प:</strong> प्रातः जल्दी उठकर स्नान करें और व्रत या पूजा का संकल्प लें।</li>
+                <li><i class="fa-solid fa-check-circle"></i> <strong>कलश पूजन:</strong> सर्वप्रथम कलश देवता (भगवान गणेश) और नवग्रहों की पूजा करें।</li>
+                <li><i class="fa-solid fa-spa"></i> <strong>पूजन सामग्री:</strong> माँ को पंचामृत से स्नान कराएं। कुमकुम, अक्षत, और <strong>पीले व लाल फूल</strong> (जैसे कमल या गुड़हल) अर्पित करें।</li>
+                <li><i class="fa-solid fa-fire-flame-curved"></i> <strong>आरती:</strong> धूप-दीप जलाकर दुर्गा चालीसा का पाठ करें और अंत में माँ ब्रह्मचारिणी की आरती करें।</li>
+            </ul>
+        </div>
+
+        <!-- Story -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2 class="card-title">पौराणिक कथा</h2>
+            </div>
+            <div style="color: var(--text-muted); text-align: justify; margin-bottom: 15px; background-color: #fff3e0; padding: 15px; border-radius: 10px; border: 1px solid #ffe0b2; font-size: 15px; line-height: 1.8;">
+                कथा के अनुसार, पूर्व जन्म में माँ ब्रह्मचारिणी ने हिमालय के घर पुत्री रूप में जन्म लिया था और देवर्षि नारद जी के उपदेश से भगवान शिव को पति रूप में प्राप्त करने के लिए घोर तपस्या की थी।<br><br>
+                हजारों वर्षों तक उन्होंने केवल फल-फूल खाकर तप किया और फिर केवल सूखे पत्ते खाकर शिव जी की आराधना की। अंत में उन्होंने पत्ते खाना भी छोड़ दिया, जिससे उनका नाम 'अपर्णा' पड़ा। इस कठिन तपस्या के कारण ही देवी को 'ब्रह्मचारिणी' नाम से जाना गया। उनकी तपस्या से प्रसन्न होकर ब्रह्मा जी ने उन्हें वरदान दिया कि भगवान शिव ही उन्हें पति रूप में प्राप्त होंगे।
+            </div>
+        </div>
+
+        <!-- Bhog / Prasad -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-bowl-rice"></i>
+                <h2 class="card-title">माँ का भोग</h2>
+            </div>
+            <p style="color: var(--text-muted); text-align: justify; margin-bottom: 15px;">
+                माँ ब्रह्मचारिणी को <strong>चीनी (शक्कर) और पंचामृत</strong> का भोग अति प्रिय है। मान्यता है कि इस दिन चीनी का भोग लगाने से परिवार के सदस्यों को दीर्घायु प्राप्त होती है और अकाल मृत्यु का भय दूर होता है।
+            </p>
+            <div class="bhog-grid">
+                <div class="bhog-item">🍚 चीनी (शक्कर)</div>
+                <div class="bhog-item">🥛 पंचामृत</div>
+                <div class="bhog-item">🍎 ताजे फल</div>
+            </div>
+        </div>
+
+        <!-- Reading Materials (Accordions) -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2 class="card-title">आरती संग्रह</h2>
+            </div>
+            
+            <button class="accordion"><i class="fa-solid fa-bell"></i> माँ ब्रह्मचारिणी की आरती <i class="fa-solid fa-chevron-down" style="float: right;"></i></button>
+            <div class="panel">
+                <div class="scroll-text">
+                    <strong>जय अंबे ब्रह्मचारिणी माता। जय चतुरानन प्रिय सुख दाता॥</strong><br><br>
+                    ब्रह्मा जी के मन भाती हो। ज्ञान सभी को सिखलाती हो॥<br><br>
+                    ब्रह्मा मंत्र है जाप तुम्हारा। जिसको जपे सकल संसारा॥<br><br>
+                    जय गायत्री वेद की माता। जो मन निस दिन तुम्हें ध्याता॥<br><br>
+                    कमी कोई रहने न पाए। कोई भी दुःख सहने न पाए॥<br><br>
+                    उसकी विरति रहे ठिकाने। जो तेरी महिमा को जाने॥<br><br>
+                    रुद्राक्ष की माला ले कर। जपे जो मंत्र श्रद्धा दे कर॥<br><br>
+                    आलस छोड़ करे गुणगाना। माँ तुम उसको सुख पहुँचाना॥<br><br>
+                    ब्रह्मचारिणी तेरो नाम। पूर्ण करो सब मेरे काम॥
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Card -->
+        <div class="share-card">
+            <div class="share-text" id="shareText">
+                "नवरात्रि के दूसरे दिन माँ ब्रह्मचारिणी आप सभी के जीवन में तप, त्याग, और संयम की वृद्धि करें। शुभ नवरात्रि! 🌸🙏"
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // Accordion Logic
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

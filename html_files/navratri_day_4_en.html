@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Navratri - Day 4: Maa Kushmanda">
+    <meta property="og:description" content="View this on the Bhavarth App!">
+    <meta property="og:image" content="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_4.webp">
+    <meta property="og:url" content="https://www.quantacoresolutions.in/notification/navratri_day_4.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navratri Day 4 - Maa Kushmanda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #c0392b; /* Deep Red / Durga Color */
+            --secondary: #f39c12; /* Gold / Saffron */
+            --bg-light: #fffcf5;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --card-bg: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: #f8f5f0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--bg-light);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding-bottom: 30px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 380px;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(192, 57, 43, 0.95) 0%, rgba(192, 57, 43, 0.3) 50%, rgba(0,0,0,0) 100%);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero-title {
+            font-family: 'Yatra One', cursive;
+            font-size: 42px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            color: #ffd700;
+        }
+        .hero-subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        /* Content Wrapper */
+        .content { padding: 20px; margin-top: -20px; position: relative; z-index: 10; }
+
+        /* Premium Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border: 1px solid rgba(192, 57, 43, 0.1);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed rgba(243, 156, 18, 0.4);
+            padding-bottom: 10px;
+        }
+        .card-header i {
+            font-size: 24px;
+            color: var(--primary);
+            margin-right: 12px;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Lists */
+        .vidhi-list { list-style: none; }
+        .vidhi-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+        .vidhi-list li i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--secondary);
+            font-size: 18px;
+        }
+
+        /* Mantra Box */
+        .mantra-box {
+            background: #fff3e0;
+            border-left: 5px solid var(--primary);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .mantra-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Yatra One', cursive;
+            line-height: 1.6;
+        }
+        .prarthana-text {
+            color: var(--text-muted);
+            font-size: 15px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Accordion */
+        .accordion {
+            background-color: #fff9c4;
+            color: var(--text-dark);
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid rgba(243, 156, 18, 0.5);
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.4s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .active, .accordion:hover { background-color: #fff59d; }
+        .panel {
+            padding: 0 15px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 10px 10px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+        .scroll-text { 
+            max-height: 300px; 
+            overflow-y: auto; 
+            padding: 15px 0;
+            text-align: center; 
+        }
+
+        /* Bhog Section */
+        .bhog-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .bhog-item {
+            background: #fff8e1;
+            color: #b9770e;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 1px solid #f8c471;
+        }
+
+        /* Share Card */
+        .share-card {
+            background: linear-gradient(135deg, var(--primary), #a04000);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(192, 57, 43, 0.4);
+        }
+        .share-text {
+            font-size: 18px;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Hero Banner -->
+    <div class="hero">
+        <img src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_4.webp" alt="Maa Kushmanda">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Maa Kushmanda</h1>
+            <div class="hero-subtitle">Fourth Day of Navratri</div>
+        </div>
+    </div>
+
+    <div class="content">
+        
+        <!-- Intro & Swaroop -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-om"></i>
+                <h2 class="card-title">The Divine Form of Maa Kushmanda</h2>
+            </div>
+            <p style="color: var(--text-muted); text-align: justify; margin-bottom: 15px;">
+                On the fourth day of Navratri, the fourth power of Goddess Durga, <strong>'Maa Kushmanda'</strong>, is worshipped and adored. She is called Goddess Kushmanda because she created the 'Anda', meaning the universe, with her gentle and radiant smile. Her divine abode resides within the core of the Sun. Endowed with eight arms, she is gracefully revered as Ashtabhuja Devi. Her mount is the majestic lion.
+            </p>
+        </div>
+
+        <!-- Mantra -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-music"></i>
+                <h2 class="card-title">Hymns and Mantras</h2>
+            </div>
+            <div class="mantra-box">
+                <div class="mantra-text">
+                    Om Devi Kushmandayai Namah॥
+                </div>
+                <div class="prarthana-text">
+                    Surasampurnakalasham Rudhiraplutameva Cha.<br>Dadhana Hastapadmabhyam Kushmanda Shubhadastu Me॥
+                </div>
+            </div>
+        </div>
+
+        <!-- Puja Vidhi -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-hands-praying"></i>
+                <h2 class="card-title">Rituals of Worship (Puja Vidhi)</h2>
+            </div>
+            <ul class="vidhi-list">
+                <li><i class="fa-solid fa-sun"></i> <strong>Bathing and Invocation:</strong> Bathe in the early morning, wear green attire, and meditate upon the divine form of Maa Kushmanda.</li>
+                <li><i class="fa-solid fa-check-circle"></i> <strong>Kalash Pujan:</strong> First and foremost, offer your prayers to the Kalash deity (Lord Ganesha) and the Navagrahas (Nine Planets).</li>
+                <li><i class="fa-solid fa-spa"></i> <strong>Sacred Offerings:</strong> Offer Kumkum, Akshat (unbroken rice), and <strong>red or yellow flowers</strong> (such as the Lotus) to the Supreme Goddess.</li>
+                <li><i class="fa-solid fa-fire-flame-curved"></i> <strong>Aarti:</strong> Light incense and the sacred lamp to perform the Aarti of the Mother, and recite the Durga Chalisa with devotion.</li>
+            </ul>
+        </div>
+
+        <!-- Story -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2 class="card-title">The Mythological Saga</h2>
+            </div>
+            <div style="color: var(--text-muted); text-align: justify; margin-bottom: 15px; background-color: #fff3e0; padding: 15px; border-radius: 10px; border: 1px solid #ffe0b2; font-size: 15px; line-height: 1.8;">
+                According to mythological legends, when the universe did not exist and there was absolute darkness everywhere, Maa Kushmanda created the entire cosmos with a mere hint of her divine, gentle smile. Hence, she is revered as the primordial creator and the Adishakti (Supreme Power) of the universe.<br><br>
+                She resides in the Suryaloka (the realm of the Sun), and only Maa Kushmanda possesses the magnificent power and capacity to dwell within its fiery core. The radiance and glow of her physical form are as resplendent and luminous as the Sun itself. Through her devout worship, all ailments and sorrows of her devotees are forever eradicated.
+            </div>
+        </div>
+
+        <!-- Bhog / Prasad -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-bowl-rice"></i>
+                <h2 class="card-title">Divine Offerings (Bhog)</h2>
+            </div>
+            <p style="color: var(--text-muted); text-align: justify; margin-bottom: 15px;">
+                Maa Kushmanda is immensely fond of the sacred offering of <strong>Malpua</strong>. It is firmly believed that offering Malpua to the Mother on this auspicious day enhances intellect and elevates one's decision-making prowess.
+            </p>
+            <div class="bhog-grid">
+                <div class="bhog-item">🥞 Malpua</div>
+                <div class="bhog-item">🍯 Honey</div>
+                <div class="bhog-item">🍎 Fruits</div>
+            </div>
+        </div>
+
+        <!-- Reading Materials (Accordions) -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2 class="card-title">Collection of Aartis</h2>
+            </div>
+            
+            <button class="accordion"><i class="fa-solid fa-bell"></i> Aarti of Maa Kushmanda <i class="fa-solid fa-chevron-down" style="float: right;"></i></button>
+            <div class="panel">
+                <div class="scroll-text">
+                    <strong>Kushmanda Jai Jag Sukhdani. Mujh Par Daya Karo Maharani॥</strong><br><br>
+                    Pingla Jwalamukhi Nirali. Shakambhari Maa Bholi Bhali॥<br><br>
+                    Lakhon Naam Nirale Tere. Bhakt Kai Matwale Tere॥<br><br>
+                    Bheema Parvat Par Hai Dera. Sweekaro Pranam Ye Mera॥<br><br>
+                    Sabki Sunti Ho Jagdambe. Sukh Pahunchti Ho Maa Ambe॥<br><br>
+                    Tere Darshan Ka Main Pyasa. Purna Kar Do Meri Asha॥<br><br>
+                    Maa Ke Man Mein Mamta Bhari. Kyon Na Sunegi Araj Hamari॥<br><br>
+                    Dar Pe Tere Main Aaya Hoon. Shraddha Suman Sang Laya Hoon॥
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Card -->
+        <div class="share-card">
+            <div class="share-text" id="shareText">
+                "May Maa Kushmanda infuse your life with new energy, radiance, and profound success on this fourth day of Navratri. Shubh Navratri! 🌸🙏"
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // Accordion Logic
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
