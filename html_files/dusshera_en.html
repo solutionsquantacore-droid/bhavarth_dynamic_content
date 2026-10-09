@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Dussehra (Vijayadashami)">
+    <meta property="og:description" content="View this on the Bhavarth App!">
+    <meta property="og:image" content="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/dusshera.webp">
+    <meta property="og:url" content="https://www.quantacoresolutions.in/notification/dusshera.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dussehra (Vijayadashami)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #c21807; /* Deep Red/Crimson */
+            --secondary: #ffb300; /* Gold */
+            --bg-light: #fffdf7;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --card-bg: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: #f5f5f5;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--bg-light);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding-bottom: 30px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 350px;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(194, 24, 7, 0.9) 0%, rgba(0,0,0,0) 100%);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero-title {
+            font-family: 'Yatra One', cursive;
+            font-size: 42px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: var(--secondary);
+        }
+        .hero-subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        /* Content Wrapper */
+        .content { padding: 20px; margin-top: -20px; position: relative; z-index: 10; }
+
+        /* Premium Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(194, 24, 7, 0.1);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed rgba(249, 168, 37, 0.4);
+            padding-bottom: 10px;
+        }
+        .card-header i {
+            font-size: 24px;
+            color: var(--primary);
+            margin-right: 12px;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Lists */
+        .vidhi-list { list-style: none; }
+        .vidhi-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+        .vidhi-list li i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--secondary);
+            font-size: 18px;
+        }
+
+        /* Mantra Box */
+        .mantra-box {
+            background: #ffebee;
+            border-left: 5px solid var(--primary);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .mantra-text {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Yatra One', cursive;
+            line-height: 1.8;
+        }
+
+        /* Accordion */
+        .accordion {
+            background-color: #fff9c4;
+            color: var(--text-dark);
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid rgba(249, 168, 37, 0.5);
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.4s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .active, .accordion:hover { background-color: #fff59d; }
+        .panel {
+            padding: 0 15px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 10px 10px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+        .scroll-text { 
+            max-height: 300px; 
+            overflow-y: auto; 
+            padding: 15px 0;
+            text-align: center; 
+        }
+
+        /* Bhog Section */
+        .bhog-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .bhog-item {
+            background: #fff3e0;
+            color: #c21807;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #ffcc80;
+        }
+
+        /* Share Card */
+        .share-card {
+            background: linear-gradient(135deg, var(--primary), #7f0000);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(194, 24, 7, 0.4);
+        }
+        .share-text {
+            font-size: 18px;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background: white;
+            color: var(--primary);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.2s;
+        }
+        .btn:active { opacity: 0.8; }
+        
+        .toast {
+            visibility: hidden;
+            min-width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 25px;
+            padding: 12px;
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 14px;
+        }
+        .toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
+        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+
+    </style>
+
+    <style>
+        #download-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: #ffffff;
+            z-index: 999999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        #download-overlay img { width: 120px; margin-bottom: 20px; border-radius: 20px; }
+        #download-overlay h2 { color: #d35400; margin-bottom: 10px; font-family: 'Mukta', sans-serif;}
+        #download-overlay p { color: #555; margin-bottom: 30px; font-size: 18px; font-family: 'Mukta', sans-serif;}
+        .download-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+            font-family: 'Mukta', sans-serif;
+        }
+    </style>
+    <script>
+                document.addEventListener("DOMContentLoaded", function() {
+            if (navigator.userAgent.indexOf('BhavarthApp') === -1) {
+                var currentPath = encodeURIComponent(window.location.pathname); // e.g., /notification/diwali.html
+                var playStoreUrl = "https://play.google.com/store/apps/details?id=com.quantacore.bhavarth&referrer=route%3D" + currentPath;
+                var marketUrl = "market://details?id=com.quantacore.bhavarth&referrer=route%3D" + currentPath;
+
+                // Hide main content and show overlay
+                var container = document.querySelector('.container');
+                if(container) container.style.display = 'none';
+                
+                var overlay = document.createElement('div');
+                overlay.id = 'download-overlay';
+                overlay.innerHTML = `
+                    <img src="https://play-lh.googleusercontent.com/4xP2U7E1N1gX1O_FzJ8gD_2v89z1p6U5Z1V9v88f01s07S7X1V_1Y482b5l01g" alt="Bhavarth App">
+                    <h2>Bhavarth App</h2>
+                    <p>This page is available in the Bhavarth App. Please download the app.</p>
+                    <a href="${playStoreUrl}" class="download-btn">Download from Play Store</a>
+                `;
+                document.body.appendChild(overlay);
+                overlay.style.display = 'flex';
+
+                // Attempt auto-redirect
+                setTimeout(function() {
+                    window.location.href = marketUrl;
+                }, 100);
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Hero Banner -->
+    <div class="hero">
+        <img src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/dusshera.webp" alt="Dussehra">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Dussehra</h1>
+            <div class="hero-subtitle">The grand festival of the victory of good over evil and truth over untruth</div>
+        </div>
+    </div>
+
+    <div class="content">
+        
+        <!-- Intro & Significance -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-om"></i>
+                <h2 class="card-title">Significance of Vijayadashami</h2>
+            </div>
+            <p style="color: var(--text-muted); text-align: justify; margin-bottom: 15px;">
+                Dussehra or Vijayadashami is a major festival of Hindus. It is celebrated on the Dashami tithi of the Shukla Paksha of Ashwin month. According to mythological beliefs, on this very day Lord Rama defeated Ravana and Maa Durga vanquished the demon Mahishasura.
+            </p>
+            <h3 style="color: var(--primary); font-size: 18px; margin-bottom: 10px;">Key Beliefs:</h3>
+            <ul class="vidhi-list">
+                <li><i class="fa-solid fa-bow-arrow"></i> This festival symbolizes the end of ego, anger, and ignorance in the form of Ravana.</li>
+                <li><i class="fa-solid fa-seedling"></i> Worshipping the Shami tree on this day brings victory, happiness, and prosperity.</li>
+                <li><i class="fa-solid fa-dove"></i> Sighting the Neelkanth bird on Dussehra is considered highly auspicious and lucky.</li>
+            </ul>
+        </div>
+
+
+
+        <!-- Story -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2 class="card-title">Mythological Tales of Dussehra</h2>
+            </div>
+            <div style="color: var(--text-muted); text-align: justify; margin-bottom: 15px; background-color: #fdf2e9; padding: 15px; border-radius: 10px; border: 1px solid #fae5d3; font-size: 15px; line-height: 1.8;">
+                <strong>Lord Rama's Victory over Ravana:</strong><br>
+                The festival of Dussehra (Vijayadashami) is primarily celebrated to commemorate Lord Rama's victory over Ravana. Ravana had deceitfully abducted Sita, following which Lord Rama, along with the Vanara Sena (monkey army), waged a war on Lanka. After a fierce battle that lasted for nine days, on the tenth day (Ashwin Shukla Dashami), Lord Rama slew the arrogant and tyrannical Ravana, re-establishing righteousness (Dharma). Hence, it is celebrated as the victory of good over evil.<br><br>
+                <strong>Maa Durga's Victory over Mahishasura:</strong><br>
+                According to another belief, a powerful demon named Mahishasura defeated the gods and took control of heaven. To put an end to his terror, Maa Durga (Mahishasuramardini) emerged from the combined cosmic energies of all the gods. A fierce battle raged between Maa Durga and Mahishasura for nine days. On the tenth day, the Goddess vanquished Mahishasura, liberating the three worlds from his wrath.
+            </div>
+        </div>
+
+        <img src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/vijay_dashami_banner.webp" alt="Vijay Dashami" style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; object-fit: cover;">
+        <!-- Puja Vidhi -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-hands-praying"></i>
+                <h2 class="card-title">Rituals & Traditions</h2>
+            </div>
+            <ul class="vidhi-list">
+                <li><i class="fa-solid fa-check-circle"></i> <strong>Shastra & Aparajita Puja:</strong> Special worship of weapons, vehicles, and Goddess Aparajita is performed on this day.</li>
+                <li><i class="fa-solid fa-check-circle"></i> <strong>Shami Pujan:</strong> Light a lamp under the Shami tree in the evening and offer your prayers.</li>
+                <li><i class="fa-solid fa-check-circle"></i> <strong>Ravan Dahan:</strong> Celebrate the end of evil by burning the effigies of Ravana, Kumbhakarna, and Meghnad.</li>
+                <li><i class="fa-solid fa-check-circle"></i> <strong>Blessings of Elders:</strong> Touch the feet of the elders in your family and seek their blessings.</li>
+                <li><i class="fa-solid fa-check-circle"></i> <strong>Eating Paan:</strong> There is a special tradition of eating and offering paan (betel leaves) on Dussehra, symbolizing love and respect.</li>
+            </ul>
+        </div>
+
+        <!-- Mantra -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-music"></i>
+                <h2 class="card-title">Victory Mantra</h2>
+            </div>
+            <div class="mantra-box">
+                <div class="mantra-text">
+                    "Shri Ram Ram Rameti Rame Rame Manorame.<br>Sahasranama Tattulyam Ramanama Varanane॥"
+                </div>
+            </div>
+        </div>
+
+
+        <img src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/vijay_dashami_2.webp" alt="Shree Ram" style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; object-fit: cover;">
+        <!-- Bhog / Prasad -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-bowl-rice"></i>
+                <h2 class="card-title">Special Delicacies & Offerings</h2>
+            </div>
+            <div class="bhog-grid">
+                <div class="bhog-item">🥨 Jalebi</div>
+                <div class="bhog-item">🥟 Fafda</div>
+                <div class="bhog-item">🍃 Paan</div>
+                <div class="bhog-item">🥣 Kheer</div>
+                <div class="bhog-item">🍎 Fresh Fruits</div>
+            </div>
+        </div>
+
+        <!-- Reading Materials (Accordions) -->
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2 class="card-title">Hymns & Prayers</h2>
+            </div>
+            
+            <button class="accordion"><i class="fa-solid fa-book"></i> Shri Ram Stuti <i class="fa-solid fa-chevron-down" style="float: right;"></i></button>
+            <div class="panel">
+                <div class="scroll-text">
+                    <strong>Shri Ramchandra Kripalu Bhaju Man Haran Bhavabhaya Darunam.</strong><br>
+                    Navakanja Lochana, Kanja Mukha, Kar Kanja, Pada Kanjarunam॥<br><br>
+                    Kandarpa Aganita Amita Chhabi, Navaneela Neerada Sundaram.<br>
+                    Pata Peeta Maanahu Tadita Ruchi Shuchi Naumi Janaka Sutavaram॥<br><br>
+                    Bhaju Deenabandhu Dinesh Daanava Daityavansha Nikandanam.<br>
+                    Raghunanda Anandakanda Kaushalchanda Dasharatha Nandanam॥<br><br>
+                    Shira Mukuta Kundala Tilaka Chaaru Udaara Anga Vibhushanam.<br>
+                    Aajaanubhuja Shara Chaapa Dhara, Sangraama Jita Kharadushanam॥<br><br>
+                    Iti Vadati Tulasidaasa Shankara Shesha Muni Mana Ranjanam.<br>
+                    Mama Hridaya Kanja Nivaasa Kuru, Kaamaadi Khaladala Ganjanam॥
+                </div>
+            </div>
+
+            <button class="accordion"><i class="fa-solid fa-om"></i> Shri Hanuman Chalisa <i class="fa-solid fa-chevron-down" style="float: right;"></i></button>
+            <div class="panel">
+                <div class="scroll-text">
+                    <strong>Shri Guru Charan Saroj Raj Nij Manu Mukuru Sudhaari.</strong><br>
+                    Baranau Raghuvar Bimal Jasu Jo Daayaku Phal Chaari॥<br>
+                    Buddhiheen Tanu Jaanike Sumirau Pavan Kumar.<br>
+                    Bal Budhi Vidya Dehu Mohi Harahu Kalesh Bikaar॥<br><br>
+                    Jai Hanuman Gyan Gun Sagar.<br>
+                    Jai Kapis Tihun Lok Ujagar॥<br>
+                    Ram Doot Atulit Bal Dhama.<br>
+                    Anjani Putra Pavansut Nama॥<br><br>
+                    Mahabir Bikram Bajrangi.<br>
+                    Kumati Nivar Sumati Ke Sangi॥<br>
+                    Kanchan Baran Biraj Subesa.<br>
+                    Kanan Kundal Kunchit Kesa॥<br><br>
+                    Hath Bajra Au Dhvaja Birajai.<br>
+                    Kandhe Moonj Janeu Sajai॥<br>
+                    Sankar Suvan Kesarinandan.<br>
+                    Tej Pratap Maha Jag Bandan॥<br><br>
+                    Vidyavan Guni Ati Chatur.<br>
+                    Ram Kaj Karibe Ko Atur॥<br>
+                    Prabhu Charitra Sunibe Ko Rasiya.<br>
+                    Ram Lakhan Sita Man Basiya॥<br><br>
+                    Sukshma Roop Dhari Siyahi Dikhava.<br>
+                    Bikat Roop Dhari Lank Jarava॥<br>
+                    Bhim Roop Dhari Asur Sanhare.<br>
+                    Ramchandra Ke Kaj Sanvare॥<br><br>
+                    Laye Sanjivan Lakhan Jiyaye.<br>
+                    Shri Raghuvir Harashi Ur Laye॥<br>
+                    Raghupati Kinhi Bahut Badai.<br>
+                    Tum Mam Priye Bharat-hi Sam Bhai॥<br><br>
+                    <em>(Read the complete Chalisa for full blessings)</em>
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Card -->
+        <div class="share-card">
+            <div class="share-text" id="shareText">
+                "Heartiest greetings to you on Vijayadashami, the great festival of the victory of good over evil and truth over untruth! 🏹 Jai Shri Ram!"
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<div id="toast" class="toast">Wishes Copied!</div>
+
+<script>
+    // Accordion Logic
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+    // Share Logic
+    function shareWishes() {
+        var shareText = document.getElementById("shareText").innerText;
+        if (navigator.share) {
+            navigator.share({
+                title: 'Vijayadashami (Dussehra)',
+                text: shareText
+            }).catch(console.error);
+        } else {
+            navigator.clipboard.writeText(shareText).then(function() {
+                showToast("Wishes copied! You can now paste and share them.");
+            });
+        }
+    }
+
+    function showToast(msg) {
+        var toast = document.getElementById("toast");
+        toast.innerText = msg;
+        toast.className = "toast show";
+        setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+    }
+</script>
+
+</body>
+</html>
