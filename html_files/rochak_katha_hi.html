@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पौराणिक रोचक कथाएँ - Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c0392b;
+            --secondary: #d35400;
+            --accent: #f39c12;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #57606f;
+            --border-color: #f1ebd9;
+            --highlight-bg: #fff8eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* Banner */
+        .banner-img {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            margin-bottom: 22px;
+            display: block;
+        }
+
+        /* Header Card */
+        .header-card {
+            background: linear-gradient(135deg, #c0392b, #8e1b10);
+            color: white;
+            border-radius: 18px;
+            padding: 26px 20px;
+            text-align: center;
+            margin-bottom: 26px;
+            box-shadow: 0 8px 24px rgba(192, 57, 43, 0.22);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffeaa7;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .header-card h1 {
+            font-family: 'Yatra One', cursive;
+            font-size: 28px;
+            line-height: 1.35;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+        }
+
+        .header-card p {
+            font-size: 15px;
+            opacity: 0.95;
+            line-height: 1.65;
+            color: #fcedcf;
+            text-align: justify;
+        }
+
+        /* Story Section Wrapper */
+        .story-section {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 22px 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            border-top: 5px solid var(--primary);
+        }
+
+        .story-main-title {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 23px;
+            line-height: 1.4;
+            margin-bottom: 18px;
+            border-bottom: 2px dashed #f0ded0;
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        /* Chapter Card */
+        .chapter-card {
+            background: #fafafa;
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .chapter-number {
+            background: var(--primary);
+            color: white;
+            font-size: 12.5px;
+            font-weight: 800;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .chapter-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            object-fit: cover;
+            display: block;
+        }
+
+        .chapter-title {
+            font-family: 'Yatra One', cursive;
+            color: var(--secondary);
+            font-size: 18.5px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .chapter-text {
+            font-size: 15px;
+            color: var(--text-main);
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .chapter-text p {
+            margin-bottom: 10px;
+        }
+
+        .chapter-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Spiritual Message Box */
+        .message-box {
+            background: linear-gradient(135deg, #fef9e7, #fcf3cf);
+            border: 1px solid #f9e79f;
+            border-left: 5px solid var(--accent);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-top: 14px;
+        }
+
+        .message-box .msg-title {
+            font-size: 14.5px;
+            font-weight: 800;
+            color: #b77700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .message-box p {
+            font-size: 14.5px;
+            color: #5c3c00;
+            line-height: 1.65;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* Collective Conclusion Card */
+        .conclusion-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 24px 20px;
+            margin-top: 28px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary);
+            border-right: 1px solid var(--border-color);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .conclusion-card h2 {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 22px;
+            margin-bottom: 14px;
+            text-align: center;
+        }
+
+        .conclusion-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+
+        .conclusion-card ul li {
+            position: relative;
+            padding-left: 26px;
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 1.65;
+            color: var(--text-main);
+        }
+
+        .conclusion-card ul li::before {
+            content: "✦";
+            position: absolute;
+            left: 4px;
+            top: 0;
+            color: var(--secondary);
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .conclusion-card .closing-p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            text-align: justify;
+            background: #fff8eb;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent);
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Banner -->
+    <img class="banner-img" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/rochak_katha_banner.webp" alt="पौराणिक रोचक कथाएँ">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <span class="app-tag">Bhavarth विशेष</span>
+        <h1>पौराणिक रोचक कथाएँ</h1>
+        <p>सनातन धर्म के इतिहास और पुराणों में वर्णित ये अद्भुत कथाएँ केवल अलौकिक प्रसंग नहीं हैं, बल्कि जीवन जीने के गूढ़ रहस्य, आत्मसंयम, धर्म, समर्पण और अटूट ज्ञान की जीवंत प्रेरणा हैं। आइए इन 5 महान पौराणिक आख्यानों के गहरे आध्यात्मिक संदेशों को समझें।</p>
+    </div>
+
+    <!-- ==================== STORY 1 ==================== -->
+    <div class="story-section">
+        <h2 class="story-main-title">1. रुद्राक्ष की उत्पत्ति भगवान शिव के आँसुओं से कैसे हुई?</h2>
+
+        <!-- Adhyay 1 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 1</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_1.webp" alt="भगवान शिव की गहन तपस्या">
+            <h3 class="chapter-title">अध्याय 1: भगवान शिव की गहन तपस्या</h3>
+            <div class="chapter-text">
+                <p>प्राचीन काल की बात है। भगवान शिव कैलाश पर्वत पर गहन समाधि में लीन थे। वे संपूर्ण सृष्टि के कल्याण, जीवों के दुःखों और संसार में व्याप्त अज्ञान के विषय में चिंतन कर रहे थे। उनकी समाधि इतनी गहरी थी कि प्रकृति भी मानो शांत होकर उनकी आराधना में सहभागी बन गई थी।</p>
+                <p>देवताओं और ऋषियों के लिए भगवान शिव केवल संहार के देवता नहीं, बल्कि करुणा, वैराग्य और कल्याण के प्रतीक भी हैं। उनकी तपस्या का उद्देश्य समस्त प्राणियों के दुःखों से मुक्ति का मार्ग प्रशस्त करना था।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 2 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 2</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_2.webp" alt="भगवान शिव के करुणामय आँसू">
+            <h3 class="chapter-title">अध्याय 2: भगवान शिव के करुणामय आँसू</h3>
+            <div class="chapter-text">
+                <p>दीर्घकालीन तपस्या के पश्चात जब भगवान शिव ने अपने नेत्र खोले, तो संसार के जीवों के दुःख और उनकी मुक्ति की आवश्यकता देखकर उनकी आँखों से करुणा के आँसू बह निकले।</p>
+                <p>शिवपुराण की प्रचलित रुद्राक्ष-उत्पत्ति परंपरा के अनुसार, भगवान शिव के उन दिव्य आँसुओं की बूँदें पृथ्वी पर गिरीं। जहाँ-जहाँ वे बूँदें गिरीं, वहाँ रुद्राक्ष के वृक्ष उत्पन्न हुए।</p>
+                <p>इसी कारण रुद्राक्ष को भगवान शिव की करुणा और तपस्या का पवित्र प्रतीक माना जाता है। ‘रुद्राक्ष’ शब्द का अर्थ सामान्यतः ‘रुद्र के अक्षि’ अर्थात भगवान रुद्र के नेत्र से जुड़ा हुआ समझा जाता है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 3 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 3</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_3.webp" alt="रुद्राक्ष के वृक्षों का प्राकट्य">
+            <h3 class="chapter-title">अध्याय 3: रुद्राक्ष के वृक्षों का प्राकट्य</h3>
+            <div class="chapter-text">
+                <p>समय के साथ रुद्राक्ष के वृक्षों पर फल लगने लगे। इन फलों के भीतर कठोर बीज होते हैं, जिन्हें रुद्राक्ष कहा जाता है। भक्तों ने इन बीजों में भगवान शिव की स्मृति और आध्यात्मिक साधना का प्रतीक देखा।</p>
+                <p>रुद्राक्ष की माला का उपयोग जप, ध्यान और मंत्र-साधना में होने लगा। विशेष रूप से ‘ॐ नमः शिवाय’ मंत्र के जप के साथ रुद्राक्ष की माला का संबंध अत्यंत लोकप्रिय हुआ।</p>
+                <p>रुद्राक्ष के वृक्ष मुख्यतः दक्षिण और दक्षिण-पूर्व एशिया के विभिन्न क्षेत्रों में पाए जाते हैं। उनकी वास्तविक वनस्पति उत्पत्ति प्राकृतिक बीज-विकास की प्रक्रिया से होती है; पुराणों में वर्णित आँसुओं की कथा इसका धार्मिक और आध्यात्मिक अर्थ प्रस्तुत करती है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 4 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 4</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_4.webp" alt="रुद्राक्ष के विभिन्न मुखों का रहस्य">
+            <h3 class="chapter-title">अध्याय 4: रुद्राक्ष के विभिन्न मुखों का रहस्य</h3>
+            <div class="chapter-text">
+                <p>रुद्राक्ष के बीजों पर दिखाई देने वाली प्राकृतिक रेखाओं या खाँचों को ‘मुख’ कहा जाता है। एकमुखी से लेकर अनेक मुखों वाले रुद्राक्ष विभिन्न परंपराओं में पूजनीय माने जाते हैं।</p>
+                <p>अलग-अलग मुखों वाले रुद्राक्षों को विभिन्न देवी-देवताओं, आध्यात्मिक गुणों और साधना-पद्धतियों से जोड़ा जाता है। हालाँकि, इनके चमत्कारी प्रभावों के बारे में किए जाने वाले सभी दावों को प्रमाणित वैज्ञानिक तथ्य नहीं माना जाना चाहिए।</p>
+                <p>रुद्राक्ष धारण करने का सबसे महत्वपूर्ण भाव है—मन में श्रद्धा, व्यवहार में संयम और जीवन में सदाचार बनाए रखना।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 5 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 5</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_5.webp" alt="रुद्राक्ष धारण करने का आध्यात्मिक संदेश">
+            <h3 class="chapter-title">अध्याय 5: रुद्राक्ष धारण करने का आध्यात्मिक संदेश</h3>
+            <div class="chapter-text">
+                <p>रुद्राक्ष हमें याद दिलाता है कि सच्ची आध्यात्मिकता केवल बाहरी प्रतीकों में नहीं, बल्कि हृदय की करुणा, मन की शांति और कर्मों की पवित्रता में निहित है।</p>
+                <p>भगवान शिव के आँसुओं की कथा का मूल संदेश है कि दिव्यता का एक स्वरूप दूसरों के दुःख को समझना और उनके कल्याण की भावना रखना भी है।</p>
+            </div>
+            <div class="message-box">
+                <div class="msg-title">🌱 आध्यात्मिक संदेश</div>
+                <p>करुणा, ध्यान, संयम और सत्य का पालन ही शिवभक्ति का सार है।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STORY 2 ==================== -->
+    <div class="story-section">
+        <h2 class="story-main-title">2. भगवान विष्णु की नाभि से कमल और ब्रह्मा जी का प्राकट्य</h2>
+
+        <!-- Adhyay 1 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 1</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_6.webp" alt="सृष्टि से पहले का दिव्य विस्तार">
+            <h3 class="chapter-title">अध्याय 1: सृष्टि से पहले का दिव्य विस्तार</h3>
+            <div class="chapter-text">
+                <p>हिंदू सृष्टि-परंपरा में सृष्टि के आरंभ का वर्णन अत्यंत रहस्यमय और दिव्य रूप में मिलता है। कल्प के अंत में जब प्रकट संसार का विलय होता है, तब भगवान विष्णु को क्षीरसागर में अनंत शेषनाग पर योगनिद्रा में विराजमान बताया गया है।</p>
+                <p>चारों ओर जल का अनंत विस्तार है। न पृथ्वी पर मनुष्यों की गतिविधियाँ हैं, न पर्वतों और वनों का परिचित संसार। यह दृश्य प्रकट सृष्टि के अवसान और एक नए सृजन-चक्र की संभावना का प्रतीक है।</p>
+                <p>भगवान विष्णु को सृष्टि के पालनकर्ता और ब्रह्मांडीय व्यवस्था के आधार के रूप में प्रतिष्ठित किया गया है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 2 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 2</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_7.webp" alt="भगवान विष्णु की नाभि से दिव्य कमल का प्राकट्य">
+            <h3 class="chapter-title">अध्याय 2: भगवान विष्णु की नाभि से दिव्य कमल का प्राकट्य</h3>
+            <div class="chapter-text">
+                <p>सृष्टि के नए चक्र के आरंभ में भगवान विष्णु की नाभि से एक दिव्य कमल प्रकट होने का वर्णन मिलता है। उसका डंठल ब्रह्मांडीय जल के ऊपर उठता हुआ दिखाई देता है और उसका विशाल पुष्प दिव्य प्रकाश से आलोकित हो जाता है।</p>
+                <p>कमल भारतीय आध्यात्मिक परंपरा में पवित्रता, सृजन और संसार के बीच निर्मल बने रहने का प्रतीक है। जिस प्रकार कमल जल में रहकर भी अपनी विशिष्ट सुंदरता बनाए रखता है, उसी प्रकार मनुष्य भी संसार में रहते हुए अपने विचारों और कर्मों को पवित्र रखने का प्रयास कर सकता है।</p>
+                <p>भगवान विष्णु की नाभि से कमल का प्रकट होना सृजन की उस संभावना को दर्शाता है, जिससे आगे विविध लोकों और जीवों की रचना होती है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 3 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 3</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_8.webp" alt="कमल पर ब्रह्मा जी का दिव्य जन्म">
+            <h3 class="chapter-title">अध्याय 3: कमल पर ब्रह्मा जी का दिव्य जन्म</h3>
+            <div class="chapter-text">
+                <p>उस दिव्य कमल पर चार मुखों वाले ब्रह्मा जी का प्राकट्य हुआ। ब्रह्मा जी को सृष्टि का रचयिता माना जाता है। उनके चार मुखों को परंपरागत रूप से चारों दिशाओं और वेदज्ञान से जोड़ा जाता है।</p>
+                <p>कमल पर प्रकट होने के बाद ब्रह्मा जी ने अपने अस्तित्व और उत्पत्ति के स्रोत को जानने की इच्छा की। उनके सामने एक विशाल और रहस्यमय संसार था, लेकिन वे तत्काल यह नहीं समझ पा रहे थे कि उनकी उत्पत्ति कैसे हुई और उन्हें कौन-सा कार्य करना है।</p>
+                <p>यह प्रसंग ज्ञान की खोज और सृष्टि के रहस्य को समझने की जिज्ञासा का प्रतीक है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 4 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 4</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_9.webp" alt="ब्रह्मा जी की जिज्ञासा और सत्य की खोज">
+            <h3 class="chapter-title">अध्याय 4: ब्रह्मा जी की जिज्ञासा और सत्य की खोज</h3>
+            <div class="chapter-text">
+                <p>ब्रह्मा जी ने कमल के स्रोत को जानने के लिए उसके डंठल के सहारे नीचे की ओर जाने का प्रयास किया। वे उस मूल कारण तक पहुँचना चाहते थे जिससे उनका प्राकट्य हुआ था।</p>
+                <p>लेकिन अनंत विस्तार में उन्हें अपने प्रश्न का तत्काल उत्तर नहीं मिला। इस प्रसंग का भाव यह है कि केवल बाहरी खोज से प्रत्येक रहस्य का समाधान नहीं होता। कभी-कभी ज्ञान प्राप्त करने के लिए धैर्य, आत्मचिंतन और साधना की आवश्यकता होती है।</p>
+                <p>परंपरागत वर्णनों में ब्रह्मा जी को तपस्या और दिव्य ज्ञान के माध्यम से अपने सृजन-कार्य के लिए मार्गदर्शन प्राप्त होता है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 5 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 5</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_10.webp" alt="ब्रह्मा जी को सृष्टि-रचना का दायित्व">
+            <h3 class="chapter-title">अध्याय 5: ब्रह्मा जी को सृष्टि-रचना का दायित्व</h3>
+            <div class="chapter-text">
+                <p>दिव्य ज्ञान प्राप्त करने के बाद ब्रह्मा जी ने सृष्टि-रचना का कार्य आरंभ किया। पुराणों में लोकों, प्रजापतियों, ऋषियों, विभिन्न जीवों और प्राकृतिक व्यवस्थाओं की उत्पत्ति का विस्तृत वर्णन मिलता है।</p>
+                <p>इस प्रकार भगवान विष्णु की नाभि से निकले कमल पर ब्रह्मा जी का प्राकट्य सृष्टि के आरंभ की एक महत्वपूर्ण पौराणिक छवि बन जाता है।</p>
+                <p>इस परंपरा में भगवान विष्णु पालन और आधार के प्रतीक हैं, जबकि ब्रह्मा जी सृजन के प्रतीक हैं। भगवान शिव को अनेक परंपराओं में संहार के साथ-साथ रूपांतरण और पुनर्निर्माण की व्यापक शक्ति से जोड़ा जाता है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 6 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 6</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_11.webp" alt="कमल और सृष्टि का प्रतीकात्मक रहस्य">
+            <h3 class="chapter-title">अध्याय 6: कमल और सृष्टि का प्रतीकात्मक रहस्य</h3>
+            <div class="chapter-text">
+                <p>यह कथा केवल देवताओं के प्राकट्य का वर्णन नहीं करती, बल्कि जीवन के कुछ गहरे विचार भी प्रस्तुत करती है।</p>
+                <p>कमल पवित्रता का प्रतीक है। ब्रह्मा जी की जिज्ञासा ज्ञान की खोज का प्रतीक है। भगवान विष्णु की योगनिद्रा प्रकट और अप्रकट सृष्टि के बीच के रहस्यमय संबंध को दर्शाती है।</p>
+            </div>
+            <div class="message-box">
+                <div class="msg-title">🌱 आध्यात्मिक संदेश</div>
+                <p>ज्ञान की खोज में जिज्ञासा, धैर्य और साधना आवश्यक हैं। संसार के बीच रहते हुए भी मनुष्य को कमल की तरह निर्मल बने रहने का प्रयास करना चाहिए।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STORY 3 ==================== -->
+    <div class="story-section">
+        <h2 class="story-main-title">3. भगवान विष्णु के शंख और सुदर्शन चक्र की कथा</h2>
+
+        <!-- Adhyay 1 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 1</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_12.webp" alt="भगवान विष्णु के दिव्य आयुध">
+            <h3 class="chapter-title">अध्याय 1: भगवान विष्णु के दिव्य आयुध</h3>
+            <div class="chapter-text">
+                <p>भगवान विष्णु के चार हाथों में सामान्यतः शंख, सुदर्शन चक्र, गदा और कमल दर्शाए जाते हैं। ये चारों प्रतीक वैष्णव परंपरा में अत्यंत महत्वपूर्ण हैं।</p>
+                <p>शंख को पवित्र ध्वनि, जागृति और धर्म के आह्वान से जोड़ा जाता है। सुदर्शन चक्र धर्म की रक्षा, विवेक और अधर्म के विनाश का प्रतीक है। गदा शक्ति और दृढ़ता को दर्शाती है, जबकि कमल पवित्रता और संतुलन का प्रतीक है।</p>
+                <p>इन आयुधों की उत्पत्ति और उनसे संबंधित कथाएँ विभिन्न पुराणों और धार्मिक परंपराओं में अलग-अलग रूपों में मिलती हैं।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 2 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 2</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_13.webp" alt="पंचजन्य शंख की कथा">
+            <h3 class="chapter-title">अध्याय 2: पंचजन्य शंख की कथा</h3>
+            <div class="chapter-text">
+                <p>पंचजन्य शंख भगवान श्रीकृष्ण से विशेष रूप से जुड़ा हुआ है। महाभारत में श्रीकृष्ण के शंख का नाम पंचजन्य बताया गया है। युद्धभूमि में शंखनाद के माध्यम से युद्ध के आरंभ और धर्म के पक्ष में खड़े होने की घोषणा की गई।</p>
+                <p>श्रीकृष्ण का पंचजन्य केवल युद्ध का संकेत नहीं था। उसका स्वर साहस, कर्तव्य और धर्म के प्रति प्रतिबद्धता का भी प्रतीक बन गया।</p>
+                <p>एक प्रसिद्ध कृष्ण-परंपरा के अनुसार, गुरु सांदीपनि के पुत्र को वापस लाने के प्रसंग में श्रीकृष्ण का संबंध पंचजन नामक असुर और शंख से जोड़ा जाता है। विभिन्न ग्रंथों में इस प्रसंग का विवरण अलग-अलग मिलता है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 3 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 3</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_14.webp" alt="शंखनाद का आध्यात्मिक अर्थ">
+            <h3 class="chapter-title">अध्याय 3: शंखनाद का आध्यात्मिक अर्थ</h3>
+            <div class="chapter-text">
+                <p>भारतीय पूजा-पद्धतियों में शंख बजाने की परंपरा व्यापक है। मंदिरों, आरती और धार्मिक अनुष्ठानों में शंखनाद वातावरण को पवित्र और उत्सवपूर्ण बनाने का कार्य करता है।</p>
+                <p>महाभारत में अनेक योद्धाओं के शंखों के नाम और उनके नाद का वर्णन मिलता है। श्रीकृष्ण के पंचजन्य, अर्जुन के देवदत्त और युधिष्ठिर के अनंतविजय का उल्लेख प्रसिद्ध है।</p>
+                <p>शंखनाद को जागृति और शुभारंभ का प्रतीक माना जाता है। इसकी ध्वनि भक्तों को पूजा या आध्यात्मिक साधना के लिए एकाग्र होने की प्रेरणा देती है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 4 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 4</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_15.webp" alt="सुदर्शन चक्र का दिव्य स्वरूप">
+            <h3 class="chapter-title">अध्याय 4: सुदर्शन चक्र का दिव्य स्वरूप</h3>
+            <div class="chapter-text">
+                <p>सुदर्शन चक्र भगवान विष्णु का तेजस्वी चक्राकार आयुध है। इसका नाम सामान्यतः ‘सु-दर्शन’ अर्थात शुभ या सुंदर दर्शन के अर्थ से जोड़ा जाता है।</p>
+                <p>वैष्णव परंपरा में यह भगवान की दिव्य शक्ति और धर्म की रक्षा का प्रतीक है। इसके घूमते हुए स्वरूप को समय, गति और ब्रह्मांडीय व्यवस्था से भी प्रतीकात्मक रूप में जोड़ा जाता है।</p>
+                <p>सुदर्शन चक्र की उत्पत्ति के विषय में विभिन्न पौराणिक परंपराएँ प्रचलित हैं। कुछ कथाओं में इसे दिव्य शिल्प और देवताओं की शक्तियों से संबंधित बताया गया है, जबकि अन्य परंपराओं में भगवान शिव और भगवान विष्णु के बीच दिव्य शक्ति के प्रसंग आते हैं।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 5 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 5</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_16.webp" alt="सुदर्शन चक्र और धर्म की रक्षा">
+            <h3 class="chapter-title">अध्याय 5: सुदर्शन चक्र और धर्म की रक्षा</h3>
+            <div class="chapter-text">
+                <p>पुराणों में भगवान विष्णु और उनके अवतारों द्वारा अधर्म का अंत करने के अनेक प्रसंग हैं। सुदर्शन चक्र इन कथाओं में दिव्य न्याय और धर्म की स्थापना का महत्वपूर्ण प्रतीक है।</p>
+                <p>श्रीकृष्ण से संबंधित परंपराओं में भी सुदर्शन चक्र का उल्लेख मिलता है। इसका भाव यह है कि जब अहंकार, अत्याचार और अन्याय बढ़ते हैं, तब धर्म की रक्षा के लिए दिव्य शक्ति सक्रिय होती है।</p>
+                <p>सुदर्शन चक्र को केवल विनाशकारी आयुध के रूप में नहीं, बल्कि अनुचित आचरण को समाप्त करने और व्यवस्था स्थापित करने के प्रतीक के रूप में भी समझा जाता है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 6 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 6</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_17.webp" alt="शंख और चक्र का संयुक्त संदेश">
+            <h3 class="chapter-title">अध्याय 6: शंख और चक्र का संयुक्त संदेश</h3>
+            <div class="chapter-text">
+                <p>शंख और सुदर्शन चक्र दो अलग-अलग, लेकिन पूरक प्रतीक हैं। शंख जागृति और आह्वान का संदेश देता है, जबकि चक्र कर्म, निर्णय और धर्म की रक्षा का प्रतीक है।</p>
+                <p>शंख हमें सत्य के लिए जागने की प्रेरणा देता है। चक्र हमें सही और गलत के बीच विवेकपूर्ण निर्णय लेने की याद दिलाता है।</p>
+            </div>
+            <div class="message-box">
+                <div class="msg-title">🌱 आध्यात्मिक संदेश</div>
+                <p>धर्म का पालन केवल अच्छे विचार रखने से नहीं होता। सत्य के प्रति जागरूकता, विवेकपूर्ण निर्णय और न्यायपूर्ण कर्म भी आवश्यक हैं।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STORY 4 ==================== -->
+    <div class="story-section">
+        <h2 class="story-main-title">4. भगवान शिव का तीसरा नेत्र पहली बार कब खुला?</h2>
+
+        <!-- Adhyay 1 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 1</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_18.webp" alt="कैलाश पर भगवान शिव की समाधि">
+            <h3 class="chapter-title">अध्याय 1: कैलाश पर भगवान शिव की समाधि</h3>
+            <div class="chapter-text">
+                <p>भगवान शिव को योग, ध्यान, वैराग्य और ब्रह्मांडीय चेतना का प्रतीक माना जाता है। कैलाश पर्वत पर उनकी समाधि का वर्णन अनेक धार्मिक कथाओं और चित्रणों में मिलता है।</p>
+                <p>एक समय देवताओं को चिंता हुई कि तारकासुर जैसे असुरों के अत्याचार को समाप्त करने के लिए शिव-पुत्र का जन्म आवश्यक है। इस पौराणिक परंपरा के अनुसार, भगवान शिव का विवाह और आगे चलकर कार्तिकेय का जन्म देवताओं के लिए महत्वपूर्ण था।</p>
+                <p>लेकिन भगवान शिव गहन ध्यान में लीन थे। उन्हें सांसारिक आकर्षणों से विचलित करना आसान नहीं था।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 2 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 2</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_19.webp" alt="कामदेव को सौंपा गया कार्य">
+            <h3 class="chapter-title">अध्याय 2: कामदेव को सौंपा गया कार्य</h3>
+            <div class="chapter-text">
+                <p>देवताओं ने कामदेव से सहायता माँगी। कामदेव को प्रेम और आकर्षण का देवता माना जाता है। उनके पास पुष्पों से बने बाण और गन्ने का धनुष होने का वर्णन मिलता है।</p>
+                <p>देवताओं की इच्छा थी कि कामदेव भगवान शिव के ध्यान में प्रेम का भाव जागृत करें, जिससे शिव और पार्वती का मिलन संभव हो सके।</p>
+                <p>कामदेव अपनी पत्नी रति के साथ इस कार्य के लिए आगे बढ़े। हिमालय के शांत वातावरण में वसंत ऋतु की सुंदरता फैलने लगी। वृक्षों पर फूल खिले और प्रकृति में आकर्षण का भाव जागृत हुआ।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 3 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 3</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_20.webp" alt="भगवान शिव का तीसरा नेत्र खुलना">
+            <h3 class="chapter-title">अध्याय 3: भगवान शिव का तीसरा नेत्र खुलना</h3>
+            <div class="chapter-text">
+                <p>प्रचलित पौराणिक कथा के अनुसार, कामदेव ने भगवान शिव के ध्यान को प्रभावित करने के लिए अपना पुष्पबाण चलाया। भगवान शिव का ध्यान भंग हुआ और उन्होंने अपनी दिव्य दृष्टि से इस हस्तक्षेप को जान लिया।</p>
+                <p>क्रोध में भगवान शिव का तीसरा नेत्र खुल गया। उससे निकली प्रचंड अग्नि में कामदेव का स्थूल शरीर भस्म हो गया।</p>
+                <p>इस प्रसंग को सामान्यतः भगवान शिव के तीसरे नेत्र के खुलने की सबसे प्रसिद्ध कथाओं में गिना जाता है। अलग-अलग ग्रंथों में इस घटना के विवरण और संदर्भ भिन्न हो सकते हैं। तीसरा नेत्र केवल क्रोध का प्रतीक नहीं है; भारतीय आध्यात्मिक विचार में इसे अंतर्दृष्टि, विवेक और अज्ञान के विनाश से भी जोड़ा जाता है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 4 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 4</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_21.webp" alt="माता रति का विलाप और कामदेव का अनंग स्वरूप">
+            <h3 class="chapter-title">अध्याय 4: माता रति का विलाप और कामदेव का अनंग स्वरूप</h3>
+            <div class="chapter-text">
+                <p>कामदेव के भस्म होने के बाद उनकी पत्नी रति दुःख से व्याकुल हो गईं। उन्होंने भगवान शिव से अपने पति के लिए कृपा की प्रार्थना की।</p>
+                <p>रति की करुण पुकार के बाद कामदेव को ‘अनंग’ नाम से जोड़ा गया, जिसका अर्थ है शरीर के बिना। इस परंपरा के अनुसार, कामदेव का प्रभाव भौतिक शरीर के बिना भी संसार में बना रह सकता है।</p>
+                <p>यह प्रसंग प्रेम, वियोग और करुणा की जटिलता को व्यक्त करता है। साथ ही यह संकेत देता है कि आकर्षण को केवल बाहरी रूप में नहीं समझा जा सकता; उसका संबंध मन और चेतना से भी है।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 5 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 5</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_22.webp" alt="तीसरे नेत्र का आध्यात्मिक रहस्य">
+            <h3 class="chapter-title">अध्याय 5: तीसरे नेत्र का आध्यात्मिक रहस्य</h3>
+            <div class="chapter-text">
+                <p>भगवान शिव का तीसरा नेत्र आध्यात्मिक चेतना का एक शक्तिशाली प्रतीक है। जहाँ सामान्य आँखें बाहरी संसार को देखती हैं, वहाँ तीसरे नेत्र की कल्पना सत्य को गहराई से पहचानने वाली दृष्टि के रूप में की जाती है।</p>
+                <p>इस कथा में कामदेव का दहन अनियंत्रित आकर्षण और ध्यान में बाधा के विनाश के रूप में समझा जा सकता है। लेकिन इसका अर्थ प्रेम का पूर्ण निषेध नहीं है। शिव-पार्वती का मिलन स्वयं प्रेम, तपस्या और संतुलन के महत्व को दर्शाता है।</p>
+            </div>
+            <div class="message-box">
+                <div class="msg-title">🌱 आध्यात्मिक संदेश</div>
+                <p>विवेक और आत्मसंयम मनुष्य को भ्रम से मुक्त कर सकते हैं। क्रोध के बजाय जागरूकता, और आकर्षण के बजाय संतुलन, जीवन को अधिक सार्थक बनाते हैं।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STORY 5 ==================== -->
+    <div class="story-section">
+        <h2 class="story-main-title">5. सावित्री ने यमराज से अपने पति सत्यवान के प्राण कैसे वापस पाए?</h2>
+
+        <!-- Adhyay 1 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 1</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_23.webp" alt="राजकुमारी सावित्री का जन्म">
+            <h3 class="chapter-title">अध्याय 1: राजकुमारी सावित्री का जन्म</h3>
+            <div class="chapter-text">
+                <p>प्राचीन भारतीय परंपरा में सावित्री को बुद्धिमत्ता, निष्ठा और साहस की आदर्श नारी के रूप में याद किया जाता है। महाभारत के वनपर्व में सावित्री और सत्यवान की कथा का विस्तृत वर्णन मिलता है।</p>
+                <p>राजा अश्वपति की पुत्री सावित्री असाधारण गुणों से संपन्न थीं। जब उनके विवाह का समय आया, तो उन्होंने अपने जीवनसाथी का चुनाव स्वयं करने का निश्चय किया।</p>
+                <p>वे विभिन्न स्थानों की यात्रा करते हुए वन में पहुँचीं, जहाँ उनकी भेंट सत्यवान से हुई। सत्यवान एक गुणवान राजकुमार थे, लेकिन परिस्थितियों के कारण अपने अंधे माता-पिता के साथ वन में रह रहे थे।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 2 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 2</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_24.webp" alt="सत्यवान से भेंट और नारद मुनि की भविष्यवाणी">
+            <h3 class="chapter-title">अध्याय 2: सत्यवान से भेंट और नारद मुनि की भविष्यवाणी</h3>
+            <div class="chapter-text">
+                <p>सावित्री सत्यवान के सद्गुणों, विनम्रता और माता-पिता के प्रति सम्मान से प्रभावित हुईं। उन्होंने उन्हें अपना पति चुन लिया।</p>
+                <p>जब यह बात देवर्षि नारद को ज्ञात हुई, तो उन्होंने सत्यवान के भाग्य से जुड़ी एक कठिन बात बताई। सत्यवान गुणवान और धर्मनिष्ठ थे, लेकिन उनकी आयु बहुत कम शेष थी।</p>
+                <p>यह सुनकर सावित्री के परिवार में चिंता फैल गई। फिर भी सावित्री ने अपने निर्णय से पीछे हटने से इनकार कर दिया। उनके लिए विवाह केवल सुख की प्राप्ति नहीं, बल्कि निष्ठा और जीवनभर साथ निभाने का संकल्प था।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 3 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 3</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_25.webp" alt="सावित्री का व्रत और कठिन समय की प्रतीक्षा">
+            <h3 class="chapter-title">अध्याय 3: सावित्री का व्रत और कठिन समय की प्रतीक्षा</h3>
+            <div class="chapter-text">
+                <p>विवाह के बाद सावित्री वन में सत्यवान और उनके माता-पिता के साथ रहने लगीं। वे परिवार की सेवा करतीं और अपने कर्तव्यों का पालन करतीं।</p>
+                <p>जैसे-जैसे सत्यवान की नियत आयु का समय निकट आने लगा, सावित्री का संकल्प और दृढ़ होता गया। उन्होंने उपवास और साधना के माध्यम से अपने मन को स्थिर रखा।</p>
+                <p>सावित्री को पता था कि संकट का समय निकट है, लेकिन उन्होंने भय के आगे हार नहीं मानी। वे सत्यवान के साथ रहने और हर परिस्थिति का सामना करने के लिए तैयार थीं।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 4 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 4</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_26.webp" alt="सत्यवान की मृत्यु और यमराज का आगमन">
+            <h3 class="chapter-title">अध्याय 4: सत्यवान की मृत्यु और यमराज का आगमन</h3>
+            <div class="chapter-text">
+                <p>एक दिन सत्यवान वन में लकड़ियाँ काटने गए और सावित्री भी उनके साथ थीं। कुछ समय बाद सत्यवान को अचानक अस्वस्थता महसूस हुई। वे थककर सावित्री की गोद में सिर रखकर लेट गए।</p>
+                <p>उसी समय यमराज के आगमन का वर्णन मिलता है। यमराज को मृत्यु और धर्म के देवता के रूप में जाना जाता है। वे सत्यवान के प्राण लेकर जाने लगे।</p>
+                <p>सावित्री ने अपने पति को अकेला छोड़ने से इनकार कर दिया और यमराज के पीछे चलने लगीं। यमराज ने उन्हें लौट जाने के लिए कहा, लेकिन सावित्री ने विनम्रता और विवेक के साथ धर्म की बातें प्रस्तुत कीं।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 5 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 5</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_27.webp" alt="यमराज और सावित्री के बीच धर्म संवाद">
+            <h3 class="chapter-title">अध्याय 5: यमराज और सावित्री के बीच धर्म संवाद</h3>
+            <div class="chapter-text">
+                <p>सावित्री यमराज के साथ चलते हुए धर्म, सत्य, करुणा और कर्तव्य के विषय में संवाद करती रहीं। उनकी वाणी में अहंकार नहीं था। वे तर्क, विनम्रता और ज्ञान के आधार पर अपनी बात रख रही थीं।</p>
+                <p>यमराज सावित्री की निष्ठा और बुद्धिमत्ता से प्रसन्न हुए। उन्होंने उन्हें सत्यवान के जीवन के अतिरिक्त अन्य वरदान माँगने का अवसर दिया।</p>
+                <p>सावित्री ने क्रमशः अपने ससुर के लिए दृष्टि और कल्याण, उनके खोए हुए राज्य की पुनः प्राप्ति तथा अपने पिता के वंश की वृद्धि जैसे वरदान माँगे। यमराज ने उनकी प्रार्थनाएँ स्वीकार कीं।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 6 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 6</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_28.webp" alt="वह वरदान जिसने सत्यवान के जीवन का मार्ग खोला">
+            <h3 class="chapter-title">अध्याय 6: वह वरदान जिसने सत्यवान के जीवन का मार्ग खोला</h3>
+            <div class="chapter-text">
+                <p>अंततः सावित्री ने ऐसा वरदान माँगा जो उनके और सत्यवान के वैवाहिक जीवन से जुड़ा था—उन्हें सत्यवान से योग्य संतान प्राप्त हो।</p>
+                <p>यमराज पहले ही उनके अनेक वरदान स्वीकार कर चुके थे। इस नए वरदान का अर्थ यह था कि सत्यवान के जीवित रहने के बिना उसकी पूर्ति संभव नहीं होगी।</p>
+                <p>सावित्री ने किसी छल या बल के बजाय अपने विवेक और संवाद-कौशल से परिस्थिति का समाधान निकाला। यमराज ने उनकी निष्ठा और बुद्धिमत्ता को स्वीकार किया और सत्यवान के प्राण लौटाने की अनुमति दी।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 7 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 7</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_29.webp" alt="सत्यवान का पुनर्जीवन और परिवार का सुख">
+            <h3 class="chapter-title">अध्याय 7: सत्यवान का पुनर्जीवन और परिवार का सुख</h3>
+            <div class="chapter-text">
+                <p>जब सावित्री सत्यवान के पास लौटीं, तो उनके पुनर्जीवन का वर्णन मिलता है। सत्यवान उठे और उन्हें अपने साथ हुई घटना का पूरा ज्ञान नहीं था।</p>
+                <p>दोनों अपने आश्रम लौटे। आगे की कथा में सत्यवान के माता-पिता के कल्याण और उनके परिवार के जीवन में सुख तथा सम्मान की वापसी का वर्णन आता है।</p>
+                <p>सावित्री की कथा भारतीय परंपरा में इसलिए विशेष है क्योंकि उन्होंने संकट के समय केवल भावनाओं पर निर्भर रहने के बजाय ज्ञान, धैर्य और संवाद का सहारा लिया।</p>
+            </div>
+        </div>
+
+        <!-- Adhyay 8 -->
+        <div class="chapter-card">
+            <div class="badge-row"><span class="chapter-number">अध्याय 8</span></div>
+            <img class="chapter-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/chitra_30.webp" alt="सावित्री की कथा का आध्यात्मिक संदेश">
+            <h3 class="chapter-title">अध्याय 8: सावित्री की कथा का आध्यात्मिक संदेश</h3>
+            <div class="chapter-text">
+                <p>सावित्री और सत्यवान की कथा निष्ठा, प्रेम, साहस और विवेक की प्रेरणादायक कहानी है। सावित्री ने मृत्यु के देवता के सामने भी अपनी गरिमा और विनम्रता बनाए रखी।</p>
+                <p>इस कथा का अर्थ यह नहीं कि मनुष्य अपनी इच्छा से मृत्यु के प्राकृतिक नियमों को बदल सकता है। इसका धार्मिक संदेश यह है कि कठिन परिस्थितियों में भी धैर्य, बुद्धिमत्ता और धर्म के मार्ग पर चलना महत्वपूर्ण है।</p>
+            </div>
+            <div class="message-box">
+                <div class="msg-title">🌱 आध्यात्मिक संदेश</div>
+                <p>सच्ची शक्ति केवल शारीरिक बल में नहीं, बल्कि सत्य, विवेक, धैर्य और दृढ़ संकल्प में होती है। प्रेम जब बुद्धिमत्ता और धर्म के साथ जुड़ता है, तब वह सबसे कठिन परिस्थितियों में भी आशा का मार्ग दिखा सकता है।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conclusion Section -->
+    <div class="conclusion-card">
+        <h2>पाँचों कथाओं से मिलने वाली संयुक्त शिक्षा</h2>
+        <ul>
+            <li><strong>रुद्राक्ष की कथा:</strong> करुणा, ध्यान और आत्मसंयम का महत्व।</li>
+            <li><strong>विष्णु और ब्रह्मा की कथा:</strong> सृजन, ज्ञान और पवित्रता का महत्व।</li>
+            <li><strong>शंख और सुदर्शन चक्र की कथा:</strong> जागरूकता, विवेक और धर्म की रक्षा।</li>
+            <li><strong>शिव के तीसरे नेत्र की कथा:</strong> अंतर्दृष्टि, आत्मसंयम और अज्ञान का विनाश।</li>
+            <li><strong>सावित्री और सत्यवान की कथा:</strong> निष्ठा, धैर्य, बुद्धिमत्ता और साहस।</li>
+        </ul>
+        <p class="closing-p">इन कथाओं को पढ़ने और समझने का उद्देश्य केवल पौराणिक घटनाओं का ज्ञान प्राप्त करना नहीं, बल्कि उनके भीतर छिपे नैतिक और आध्यात्मिक संदेशों को अपने जीवन में अपनाना भी है।</p>
+    </div>
+
+</div>
+
+</body>
+</html>
