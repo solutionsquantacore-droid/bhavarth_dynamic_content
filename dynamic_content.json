@@ -150,5 +150,13 @@
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/hindu_symbols_secrets_hi.html",
     "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/hindu_dharam_secret_banner.webp",
     "enabled": true
+  },
+  {
+    "title": "Amazing Mythological Tales",
+    "title_hindi": "अद्भुत पौराणिक कथाएँ",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/rochak_katha_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/rochak_katha_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/rochak_katha_banner.webp",
+    "enabled": true
   }
 ]
