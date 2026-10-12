@@ -134,5 +134,13 @@
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/kanha_ji_names_hi.html",
     "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/kanha_ji_names.webp",
     "enabled": true
+  },
+  {
+    "title": "The Mystery of Hindu Symbols",
+    "title_hindi": "हिंदू धर्म के प्रतीकों का रहस्य",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/hindu_symbols_secrets_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/hindu_symbols_secrets_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/hindu_dharam_secret_banner.webp",
+    "enabled": true
   }
 ]
