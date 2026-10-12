@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>माँ वैष्णो देवी की पावन कथा - Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c0392b;
+            --secondary: #d35400;
+            --accent: #f39c12;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #57606f;
+            --border-color: #f1ebd9;
+            --highlight-bg: #fff8eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, #c0392b, #8e1b10);
+            color: white;
+            border-radius: 18px;
+            padding: 26px 20px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(192, 57, 43, 0.22);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffeaa7;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .header-card h1 {
+            font-family: 'Yatra One', cursive;
+            font-size: 28px;
+            line-height: 1.35;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+        }
+
+        .header-card .jai-mata-di {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffeaa7;
+            margin-bottom: 8px;
+        }
+
+        .header-card p {
+            font-size: 15px;
+            opacity: 0.95;
+            line-height: 1.65;
+            color: #fcedcf;
+            text-align: justify;
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--primary);
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .part-number {
+            background: var(--primary);
+            color: white;
+            font-size: 13px;
+            font-weight: 800;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .part-category {
+            font-size: 12.5px;
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        .story-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            object-fit: cover;
+            display: block;
+        }
+
+        .story-title {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 21px;
+            line-height: 1.4;
+            margin-bottom: 14px;
+            border-bottom: 1.5px dashed #f0ded0;
+            padding-bottom: 10px;
+        }
+
+        .story-desc {
+            font-size: 15px;
+            color: var(--text-main);
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .story-desc p {
+            margin-bottom: 10px;
+        }
+
+        .pindi-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 12px 0;
+        }
+
+        .pindi-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        .pindi-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 2px;
+            top: 0;
+            color: var(--secondary);
+            font-size: 13px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin: 14px 0 6px 0;
+            font-size: 14.5px;
+            color: #7d4400;
+            line-height: 1.65;
+            text-align: justify;
+        }
+
+        .prayer-card {
+            background: linear-gradient(135deg, #fef9e7, #fcf3cf);
+            border: 1px solid #f9e79f;
+            border-radius: 16px;
+            padding: 22px 20px;
+            margin-top: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .prayer-card h2 {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .prayer-card p {
+            font-size: 15.5px;
+            color: #5c3c00;
+            line-height: 1.75;
+            margin-bottom: 12px;
+            font-weight: 600;
+            text-align: justify;
+        }
+
+        .prayer-card .closing {
+            font-family: 'Yatra One', cursive;
+            font-size: 20px;
+            color: var(--primary);
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <span class="app-tag">Bhavarth विशेष</span>
+        <h1>माँ वैष्णो देवी की पावन कथा 🙏</h1>
+        <div class="jai-mata-di">जय माता दी! 🌺</div>
+        <p>माँ वैष्णो देवी की कथा श्रद्धा, भक्ति, तपस्या और धर्म की विजय की एक पवित्र गाथा है। जम्मू-कश्मीर के त्रिकूट पर्वत पर स्थित माँ वैष्णो देवी का पवित्र धाम करोड़ों भक्तों की आस्था का केंद्र है। मान्यता है कि जो भक्त सच्चे मन से माता को पुकारता है, माता उसे अपने चरणों में बुलाती हैं।</p>
+    </div>
+
+    <!-- Part 1 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">प्रसंग #1</span>
+            <span class="part-category">दिव्य प्राकट्य</span>
+        </div>
+        <img class="story-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/vaishno_mata_1.webp" alt="माता वैष्णो देवी का दिव्य अवतार">
+        <h2 class="story-title">1. माता वैष्णो देवी का दिव्य अवतार</h2>
+        <div class="story-desc">
+            <p>पौराणिक मान्यताओं के अनुसार, जब पृथ्वी पर अधर्म बढ़ने लगा और धर्म की रक्षा के लिए दिव्य शक्ति की आवश्यकता हुई, तब माता महालक्ष्मी, महासरस्वती और महाकाली की शक्तियों के सम्मिलित तेज से एक दिव्य कन्या का प्राकट्य हुआ। इस कन्या को वैष्णवी कहा गया।</p>
+            <p>माता वैष्णवी का जन्म संसार में धर्म की स्थापना, मानवता को भक्ति का मार्ग दिखाने और दुष्ट शक्तियों का विनाश करने के उद्देश्य से हुआ था।</p>
+            <p>बचपन से ही वैष्णवी का मन भगवान विष्णु की भक्ति में लगा रहता था। वे सांसारिक सुखों से दूर रहकर ध्यान, तपस्या और सेवा में समय बिताती थीं।</p>
+        </div>
+    </div>
+
+    <!-- Part 2 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">प्रसंग #2</span>
+            <span class="part-category">प्रभु मिलन</span>
+        </div>
+        <img class="story-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/vaishno_mata_2.webp" alt="श्रीराम से माता वैष्णवी की भेंट">
+        <h2 class="story-title">2. श्रीराम से माता वैष्णवी की भेंट</h2>
+        <div class="story-desc">
+            <p>लोकप्रिय वैष्णो देवी कथा के अनुसार, त्रेतायुग में जब भगवान श्रीराम माता सीता की खोज कर रहे थे, तब उनकी भेंट वैष्णवी से हुई।</p>
+            <p>वैष्णवी ने भगवान श्रीराम को पहचान लिया और उन्हें अपना आराध्य मानकर उनके साथ रहने की इच्छा प्रकट की। भगवान श्रीराम ने उन्हें समझाया कि उस समय वे एकपत्नी व्रत का पालन कर रहे हैं। उन्होंने वैष्णवी को आश्वासन दिया कि कलियुग में वे उन्हें पहचानने का अवसर देंगी।</p>
+            <p>कथा के अनुसार, भगवान श्रीराम ने उन्हें त्रिकूट पर्वत पर तपस्या करने और मानवता को भक्ति का मार्ग दिखाने का निर्देश दिया।</p>
+        </div>
+    </div>
+
+    <!-- Part 3 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">प्रसंग #3</span>
+            <span class="part-category">कठिन साधना</span>
+        </div>
+        <img class="story-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/vaishno_mata_3.webp" alt="त्रिकूट पर्वत पर माता की तपस्या">
+        <h2 class="story-title">3. त्रिकूट पर्वत पर माता की तपस्या</h2>
+        <div class="story-desc">
+            <p>भगवान श्रीराम के निर्देशानुसार माता वैष्णवी त्रिकूट पर्वत पर पहुँचीं। वहाँ उन्होंने एकांत में तपस्या आरंभ की और भक्तों के कल्याण के लिए स्वयं को समर्पित कर दिया।</p>
+            <p>धीरे-धीरे माता की दिव्य शक्ति और तपस्या की महिमा दूर-दूर तक फैलने लगी। अनेक श्रद्धालु उनके दर्शन करने आने लगे। माता सभी को प्रेम, करुणा, सदाचार और ईश्वर की भक्ति का संदेश देती थीं।</p>
+            <p>इसी दौरान भैरवनाथ नामक एक तांत्रिक को माता की शक्ति के बारे में पता चला।</p>
+        </div>
+    </div>
+
+    <!-- Part 4 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">प्रसंग #4</span>
+            <span class="part-category">भैरवनाथ की हठ</span>
+        </div>
+        <img class="story-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/vaishno_mata_4.webp" alt="भैरवनाथ और माता की लीला">
+        <h2 class="story-title">4. भैरवनाथ और माता की लीला</h2>
+        <div class="story-desc">
+            <p>प्रचलित कथा के अनुसार, भैरवनाथ माता की शक्ति को जानने के लिए उनके पीछे पड़ गया। माता ने उसे कई बार समझाया, लेकिन वह अपनी जिद पर अड़ा रहा।</p>
+            <p>माता वैष्णवी ने उससे बचने के लिए त्रिकूट पर्वत की गुफाओं और पहाड़ी मार्गों से यात्रा की। इस यात्रा से जुड़ी अनेक जगहें आज वैष्णो देवी यात्रा के पवित्र पड़ाव मानी जाती हैं।</p>
+            <p>अंततः माता एक पवित्र गुफा में पहुँचीं और वहाँ तपस्या में लीन हो गईं। जब भैरवनाथ ने वहाँ भी उनका पीछा नहीं छोड़ा, तब माता ने अपनी दिव्य शक्ति का प्रकट रूप दिखाया।</p>
+        </div>
+    </div>
+
+    <!-- Part 5 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">प्रसंग #5</span>
+            <span class="part-category">संहार और क्षमा</span>
+        </div>
+        <img class="story-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/vaishno_mata_5.webp" alt="भैरवनाथ का वध और माता की करुणा">
+        <h2 class="story-title">5. भैरवनाथ का वध और माता की करुणा</h2>
+        <div class="story-desc">
+            <p>कथा के अनुसार, जब भैरवनाथ ने माता पर आक्रमण करने का प्रयास किया, तब माता ने महाकाली का उग्र स्वरूप धारण किया और उसका वध कर दिया। भैरवनाथ का सिर कटकर पहाड़ पर दूर जा गिरा। यह स्थान आज भैरव घाटी से जुड़ी धार्मिक मान्यता का हिस्सा है।</p>
+            <p>मृत्यु के क्षण में भैरवनाथ को अपनी भूल का एहसास हुआ। उसने माता से क्षमा माँगी।</p>
+            <p>माता करुणामयी हैं। उन्होंने भैरवनाथ को क्षमा करते हुए उसे वरदान दिया कि जो भक्त उनके दर्शन के लिए आएगा, उसकी यात्रा भैरवनाथ के दर्शन के बिना पूर्ण नहीं मानी जाएगी।</p>
+            <p>इसी मान्यता के कारण आज भी अनेक श्रद्धालु माता के दर्शन के बाद भैरव बाबा के मंदिर में माथा टेकते हैं।</p>
+        </div>
+    </div>
+
+    <!-- Part 6 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">प्रसंग #6</span>
+            <span class="part-category">दिव्य स्वरूप</span>
+        </div>
+        <img class="story-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/vaishno_mata_6.webp" alt="पवित्र गुफा में तीन पिंडियों का रहस्य">
+        <h2 class="story-title">6. पवित्र गुफा में तीन पिंडियों का रहस्य</h2>
+        <div class="story-desc">
+            <p>माता वैष्णो देवी के पवित्र भवन में प्राकृतिक रूप से प्रकट तीन पिंडियाँ विशेष श्रद्धा का केंद्र हैं। इन तीनों पिंडियों को देवी की तीन प्रमुख शक्तियों का प्रतीक माना जाता है:</p>
+            <ul class="pindi-list">
+                <li><strong>माँ महाकाली:</strong> शक्ति, साहस और बुराई के विनाश की प्रतीक।</li>
+                <li><strong>माँ महालक्ष्मी:</strong> समृद्धि, करुणा और पालन-पोषण की प्रतीक।</li>
+                <li><strong>माँ महासरस्वती:</strong> ज्ञान, बुद्धि और विवेक की प्रतीक।</li>
+            </ul>
+        </div>
+        <div class="highlight-box">
+            इन तीनों शक्तियों का एक ही पवित्र स्थान पर विराजमान होना इस संदेश को प्रकट करता है कि शक्ति, समृद्धि और ज्ञान जीवन में एक-दूसरे के पूरक हैं।
+        </div>
+    </div>
+
+    <!-- Part 7 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">प्रसंग #7</span>
+            <span class="part-category">जीवन दर्शन</span>
+        </div>
+        <img class="story-image" src="https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/images/vaishno_mata_7.webp" alt="माता वैष्णो देवी के दर्शन का आध्यात्मिक संदेश">
+        <h2 class="story-title">7. माता वैष्णो देवी के दर्शन का आध्यात्मिक संदेश</h2>
+        <div class="story-desc">
+            <p>माता की कथा हमें सिखाती है कि सच्ची भक्ति में अहंकार के लिए कोई स्थान नहीं होता। मनुष्य को अपनी शक्ति का उपयोग दूसरों की रक्षा और कल्याण के लिए करना चाहिए।</p>
+            <p>माता वैष्णो देवी की कृपा प्राप्त करने के लिए श्रद्धालु सच्चे मन से प्रार्थना करते हैं, सेवा करते हैं और अपने जीवन में सदाचार अपनाने का प्रयास करते हैं।</p>
+            <p>माता के दरबार में पहुँचने वाला प्रत्येक भक्त यही प्रार्थना करता है कि उसके मन में श्रद्धा, परिवार में सुख-शांति और जीवन में सही मार्ग पर चलने की शक्ति बनी रहे।</p>
+        </div>
+    </div>
+
+    <!-- Aarti Prayer Card -->
+    <div class="prayer-card">
+        <h2>माँ वैष्णो देवी की आरती-भाव से प्रार्थना</h2>
+        <p>हे माता रानी! हमारे जीवन से अज्ञान और अहंकार दूर करें। हमें सत्य के मार्ग पर चलने, दुखियों की सहायता करने और कठिन परिस्थितियों में धैर्य बनाए रखने की शक्ति दें। हमारे परिवार पर अपनी कृपा बनाए रखें और हमारे मन में सदैव भक्ति का दीप जलाए रखें।</p>
+        <span class="closing">जय माता दी! 🙏🌺</span>
+    </div>
+
+</div>
+
+</body>
+</html>
