@@ -29,7 +29,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_2_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_2.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_2.webp",
-    "enabled": true
+    "enabled": false
   },
   {
     "title_hindi": "तृतीय दिन: माँ चंद्रघंटा",
@@ -37,7 +37,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_3_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_3.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_3.webp",
-    "enabled": false
+    "enabled": true
   },
   {
     "title_hindi": "चतुर्थ दिन: माँ कूष्मांडा",
