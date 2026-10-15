@@ -45,7 +45,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_4_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_4.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_4.webp",
-    "enabled": true
+    "enabled": false
   },
   {
     "title_hindi": "पंचम दिन: माँ स्कंदमाता",
@@ -53,7 +53,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_5_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_5.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_5.webp",
-    "enabled": false
+    "enabled": true
   },
   {
     "title_hindi": "षष्ठम दिन: माँ कात्यायनी",
