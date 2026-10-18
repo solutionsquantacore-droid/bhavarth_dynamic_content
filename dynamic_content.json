@@ -77,7 +77,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_8_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_8.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_8.webp",
-    "enabled": true
+    "enabled": false
   },
   {
     "title_hindi": "नवम दिन: माँ सिद्धिदात्री",
@@ -85,7 +85,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_9_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/navratri_day_9.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/devi_maa_9.webp",
-    "enabled": false
+    "enabled": true
   },
   {
     "title_hindi": "माँ वैष्णो देवी की पावन कथा",
