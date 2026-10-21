@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legend of Kedarnath: When Lord Shiva Disappeared into the Earth - Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #b33927;
+            --primary-dark: #871f11;
+            --secondary: #d35400;
+            --accent: #f39c12;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #57606f;
+            --border-color: #f1ebd9;
+            --highlight-bg: #fff8eb;
+            --shiva-blue: #1b4f72;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            display: block;
+            object-fit: cover;
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border-radius: 18px;
+            padding: 28px 22px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(179, 57, 39, 0.25);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffeaa7;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .header-card h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 25px;
+            line-height: 1.35;
+            margin-bottom: 10px;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+        }
+
+        .header-card .devotional-chant {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffeaa7;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-card p {
+            font-size: 14.5px;
+            opacity: 0.95;
+            line-height: 1.68;
+            color: #fcedcf;
+            text-align: justify;
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 22px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--primary);
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .part-number {
+            background: var(--primary);
+            color: white;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .part-category {
+            font-size: 12px;
+            color: var(--secondary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .story-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+            object-fit: cover;
+            display: block;
+        }
+
+        .story-title {
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 14px;
+            border-bottom: 1.5px dashed #f0ded0;
+            padding-bottom: 10px;
+        }
+
+        .story-desc {
+            font-size: 14.5px;
+            color: var(--text-main);
+            line-height: 1.75;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        .story-desc p {
+            margin-bottom: 12px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 13px 15px;
+            margin: 16px 0 8px 0;
+            font-size: 14px;
+            color: #7d4400;
+            line-height: 1.68;
+            text-align: justify;
+            font-weight: 500;
+        }
+
+        .kedar-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .kedar-item {
+            background: #fffbf5;
+            border: 1px solid #fae5d3;
+            border-radius: 14px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .kedar-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .kedar-item-title {
+            font-family: 'Cinzel', serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .kedar-tag {
+            font-size: 11px;
+            background: var(--secondary);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .kedar-item-desc {
+            font-size: 13.8px;
+            color: var(--text-main);
+            line-height: 1.65;
+            text-align: justify;
+        }
+
+        .prayer-card {
+            background: linear-gradient(135deg, #fef9e7, #fcf3cf);
+            border: 1px solid #f9e79f;
+            border-radius: 16px;
+            padding: 26px 20px;
+            margin-top: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .prayer-card h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .prayer-card p {
+            font-size: 15px;
+            color: #5c3c00;
+            line-height: 1.75;
+            margin-bottom: 14px;
+            font-weight: 600;
+            text-align: justify;
+        }
+
+        .prayer-card .closing {
+            font-family: 'Cinzel', serif;
+            font-size: 19px;
+            color: var(--primary);
+            margin-top: 10px;
+            display: block;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero Banner Image -->
+    <img class="hero-banner" src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/kedarnath_banner.webp" alt="The Legend of Kedarnath and Panch Kedar">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <span class="app-tag">Bhavarth Spiritual Chronicles</span>
+        <h1>The Legend of Kedarnath</h1>
+        <div class="devotional-chant">Har Har Mahadev! 🔱 Om Namah Shivaya!</div>
+        <p>A sacred devotional saga inspired by the Mahabharata tradition and the immortal legend of Panch Kedar. Embark on the profound spiritual journey of the Pandavas as they traversed the rugged Himalayan heights in search of Lord Shiva's divine forgiveness, leading to the miraculous manifestation of Kedarnath Dham.</p>
+    </div>
+
+    <!-- Chapter 1 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #1</span>
+            <span class="part-category">The Search for Redemption</span>
+        </div>
+        <img class="story-image" src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/kedarnath.webp" alt="Pandavas in search of Lord Shiva in the Himalayas">
+        <h2 class="story-title">1. The Pandavas' Sorrow and the Search for Shiva</h2>
+        <div class="story-desc">
+            <p>Long ago, in the aftermath of the cataclysmic battle of Kurukshetra, the five Pandava brothers emerged victorious. Yet, the hard-won crown brought them no inner peace. The war had claimed the lives of their own kin, venerable preceptors like Bhishma and Drona, beloved friends, and countless warriors. Their hearts were weighed down with profound grief and the spiritual burden of fratricide (<em>Gotra Hatya</em>).</p>
+            <p>Seeking absolution and spiritual peace, the Pandavas sought the counsel of Sage Vyasa. The great sage advised them that only Mahadeva, the supreme Lord of ascetics and compassion, could absolve their spiritual sorrow. Resolved to seek His divine grace, the brothers entrusted their kingdom to young Parikshit and set out toward the formidable peaks of the Himalayas.</p>
+            <p>However, Lord Shiva did not wish to grant an easy audience. He believed the Pandavas must first endure sincere penance and confront the gravity of war's toll. To elude their pursuit, the Lord vanished into the Garhwal mountain wilderness and assumed the disguise of an extraordinary bull grazing among the alpine herds.</p>
+        </div>
+    </div>
+
+    <!-- Chapter 2 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #2</span>
+            <span class="part-category">The Divine Disappearance</span>
+        </div>
+        <h2 class="story-title">2. The Divine Disappearance into the Earth</h2>
+        <div class="story-desc">
+            <p>Undeterred by freezing winds and steep precipices, the Pandavas searched diligently through valleys, mist-covered forests, and glacial ridges. At last, Bhima's discerning eye noticed a magnificent bull whose radiant aura and majestic bearing set it apart from ordinary beasts. Bhima instantly recognized that this was none other than Mahadeva in disguise.</p>
+            <p>To prevent the celestial bull from escaping, the mighty Bhima stood astride two opposing mountain ridges with legs outstretched across the valley. The other Pandava brothers moved forward to surround the divine form.</p>
+            <p>Realizing He had been discovered, the divine bull began to sink mystically into the earth. Bhima lunged forward with all his strength and managed to grasp its muscular hindquarters. Yet, through supreme cosmic power, the Lord descended into the subterranean realm, leaving the triangular hump of the bull manifested above the ground at the sacred valley of Kedarnath.</p>
+        </div>
+        <div class="highlight-box">
+            Awe-struck by this divine phenomenon, the Pandavas realized that Lord Shiva had tested their perseverance and granted them His grace. At Kedarnath, this holy hump has since been venerated as the self-manifested (Swayambhu) Jyotirlinga in a distinctive natural rock formation.
+        </div>
+    </div>
+
+    <!-- Chapter 3 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #3</span>
+            <span class="part-category">The Panch Kedar Circuit</span>
+        </div>
+        <h2 class="story-title">3. The Five Sacred Manifestations: The Panch Kedar</h2>
+        <div class="story-desc">
+            <p>According to the sacred Puranic tradition, after vanishing beneath the earth at Kedarnath, different parts of Lord Shiva's divine form re-emerged across four other magnificent locations in the Garhwal Himalayas. Together with Kedarnath, these five holy shrines are revered as the eternal <strong>Panch Kedar</strong> pilgrimage:</p>
+        </div>
+
+        <div class="kedar-grid">
+
+            <!-- 1. Kedarnath -->
+            <div class="kedar-item">
+                <img src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/kedarnath.webp" alt="Kedarnath Temple - The Sacred Hump">
+                <div class="kedar-item-title">
+                    <span>1. Kedarnath Dham</span>
+                    <span class="kedar-tag">The Hump</span>
+                </div>
+                <div class="kedar-item-desc">
+                    Situated at an altitude of 3,583 meters against the majestic Kedarnath peak and Kedar Dome. Here, Lord Shiva's triangular hump is worshipped inside the revered stone shrine, sanctified as the highest among the 12 Jyotirlingas.
+                </div>
+            </div>
+
+            <!-- 2. Tungnath -->
+            <div class="kedar-item">
+                <img src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/tungnath.webp" alt="Tungnath Temple - The Divine Arms">
+                <div class="kedar-item-title">
+                    <span>2. Tungnath</span>
+                    <span class="kedar-tag">The Arms (Bahu)</span>
+                </div>
+                <div class="kedar-item-desc">
+                    Perched at an astonishing elevation of 3,680 meters atop Chandrashila ridge, Tungnath is the highest Shiva temple on earth. Here, Lord Shiva's mighty arms emerged, symbolizing boundless protection and divine strength.
+                </div>
+            </div>
+
+            <!-- 3. Rudranath -->
+            <div class="kedar-item">
+                <img src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/rudranath.webp" alt="Rudranath Temple - The Sacred Face">
+                <div class="kedar-item-title">
+                    <span>3. Rudranath</span>
+                    <span class="kedar-tag">The Face (Mukh)</span>
+                </div>
+                <div class="kedar-item-desc">
+                    Nestled amidst dense rhododendron forests and alpine meadows, Rudranath is where the tranquil, compassionate face (<em>Neelkanth Mahadeva</em>) of Lord Shiva appeared. Devotees worship His natural rock face inside a secluded cave.
+                </div>
+            </div>
+
+            <!-- 4. Madhyamaheshwar -->
+            <div class="kedar-item">
+                <img src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/madhyamaheshwar.webp" alt="Madhyamaheshwar Temple - The Divine Navel">
+                <div class="kedar-item-title">
+                    <span>4. Madhyamaheshwar</span>
+                    <span class="kedar-tag">The Navel (Nabhi)</span>
+                </div>
+                <div class="kedar-item-desc">
+                    Located in a scenic valley beneath the Chaukhamba peak, Madhyamaheshwar is the sanctuary where Lord Shiva's navel and torso manifested. The site represents the sacred center of cosmic creative energy.
+                </div>
+            </div>
+
+            <!-- 5. Kalpeshwar -->
+            <div class="kedar-item">
+                <img src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/kalpeshawar_mahadev.webp" alt="Kalpeshwar Temple - The Matted Hair">
+                <div class="kedar-item-title">
+                    <span>5. Kalpeshwar</span>
+                    <span class="kedar-tag">The Matted Hair (Jata)</span>
+                </div>
+                <div class="kedar-item-desc">
+                    Set in the serene Urgam Valley, Kalpeshwar is the sacred cave temple where Lord Shiva's divine matted locks (<em>Jata</em>) manifested. It is the only Panch Kedar shrine that remains accessible to pilgrims throughout all twelve months of the year.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Chapter 4 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #4</span>
+            <span class="part-category">Divine Resilience</span>
+        </div>
+        <h2 class="story-title">4. The Miracle of Bheem Shila and Temple Survival</h2>
+        <div class="story-desc">
+            <p>In June 2013, an unprecedented cloudburst and flash flood devastated the Mandakini river valley and Kedarnath town. Immense torrents of water, boulders, and glacial silt washed away hundreds of surrounding buildings and bridges. Yet, in the midst of this overwhelming cataclysm, the ancient sanctum of Kedarnath Temple remained virtually undamaged.</p>
+            <p>During the peak of the deluge, a massive natural boulder rolled down the mountain from behind the temple and came to a sudden halt just feet behind the sanctum sanctorum. This giant rock—fondly revered by millions as <strong>Bheem Shila</strong>—acted as an impregnable natural barrier, dividing the ferocious river of silt and rushing floodwaters to flow safely around both sides of the temple.</p>
+            <p>Devotees across the world venerate Bheem Shila as an unmistakable manifestation of Mahadeva's divine protection and the unyielding strength of Bhima. The event stands as a timeless testament to how architectural mastery, natural geography, and unshakeable spiritual faith converge in the Himalayas.</p>
+        </div>
+    </div>
+
+    <!-- Chapter 5 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #5</span>
+            <span class="part-category">Spiritual Philosophy</span>
+        </div>
+        <h2 class="story-title">5. The Eternal Spiritual Message of Kedarnath</h2>
+        <div class="story-desc">
+            <p>The immortal legend of Kedarnath is far deeper than a historical chronicle. It serves as an illuminating spiritual mirror for every human soul on life's pilgrimage:</p>
+            <p><strong>1. The Path of True Humility:</strong> Even the most formidable warriors of the earth—the victorious Pandavas—had to surrender their pride, walk barefoot into the snowbound wilderness, and seek divine forgiveness. Victory without righteousness and humility is empty.</p>
+            <p><strong>2. Unwavering Perseverance:</strong> Mahadeva did not reveal Himself immediately; He tested the Pandavas' resolve. True devotion demands patient endurance through life's trials and cold precipices.</p>
+            <p><strong>3. Redemption through Grace:</strong> No sorrow is too heavy and no karma is beyond redemption when a seeker approaches Lord Shiva with genuine remorse, sincerity, and selfless surrender.</p>
+            <p>Kedarnath stands forever as the crown jewel of the Himalayas—a sanctuary where mountains bow in reverence, the Mandakini river sings eternal praise, and every stone resonates with the cosmic presence of Lord Shiva.</p>
+        </div>
+    </div>
+
+    <!-- Prayer Card -->
+    <div class="prayer-card">
+        <h2>A Heartfelt Prayer to Lord Kedarnath</h2>
+        <p>O Supreme Lord of the Himalayas! Dweller of the snowy Kedara peaks, destroyer of fear, and wellspring of infinite compassion! Forgive our shortcomings and dissolve the burdens of our worldly trials. When torrential floods of distress surround our lives, stand before us like the sacred Bheem Shila to shield and guide our path. Bestow upon our hearts the virtues of patience, purity, and unwavering devotion at Your lotus feet.</p>
+        <span class="closing">Jai Baba Kedarnath! 🔱 Har Har Mahadev!</span>
+    </div>
+
+</div>
+
+</body>
+</html>
