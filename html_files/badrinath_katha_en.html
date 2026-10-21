@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Divine Legend of Badrinath Dham & Tapt Kund - Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #b33927;
+            --primary-dark: #871f11;
+            --secondary: #d35400;
+            --accent: #f39c12;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #57606f;
+            --border-color: #f1ebd9;
+            --highlight-bg: #fff8eb;
+            --gold-accent: #f5b041;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            display: block;
+            object-fit: cover;
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border-radius: 18px;
+            padding: 28px 22px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(179, 57, 39, 0.25);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffeaa7;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .header-card h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 25px;
+            line-height: 1.35;
+            margin-bottom: 10px;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+        }
+
+        .header-card .devotional-chant {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffeaa7;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-card p {
+            font-size: 14.5px;
+            opacity: 0.95;
+            line-height: 1.68;
+            color: #fcedcf;
+            text-align: justify;
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 22px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--primary);
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .part-number {
+            background: var(--primary);
+            color: white;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .part-category {
+            font-size: 12px;
+            color: var(--secondary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .story-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+            object-fit: cover;
+            display: block;
+        }
+
+        .story-title {
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 14px;
+            border-bottom: 1.5px dashed #f0ded0;
+            padding-bottom: 10px;
+        }
+
+        .story-desc {
+            font-size: 14.5px;
+            color: var(--text-main);
+            line-height: 1.75;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        .story-desc p {
+            margin-bottom: 12px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 13px 15px;
+            margin: 16px 0 8px 0;
+            font-size: 14px;
+            color: #7d4400;
+            line-height: 1.68;
+            text-align: justify;
+            font-weight: 500;
+        }
+
+        .prayer-card {
+            background: linear-gradient(135deg, #fef9e7, #fcf3cf);
+            border: 1px solid #f9e79f;
+            border-radius: 16px;
+            padding: 26px 20px;
+            margin-top: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .prayer-card h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .prayer-card p {
+            font-size: 15px;
+            color: #5c3c00;
+            line-height: 1.75;
+            margin-bottom: 14px;
+            font-weight: 600;
+            text-align: justify;
+        }
+
+        .prayer-card .closing {
+            font-family: 'Cinzel', serif;
+            font-size: 19px;
+            color: var(--primary);
+            margin-top: 10px;
+            display: block;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero Banner Image -->
+    <img class="hero-banner" src="https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/badrinath_banner_new.webp?raw=true" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/thumbnails/badrinath_banner_new.webp';" alt="Shri Badrinath Dham - The Abode of Lord Badrivishal">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <span class="app-tag">Bhavarth Spiritual Chronicles</span>
+        <h1>The Legend of Badrinath & Tapt Kund</h1>
+        <div class="devotional-chant">Jai Shri Badrivishal! 🙏 Om Namo Bhagavate Vasudevaya!</div>
+        <p>Nestled high in the snow-clad peaks of the Garhwal Himalayas, upon the holy banks of the celestial Alaknanda River, stands the supreme pilgrimage of Lord Maha Vishnu — <strong>Shri Badrinath Dham</strong>. For millennia, this sacred valley has remained the eternal beacon of divine penance, selfless devotion, and spiritual liberation.</p>
+    </div>
+
+    <!-- Chapter 1 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #1</span>
+            <span class="part-category">Divine Love & Sacrifice</span>
+        </div>
+        <img class="story-image" src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/lakshmi_mata_sacred_canopy.webp" alt="Goddess Lakshmi sheltering Lord Vishnu as a Badri Tree">
+        <h2 class="story-title">1. The Severe Penance of Lord Vishnu & Lakshmi Mata's Canopy</h2>
+        <div class="story-desc">
+            <p>According to ancient Puranic legends, Lord Vishnu once arrived at the secluded, pristine valley of the Himalayas to perform intense austerities for the spiritual welfare and enlightenment of all living beings in the cosmos. Sitting in deep meditative absorption (<em>Samadhi</em>), the Supreme Lord became completely oblivious to His physical surroundings.</p>
+            <p>As seasons turned, a ferocious winter swept through the mountains. Frigid blizzards howled, bone-chilling winds lashed across the valley, and heavy snow began burying the sacred ground. Yet, Lord Vishnu remained motionless, immersed in boundless meditation without food, shelter, or warmth.</p>
+            <p>Witnessing Her beloved Lord exposed to the relentless elements, Goddess Lakshmi was filled with profound compassion and devoted concern. She resolved to shield Him without disturbing His sacred contemplation. Transforming Herself into a flourishing <strong>Badri tree (the wild Himalayan berry tree / Jujube)</strong>, She spread Her branches, leaves, and boughs as a living protective canopy over Lord Vishnu, absorbing the heavy snow, howling winds, and torrential hail upon Her own form.</p>
+            <p>When Lord Vishnu finally emerged from His deep meditation, He saw Goddess Lakshmi shivering under the snow, covered in frost, having stood vigil for decades out of pure, selfless love. Deeply touched by Her supreme sacrifice, the Lord proclaimed: <em>"O Devi! You have protected Me as the Badri tree. Henceforth, this holy hermitage shall be named after You as <strong>Badrikashram</strong> and <strong>Badrinath</strong> (The Lord of the Badri). My worship here will forever remain incomplete without acknowledging Your devotion."</em></p>
+        </div>
+        <div class="highlight-box">
+            In Sanskrit, <strong>Badri</strong> signifies the sacred berry (Jujube). Because Goddess Lakshmi transformed Herself into a protective berry tree to shelter Lord Narayana, this supreme Himalayan shrine gained the eternal name <strong>Badrinath</strong>, and Lord Vishnu is revered here as <strong>Badrivishal</strong>.
+        </div>
+    </div>
+
+    <!-- Chapter 2 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #2</span>
+            <span class="part-category">Sacred Mystery</span>
+        </div>
+        <img class="story-image" src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/tapt_kund_badrinath.webp" alt="The Sacred Tapt Kund Hot Spring at Badrinath">
+        <h2 class="story-title">2. The Divine Mystery of Tapt Kund</h2>
+        <div class="story-desc">
+            <p>Before stepping into the sanctum sanctorum of Badrinath Temple, every pilgrim first partakes in a ritual bath in a remarkable natural thermal spring located just below the temple entrance — the sacred <strong>Tapt Kund</strong>.</p>
+            <p>In Hindu spiritual tradition, this steaming water basin is venerated as the celestial abode of <strong>Agni Deva</strong> (the Lord of Fire), the universal deity of purity, energy, and Vedic sacrifice. Puranic tradition recounts that Agni Deva performed deep penance here to please Lord Vishnu and received the boon to reside eternally in this pool, purifying the body, mind, and soul of all who bathe in its waters before having darshan of Lord Badrivishal.</p>
+            <p>The most awe-inspiring aspect of Tapt Kund is its eternal warmth. Situated in an alpine Himalayan climate where outside temperatures frequently plunge below freezing, this natural reservoir consistently gushes steaming water at approximately <strong>45°C to 50°C</strong> throughout the entire year.</p>
+            <p>Scientifically, this extraordinary phenomenon is fueled by deep geothermal activity within the earth's crust, where subterranean waters are heated by geothermal energy and rise through mineral-rich fissures. The natural sulfur content in the water carries proven therapeutic and medicinal benefits for skin, joints, and physical rejuvenation.</p>
+        </div>
+        <div class="highlight-box">
+            Tapt Kund stands as an immaculate union of timeless Vedic faith and natural geological wonder. It reminds pilgrims that divine warmth and spiritual purification exist even amidst the coldest and most challenging landscapes of life.
+        </div>
+    </div>
+
+    <!-- Chapter 3 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #3</span>
+            <span class="part-category">The Holy Darshan</span>
+        </div>
+        <h2 class="story-title">3. The Sacred Darshan of Lord Badrivishal</h2>
+        <div class="story-desc">
+            <p>Having cleansed both body and mind in the sanctifying waters of Tapt Kund, devotees ascend the stone stairs toward the vibrantly painted arched gateway of the Badrinath Temple. Flanked by the twin guardians of the valley — the majestic <strong>Nara and Narayana</strong> mountain ranges — the temple emanates an aura of absolute peace and cosmic stillness.</p>
+            <p>Inside the innermost sanctum sits the self-manifested (<em>Swayambhu</em>) sacred black stone idol of Lord Vishnu, sculpted from rare <strong>Shaligram</strong> stone. Uniquely in all of Hindu iconography, Lord Vishnu is seated not in His reclining posture upon Sheshnag, but in the serene <strong>Padmasana (Lotus Posture)</strong>, absorbed in deep meditation.</p>
+            <p>Gazing upon this divine form imparts an immediate sense of quietude, inner calm, and spiritual reassurance. It teaches that the Supreme Divinity is not merely the ruler of the universe, but the supreme exemplar of inner silence, contemplative mastery, and unshakeable equanimity.</p>
+        </div>
+    </div>
+
+    <!-- Chapter 4 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Chapter #4</span>
+            <span class="part-category">Spiritual Philosophy</span>
+        </div>
+        <h2 class="story-title">4. Timeless Spiritual Lessons from Badrinath</h2>
+        <div class="story-desc">
+            <p>The immortal chronicle of Badrinath Dham and Tapt Kund provides profound guidance for every spiritual seeker on life's journey:</p>
+            <p><strong>1. True Love is Selfless Service:</strong> Goddess Lakshmi did not disrupt Lord Vishnu's spiritual mission; instead, She quietly absorbed the pain and harsh blizzards to support Him. Authentic love and companionship find their highest expression in selfless protection, mutual support, and silent sacrifice.</p>
+            <p><strong>2. Penance Cultivates Enduring Patience:</strong> Lord Vishnu's steadfast meditation in freezing wilderness reminds us that noble endeavors and spiritual wisdom require deep discipline, resilience, and patience amidst worldly distractions.</p>
+            <p><strong>3. Reverence for Nature Awakes Humility:</strong> The steaming waters of Tapt Kund beside glacial streams remind humanity of the boundless wonders of nature, inspiring us to bow in awe, humility, and gratitude before the cosmic order.</p>
+            <p>When a devotee journeys to Badrinath Dham, they do not merely visit a temple; they connect with a living stream of ancient devotion, selfless love, and eternal peace that has illuminated humanity for countless generations.</p>
+        </div>
+    </div>
+
+    <!-- Prayer Card -->
+    <div class="prayer-card">
+        <h2>A Heartfelt Prayer to Lord Badrivishal</h2>
+        <p>O Supreme Lord Narayana, Dweller of Badrikashram, Protector of the meek, and Ocean of Infinite Compassion! Dissolve the anxieties of our worldly minds and grant us the warmth of Your divine grace. May the selfless love of Mother Mahalakshmi inspire our hearts to serve without expectation, and may our lives be blessed with peace, truth, and devotion at Your lotus feet.</p>
+        <span class="closing">Jai Shri Badrivishal! 🙏 Hari Om Tat Sat.</span>
+    </div>
+
+</div>
+
+</body>
+</html>

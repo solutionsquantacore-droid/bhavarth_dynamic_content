@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री बद्रीनाथ धाम और तप्त कुंड की दिव्य कथा - Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #b33927;
+            --primary-dark: #871f11;
+            --secondary: #d35400;
+            --accent: #f39c12;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #57606f;
+            --border-color: #f1ebd9;
+            --highlight-bg: #fff8eb;
+            --gold-accent: #f5b041;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            display: block;
+            object-fit: cover;
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border-radius: 18px;
+            padding: 28px 22px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(179, 57, 39, 0.25);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffeaa7;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .header-card h1 {
+            font-family: 'Yatra One', cursive;
+            font-size: 26px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+        }
+
+        .header-card .devotional-chant {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffeaa7;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-card p {
+            font-size: 15px;
+            opacity: 0.95;
+            line-height: 1.75;
+            color: #fcedcf;
+            text-align: justify;
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 22px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--primary);
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .part-number {
+            background: var(--primary);
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .part-category {
+            font-size: 13px;
+            color: var(--secondary);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .story-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+            object-fit: cover;
+            display: block;
+        }
+
+        .story-title {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 21px;
+            line-height: 1.45;
+            margin-bottom: 14px;
+            border-bottom: 1.5px dashed #f0ded0;
+            padding-bottom: 10px;
+        }
+
+        .story-desc {
+            font-size: 15px;
+            color: var(--text-main);
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        .story-desc p {
+            margin-bottom: 12px;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 16px 0 8px 0;
+            font-size: 14.5px;
+            color: #7d4400;
+            line-height: 1.75;
+            text-align: justify;
+            font-weight: 500;
+        }
+
+        .prayer-card {
+            background: linear-gradient(135deg, #fef9e7, #fcf3cf);
+            border: 1px solid #f9e79f;
+            border-radius: 16px;
+            padding: 26px 20px;
+            margin-top: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .prayer-card h2 {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .prayer-card p {
+            font-size: 15.5px;
+            color: #5c3c00;
+            line-height: 1.8;
+            margin-bottom: 14px;
+            font-weight: 600;
+            text-align: justify;
+        }
+
+        .prayer-card .closing {
+            font-family: 'Yatra One', cursive;
+            font-size: 20px;
+            color: var(--primary);
+            margin-top: 10px;
+            display: block;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero Banner Image -->
+    <img class="hero-banner" src="https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/badrinath_banner_new.webp?raw=true" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_dynamic_content/main/thumbnails/badrinath_banner_new.webp';" alt="श्री बद्रीनाथ धाम - भगवान बदरीविशाल का पावन दरबार">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <span class="app-tag">भवार्थ आध्यात्मिक गाथा</span>
+        <h1>श्री बद्रीनाथ धाम और तप्त कुंड की दिव्य कथा 🙏</h1>
+        <div class="devotional-chant">जय श्री बदरीविशाल! ॐ नमो भगवते वासुदेवाय!</div>
+        <p>हिमालय की ऊँची बर्फीली चोटियों के बीच, अलकनंदा नदी के पवित्र तट पर स्थित है भगवान श्री हरि विष्णु का दिव्य धाम — <strong>श्री बद्रीनाथ धाम</strong>। यह पवित्र स्थान सदियों से भक्तों की आस्था, तपस्या और भक्ति का केंद्र रहा है। जानिए भगवान विष्णु की कठोर तपस्या, माता लक्ष्मी के निःस्वार्थ प्रेम और अग्निदेव के पावन तप्त कुंड का अलौकिक रहस्य।</p>
+    </div>
+
+    <!-- Chapter 1 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">अध्याय #1</span>
+            <span class="part-category">त्याग और निःस्वार्थ प्रेम</span>
+        </div>
+        <img class="story-image" src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/lakshmi_mata_sacred_canopy.webp" alt="भगवान विष्णु की तपस्या और माता लक्ष्मी का बदरी वृक्ष रूप">
+        <h2 class="story-title">1. भगवान विष्णु की कठोर तपस्या एवं माता लक्ष्मी का समर्पण</h2>
+        <div class="story-desc">
+            <p>पौराणिक मान्यताओं के अनुसार, एक समय भगवान विष्णु संपूर्ण चराचर जगत के कल्याण और जीवों के उद्धार हेतु हिमालय की शांत, एकांत और पवित्र भूमि पर कठोर तपस्या करने पधारे। वे अलकनंदा के सुरम्य तट पर ध्यान में लीन हो गए।</p>
+            <p>समय बीतने के साथ वहां मौसम अत्यंत विकराल हो उठा। चारों ओर भीषण बर्फबारी होने लगी, हाड़ कंपाने वाली बर्फीली हवाएँ चलने लगीं और पूरा पर्वतीय क्षेत्र शून्य से भी नीचे तापमान में घने हिमपात से ढक गया। भगवान विष्णु अपनी तपस्या में इतने गहराई से लीन थे कि उन्हें अपने आसपास के मौसम, हिमपात और शीत का तनिक भी भान नहीं रहा।</p>
+            <p>अपने प्रिय नारायण को हाड़ कंपाने वाली ठंड और बर्फ में ठिठुरते देख माता लक्ष्मी का हृदय द्रवित हो उठा। उन्होंने अपने प्रभु की तपस्या में विघ्न डाले बिना उनकी रक्षा करने का पावन संकल्प लिया। माता लक्ष्मी ने तत्काल एक विशाल <strong>बदरी (बेर) के वृक्ष</strong> का रूप धारण कर लिया और अपनी सघन शाखाओं तथा पत्तों को छत्र की भांति फैलाकर भगवान के ऊपर तान दिया। बर्फ के विशाल कण, शीत लहर और मूसलाधार वर्षा को माता ने स्वयं अपने शरीर पर सहा और भगवान तक ठंड की एक भी बूंद नहीं पहुँचने दी।</p>
+            <p>जब वर्षों पश्चात भगवान विष्णु की समाधि टूटी, तो उन्होंने देखा कि माता लक्ष्मी बर्फ से ढकी कांप रही हैं और वर्षों से बिना रुके उनकी रक्षा कर रही हैं। माता के इस अलौकिक प्रेम और त्याग को देखकर भगवान भाव-विभोर हो गए। उन्होंने वरदान दिया—<em>"हे देवी! तुमने बदरी वृक्ष बनकर मेरी रक्षा की है। इसलिए आज से यह पावन स्थल 'बदरीकाश्रम' और 'बदरीनाथ' के नाम से जाना जाएगा, और यहाँ मेरी पूजा तुम्हारे पावन समर्पण के स्मरण के बिना अधूरी रहेगी।"</em></p>
+        </div>
+        <div class="highlight-box">
+            संस्कृत भाषा में <strong>बदरी</strong> का अर्थ 'बेर' (Jujube) होता है। माता लक्ष्मी द्वारा बेर का वृक्ष बनकर भगवान नारायण को शीत से बचाने के इसी निःस्वार्थ प्रेम के कारण यह पावन धाम <strong>बदरीनाथ</strong> कहलाया और भगवान विष्णु यहाँ <strong>बदरीविशाल</strong> के रूप में पूजे जाते हैं।
+        </div>
+    </div>
+
+    <!-- Chapter 2 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">अध्याय #2</span>
+            <span class="part-category">दिव्य रहस्य और विज्ञान</span>
+        </div>
+        <img class="story-image" src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/tapt_kund_badrinath.webp" alt="बद्रीनाथ धाम स्थित पावन तप्त कुंड">
+        <h2 class="story-title">2. तप्त कुंड का दिव्य रहस्य एवं अग्निदेव का पावन वास</h2>
+        <div class="story-desc">
+            <p>बद्रीनाथ धाम में भगवान के दर्शन से पहले श्रद्धालु जिस गर्म जल के पावन कुंड में श्रद्धापूर्वक स्नान करते हैं, वह <strong>तप्त कुंड</strong> कहलाता है। यह कुंड अलकनंदा नदी के किनारे मंदिर के ठीक नीचे स्थित है।</p>
+            <p>धार्मिक परंपरा और पुराणों में इस कुंड को साक्षात <strong>अग्निदेव</strong> का पवित्र निवास माना गया है। अग्निदेव हिंदू धर्म में तेज, पवित्रता, ऊर्जा और यज्ञ के प्रतीक हैं। मान्यता है कि अग्निदेव ने भगवान नारायण को प्रसन्न करने हेतु यहाँ तप किया था और उन्हें वरदान मिला कि जो भी श्रद्धालु इस तप्त कुंड में स्नान करेगा, उसके समस्त पाप, कायिक संताप और नकारात्मकता भस्म हो जाएगी तथा वह पूर्ण शुद्ध होकर ही प्रभु बदरीविशाल के सम्मुख उपस्थित होगा।</p>
+            <p>इस स्थान की सबसे अद्भुत और विस्मयकारी बात यह है कि जहाँ आसपास का वातावरण बर्फ से ढका रहता है और तापमान शून्य या उससे नीचे चला जाता है, वहीं तप्त कुंड में दिन-रात प्राकृतिक रूप से <strong>लगभग 45°C से 50°C</strong> तक खौलता हुआ गर्म जल निरंतर प्रवाहित होता रहता है।</p>
+            <p>वैज्ञानिक दृष्टिकोण से इसका कारण पृथ्वी के भीतर की भू-तापीय (Geothermal) गतिविधियाँ हैं, जिनसे भूमिगत जल खनिज-सल्फर से समृद्ध होकर सतह पर निकलता है। इस गंधकयुक्त जल में स्नान करने से चर्म रोग, जोड़ों का दर्द और शारीरिक थकान दूर होती है।</p>
+        </div>
+        <div class="highlight-box">
+            तप्त कुंड प्रकृति के एक अद्भुत वैज्ञानिक चमत्कार और सनातन धार्मिक आस्था, दोनों का अनूठा प्रतीक है। यह स्मरण कराता है कि जीवन की सबसे विषम और बर्फीली परिस्थितियों में भी प्रभु की कृपा का उष्ण संबल सदैव विद्यमान रहता है।
+        </div>
+    </div>
+
+    <!-- Chapter 3 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">अध्याय #3</span>
+            <span class="part-category">अलौकिक दर्शन</span>
+        </div>
+        <h2 class="story-title">3. भगवान बदरीविशाल के दर्शन एवं अलौकिक प्रतिमा</h2>
+        <div class="story-desc">
+            <p>तप्त कुंड में पावन स्नान कर शरीर और मन को शुद्ध करने के उपरांत श्रद्धालु भगवान बदरीविशाल के भव्य मंदिर में दर्शन हेतु आगे बढ़ते हैं। नर और नारायण पर्वतों की छत्रछाया में सुशोभित यह मंदिर शांति और वैकुंठ का साक्षात अनुभव कराता है।</p>
+            <p>गर्भगृह में विराजमान भगवान विष्णु की लगभग एक मीटर ऊँची शालिग्राम शिला से निर्मित प्रतिमा अत्यंत अलौकिक है। अन्य मंदिरों के विपरीत, यहाँ भगवान शेषनाग पर शयन मुद्रा में नहीं, अपितु पद्मासन लगाकर <strong>गहन ध्यान मुद्रा (योग मुद्रा)</strong> में प्रतिष्ठित हैं।</p>
+            <p>भगवान बदरीविशाल की यह ध्यानमग्न छवि भक्तों को संदेश देती है कि बाह्य संसार में चाहे कितनी भी अशांति या कोलाहल क्यों न हो, अंतरात्मा में शांति, धैर्य और ईश्वर के प्रति पूर्ण समर्पण ही जीवन का अंतिम लक्ष्य है।</p>
+        </div>
+    </div>
+
+    <!-- Chapter 4 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">अध्याय #4</span>
+            <span class="part-category">जीवन दर्शन</span>
+        </div>
+        <h2 class="story-title">4. इस पावन कथा से मिलने वाली आध्यात्मिक सीख</h2>
+        <div class="story-desc">
+            <p>बद्रीनाथ धाम और तप्त कुंड की यह अमर गाथा केवल एक पौराणिक वृत्तांत नहीं, अपितु मानव जीवन को दिशा देने वाला एक पवित्र प्रकाशपुंज है:</p>
+            <p><strong>1. सच्चा प्रेम निःस्वार्थ सेवा है:</strong> माता लक्ष्मी ने अपने प्रभु की साधना में व्यवधान नहीं डाला, बल्कि चुपचाप कष्ट सहकर उनके मार्ग की बाधाओं को दूर किया। सच्चा प्रेम शब्दों में नहीं, अपितु निःस्वार्थ सेवा और त्याग में परिलक्षित होता है।</p>
+            <p><strong>2. तपस्या से धैर्य का उदय:</strong> भगवान विष्णु की कठोर साधना सिखाती है कि जीवन में किसी भी महान लक्ष्य की प्राप्ति हेतु एकाग्रता, आत्म-संयम और धैर्य अनिवार्य है।</p>
+            <p><strong>3. प्रकृति के प्रति कृतज्ञता:</strong> तप्त कुंड की गर्म जलधारा यह सिखाती है कि प्रकृति ईश्वर का ही साक्षात रूप है, जिसके प्रति श्रद्धा और संरक्षण का भाव हमारे मन में विनम्रता जगाता है।</p>
+            <p>जब भी कोई श्रद्धालु बद्रीनाथ धाम पहुँचता है, वह केवल पाषाण प्रतिमा के दर्शन नहीं करता, बल्कि प्रेम, त्याग, तपस्या और आस्था की उस अनादि परंपरा से जुड़ जाता है जो युगों-युगों से इस पुण्यभूमि पर प्रवाहित हो रही है।</p>
+        </div>
+    </div>
+
+    <!-- Prayer Card -->
+    <div class="prayer-card">
+        <h2>श्री बदरीविशाल जी की पावन स्तुति</h2>
+        <p>हे वैकुंठनाथ, हे बदरीविशाल, हे चराचर जगत के पालनहार! हमारे अज्ञान और सांसारिक बंधनों को दूर कीजिए। हमें माता महालक्ष्मी के त्याग और सेवा से प्रेरणा लेने की शक्ति दीजिए। जीवन की शीतलता और कठिनाइयों में अपनी कृपा का संबल प्रदान कीजिए तथा हमारे हृदय में अविचल भक्ति और शांति का वास स्थापित कीजिए।</p>
+        <span class="closing">जय श्री बदरीविशाल! 🙏 हरि ॐ तत्सत्।</span>
+    </div>
+
+</div>
+
+</body>
+</html>
