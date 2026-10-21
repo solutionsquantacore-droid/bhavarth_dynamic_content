@@ -96,6 +96,14 @@
     "enabled": false
   },
   {
+    "title_hindi": "केदारनाथ धाम की अमर गाथा",
+    "title": "The Legend of Kedarnath",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/kedarnath_katha_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/kedarnath_katha_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/images/kedarnath_banner.webp",
+    "enabled": true
+  },
+  {
     "title_hindi": "माँ वैष्णो देवी की पावन कथा",
     "title": "The Sacred Legend of Maa Vaishno Devi",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/vaishno_devi_mata_katha_en.html",
