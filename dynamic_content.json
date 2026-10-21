@@ -88,20 +88,20 @@
     "enabled": false
   },
   {
-    "title_hindi": "माँ वैष्णो देवी की पावन कथा",
-    "title": "The Sacred Legend of Maa Vaishno Devi",
-    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/vaishno_devi_mata_katha_en.html",
-    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/vaishno_devi_mata_katha_hi.html",
-    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/vaishno_devi_mata_banner.webp",
-    "enabled": true
-  },
-  {
     "title_hindi": "विजयादशमी: बुराई पर अच्छाई की जीत",
     "title": "Vijay Dashami: The Triumph of Good Over Evil",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/dusshera_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/dusshera.html",
     "image_url": "https://raw.githubusercontent.com/solutionsquantacore-droid/bhavarth_notifications/main/images/dusshera.webp",
     "enabled": false
+  },
+  {
+    "title_hindi": "माँ वैष्णो देवी की पावन कथा",
+    "title": "The Sacred Legend of Maa Vaishno Devi",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/vaishno_devi_mata_katha_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/vaishno_devi_mata_katha_hi.html",
+    "image_url": "https://github.com/solutionsquantacore-droid/bhavarth_dynamic_content/blob/main/thumbnails/vaishno_devi_mata_banner.webp",
+    "enabled": true
   },
   {
     "title": "The 51 Shakti Peethas of Mata Sati",
