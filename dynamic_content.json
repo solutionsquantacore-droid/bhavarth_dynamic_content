@@ -96,6 +96,14 @@
     "enabled": false
   },
   {
+    "title_hindi": "करवा चौथ व्रत: संपूर्ण जानकारी",
+    "title": "Karwa Chauth Fast: Complete Information",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/karwa_chauth_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/karwa_chauth_hi.html",
+    "image_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/karwa_chauth_banner.webp",
+    "enabled": true
+  },
+  {
     "title_hindi": "श्री बद्रीनाथ धाम की दिव्य कथा",
     "title": "The Legend of Shree Badrinath",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/badrinath_katha_en.html",
