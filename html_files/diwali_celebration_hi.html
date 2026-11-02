@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>दीपावली महापर्व – पावन कथा, लक्ष्मी पूजन विधि, दीपदान एवं धार्मिक महत्व - Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #b32d00;
+            --primary-dark: #7a1f00;
+            --secondary: #e65100;
+            --accent: #ff9800;
+            --gold: #f5b041;
+            --gold-glow: #f39c12;
+            --gold-light: #fff8e7;
+            --bg-color: #fdfaf6;
+            --card-bg: #ffffff;
+            --text-main: #2d1810;
+            --text-muted: #6d4c41;
+            --border-color: #f5e6d3;
+            --highlight-bg: #fffbf0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(179, 45, 0, 0.15);
+            display: block;
+            object-fit: cover;
+            border: 1.5px solid rgba(245, 176, 65, 0.4);
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, #991b1b, #7f1d1d, #450a0a);
+            color: white;
+            border-radius: 20px;
+            padding: 26px 20px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 28px rgba(153, 27, 27, 0.3);
+            border: 1.5px solid var(--gold);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffeaa7;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 234, 167, 0.35);
+        }
+
+        .header-card h1 {
+            font-family: 'Yatra One', cursive;
+            font-size: 26px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+
+        .header-card .devotional-chant {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffeaa7;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .header-card p {
+            font-size: 15px;
+            opacity: 0.95;
+            line-height: 1.75;
+            color: #fcedcf;
+            text-align: justify;
+        }
+
+        /* Video Section specifically optimized for mobile devices */
+        .video-card {
+            background: linear-gradient(145deg, #1f140e, #2e1810, #140b07);
+            border-radius: 20px;
+            padding: 20px 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--gold-glow);
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .video-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .video-badge {
+            background: linear-gradient(135deg, var(--gold-glow), var(--secondary));
+            color: #2c1200;
+            font-size: 12.5px;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 14px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(243, 156, 18, 0.45);
+        }
+
+        .video-title {
+            font-family: 'Yatra One', cursive;
+            font-size: 21px;
+            color: #ffeaa7;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .video-subtitle {
+            font-size: 14px;
+            color: #fcedcf;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        /* 9:16 mobile aspect ratio responsive container */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+            background: #000;
+            border: 2px solid rgba(245, 176, 65, 0.6);
+            aspect-ratio: 9 / 16;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 14px;
+            background: #000;
+        }
+
+        .video-caption {
+            margin-top: 14px;
+            font-size: 13.5px;
+            color: #f5d6a8;
+            font-weight: 600;
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border-radius: 18px;
+            padding: 22px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 20px rgba(179, 45, 0, 0.06);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--secondary);
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .part-number {
+            background: var(--primary);
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .part-category {
+            font-size: 13px;
+            color: var(--secondary);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .story-title {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 21px;
+            line-height: 1.45;
+            margin-bottom: 14px;
+            border-bottom: 1.5px dashed #f5e6d3;
+            padding-bottom: 10px;
+        }
+
+        .story-desc {
+            font-size: 15px;
+            color: var(--text-main);
+            line-height: 1.85;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        .story-desc p {
+            margin-bottom: 12px;
+        }
+
+        .story-desc ul, .story-desc ol {
+            margin: 12px 0 16px 20px;
+        }
+
+        .story-desc li {
+            margin-bottom: 8px;
+            line-height: 1.75;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--gold-glow);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin: 16px 0 8px 0;
+            font-size: 14.5px;
+            color: #7d4400;
+            line-height: 1.75;
+            text-align: justify;
+            font-weight: 500;
+            border: 1px solid #fae8c8;
+            border-left: 4px solid var(--gold-glow);
+        }
+
+        .festival-days-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .day-card {
+            background: #fffdfa;
+            border: 1px solid #f2e3d3;
+            border-radius: 14px;
+            padding: 14px 16px;
+            border-left: 4px solid var(--secondary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .day-name {
+            font-family: 'Yatra One', cursive;
+            font-size: 17px;
+            color: var(--primary);
+        }
+
+        .day-tithi {
+            background: #fff3e0;
+            color: #e65100;
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 8px;
+        }
+
+        .day-desc {
+            font-size: 14px;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .shloka-box {
+            background: linear-gradient(135deg, #fff9e6, #fff4d1);
+            border: 1.5px solid #fae588;
+            border-radius: 12px;
+            padding: 18px 16px;
+            margin: 16px 0;
+            font-size: 16px;
+            color: #78350f;
+            font-weight: 700;
+            line-height: 1.85;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(243, 156, 18, 0.08);
+        }
+
+        .shloka-meaning {
+            font-size: 14px;
+            color: #5c3c00;
+            font-weight: 500;
+            text-align: justify;
+            margin-top: 10px;
+            line-height: 1.75;
+        }
+
+        .faq-card {
+            background: #fffdfa;
+            border: 1px solid #f2e3d3;
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+        }
+
+        .faq-q {
+            font-family: 'Yatra One', cursive;
+            font-size: 16px;
+            color: var(--primary);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .faq-a {
+            font-size: 14.5px;
+            color: var(--text-main);
+            line-height: 1.7;
+            text-align: justify;
+            padding-left: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero Banner Image -->
+    <img class="hero-banner" 
+         src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/diwali_banner.webp" 
+         onerror="this.onerror=null; this.src='diwali_banner.webp';" 
+         alt="दीपावली महापर्व – पावन कथा, लक्ष्मी पूजन विधि एवं उत्सव">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <span class="app-tag">भवार्थ पर्व दर्शन</span>
+        <h1>दीपावली महापर्व – संपूर्ण उत्सव एवं पावन कथा 🪔</h1>
+        <div class="devotional-chant">॥ ॐ महालक्ष्म्यै च विद्महे विष्णुपत्नी च धीमहि तन्नो लक्ष्मीः प्रचोदयात् ॥</div>
+        <p>अंधकार पर प्रकाश, अधर्म पर धर्म और अज्ञान पर आत्म-ज्ञान की विजय का महापर्व। जानिए प्रभु श्री राम के अयोध्या आगमन की पावन कथा, दीपदान का आध्यात्मिक रहस्य, महालक्ष्मी-गणेश पूजन की प्रामाणिक विधि एवं पंचदिवसीय दीपोत्सव का संपूर्ण महत्व।</p>
+    </div>
+
+    <!-- FEATURED MOBILE VIDEO PLAYER -->
+    <div class="video-card">
+        <div class="video-header">
+            <span class="video-badge">🎬 पावन वीडियो दर्शन</span>
+        </div>
+        <h2 class="video-title">अयोध्या दीपोत्सव एवं पावन कथा 🪔</h2>
+        <p class="video-subtitle">प्रभु श्री राम के अयोध्या लौटने, दीपों से जगमगाती स्वर्णिम नगरी और दीपावली की दिव्य गाथा का साक्षात दर्शन</p>
+        
+        <div class="video-wrapper">
+            <video 
+                id="diwaliVideo"
+                controls 
+                playsinline 
+                webkit-playsinline 
+                preload="auto"
+                poster="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/diwali_video_thumbnail.webp"
+            >
+                <source src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/video/diwali.mp4" type="video/mp4">
+                आपका ब्राउज़र वीडियो टैग को सपोर्ट नहीं करता है।
+            </video>
+        </div>
+        
+        <div class="video-caption">
+            ✨ मोबाइल पर देखने के लिए वीडियो प्ले करें और दीपों के इस पावन पर्व का आनंद लें
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">भाग #1</span>
+            <span class="part-category">पावन परिचय</span>
+        </div>
+        <h2 class="story-title">1. दीपावली का परिचय एवं महत्व</h2>
+        <div class="story-desc">
+            <p>दीपावली (दिवाली) सनातन हिंदू धर्म का सबसे प्रमुख, पवित्र और उल्लासपूर्ण त्योहार है। इसे <strong>"दीपोत्सव"</strong> या <strong>"प्रकाश पर्व"</strong> भी कहा जाता है। यह पर्व कार्तिक मास की कृष्ण पक्ष की अमावस्या तिथि को पूरे भारतवर्ष और विश्वभर में श्रद्धा व उमंग के साथ मनाया जाता है।</p>
+            <p>दीपावली का शाब्दिक अर्थ है — <em>"दीपों की आवली"</em> अर्थात् <strong>दीयों की पंक्ति</strong>। इस रात्रि को अमावस्या का घनघोर अंधकार अनगिनत दीपकों की स्वर्णिम रोशनी से आलोकित हो उठता है।</p>
+            <p>यह पर्व हमें यह शाश्वत संदेश देता है कि चाहे अंधकार कितना भी गहरा क्यों न हो, सत्य और धर्म का एक छोटा सा दीपक भी उस अंधकार को पराजित करने का सामर्थ्य रखता है।</p>
+        </div>
+        <div class="highlight-box">
+            दीपावली केवल बाहरी प्रकाश का पर्व नहीं है, बल्कि अपनी अंतरात्मा में सत्य, प्रेम, करुणा और ज्ञान का दीपक जलाने का दिव्य अवसर है।
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">भाग #2</span>
+            <span class="part-category">अमर पौराणिक कथाएँ</span>
+        </div>
+        <h2 class="story-title">2. दीपावली से जुड़ी पौराणिक कथाएँ</h2>
+        <div class="story-desc">
+            <p>दीपावली के पर्व से अनेक दिव्य पौराणिक प्रसंग जुड़े हुए हैं:</p>
+            
+            <p><strong>1. प्रभु श्री राम का अयोध्या आगमन:</strong><br>
+            रामायण के अनुसार, मर्यादा पुरुषोत्तम भगवान श्री राम ने लंकापति रावण का वध कर 14 वर्षों का वनवास पूर्ण किया। जब प्रभु श्री राम, माता सीता और भ्राता लक्ष्मण के साथ अयोध्या लौटे, तो अयोध्यावासियों ने उनके स्वागत और अभिनंदन में पूरी अयोध्या नगरी को घी के दीपकों से जगमगा दिया था। तभी से प्रतिवर्ष दीपावली मनाने की परंपरा आरंभ हुई।</p>
+
+            <p><strong>2. समुद्र मंथन और महालक्ष्मी का प्राकट्य:</strong><br>
+            पौराणिक मान्यताओं के अनुसार, कार्तिक अमावस्या के दिन ही क्षीरसागर में देवताओं और असुरों द्वारा किए गए समुद्र मंथन से धन, ऐश्वर्य और सौभाग्य की देवी माता महालक्ष्मी प्रकट हुई थीं। इसलिए इस रात्रि को माता लक्ष्मी का विशेष पूजन किया जाता है।</p>
+
+            <p><strong>3. भगवान श्री कृष्ण द्वारा नरकासुर वध:</strong><br>
+            द्वापर युग में भगवान श्री कृष्ण ने अत्याचारी राक्षस नरकासुर का संहार कर 16,100 कन्याओं को उसके बंदीगृह से मुक्त कराया था। बुराई पर अच्छाई की इस विजय की स्मृति में भी दीपोत्सव मनाया जाता है।</p>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">भाग #3</span>
+            <span class="part-category">पंचदिवसीय उत्सव</span>
+        </div>
+        <h2 class="story-title">3. पंचमहोत्सव: पाँच दिनों का दीपोत्सव</h2>
+        <div class="story-desc">
+            <p>दीपावली का उत्सव केवल एक दिन का नहीं, अपितु पाँच दिनों तक चलने वाला महापर्व है:</p>
+
+            <div class="festival-days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">१. धनतेरस (धन्वंतरि त्रयोदशी)</span>
+                        <span class="day-tithi">कार्तिक कृष्ण त्रयोदशी</span>
+                    </div>
+                    <div class="day-desc">आयुर्वेद के जनक भगवान धन्वंतरि और कुबेर देव का पूजन। इस दिन धातु, बर्तन या स्वर्ण-रजत खरीदना अत्यंत शुभ माना जाता है। दक्षिण दिशा में यम दीपदान किया जाता है।</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">२. नरक चतुर्दशी (रूप चौदस / छोटी दिवाली)</span>
+                        <span class="day-tithi">कार्तिक कृष्ण चतुर्दशी</span>
+                    </div>
+                    <div class="day-desc">भगवान श्री कृष्ण द्वारा नरकासुर वध की स्मृति। इस दिन उबटन लगाकर स्नान करने और यमराज के निमित्त दीप जलाने की परंपरा है।</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">३. दीपावली (महालक्ष्मी पूजन)</span>
+                        <span class="day-tithi">कार्तिक कृष्ण अमावस्या</span>
+                    </div>
+                    <div class="day-desc">महापर्व का मुख्य दिन। शुभ मुहूर्त में माता लक्ष्मी, भगवान गणेश, माता सरस्वती और कुबेर जी की विधिवत पूजा होती है। रात्रि में घर-आँगन दीपकों से जगमगाते हैं।</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">४. गोवर्धन पूजा (अन्नकूट)</span>
+                        <span class="day-tithi">कार्तिक शुक्ल प्रतिपदा</span>
+                    </div>
+                    <div class="day-desc">इंद्र के अहंकार को तोड़कर भगवान श्री कृष्ण ने गोवर्धन पर्वत उठाकर ब्रजवासियों की रक्षा की थी। इस दिन गाय-बछड़ों की पूजा और अन्नकूट का भोग लगाया जाता है।</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">५. भाई दूज (यम द्वितीया)</span>
+                        <span class="day-tithi">कार्तिक शुक्ल द्वितीया</span>
+                    </div>
+                    <div class="day-desc">भाई-बहन के पवित्र प्रेम और विश्वास का पर्व। बहनें भाई के माथे पर तिलक लगाकर उनकी दीर्घायु की मंगलकामना करती हैं।</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">भाग #4</span>
+            <span class="part-category">पूजा विधान</span>
+        </div>
+        <h2 class="story-title">4. महालक्ष्मी-गणेश पूजन की प्रामाणिक विधि</h2>
+        <div class="story-desc">
+            <p>दीपावली की शाम को शुभ मुहूर्त (प्रदोष काल अथवा स्थिर लग्न) में पूजन करना श्रेष्ठ माना जाता है:</p>
+            <ol>
+                <li><strong>पूजा स्थल की शुद्धि:</strong> घर और पूजा कक्ष को स्वच्छ कर गंगाजल छिड़कें।</li>
+                <li><strong>चौकी स्थापना:</strong> लकड़ी की चौकी पर लाल या पीला रेशमी वस्त्र बिछाएं।</li>
+                <li><strong>प्रतिमा स्थापना:</strong> माता लक्ष्मी को दाईं ओर और भगवान श्री गणेश को बाईं ओर स्थापित करें।</li>
+                <li><strong>कलश स्थापना:</strong> चौकी पर तांबे या चांदी के कलश में जल, सुपारी, सिक्का और आम के पत्ते रखकर ऊपर नारियल स्थापित करें।</li>
+                <li><strong>नवग्रह एवं षोडश मातृका:</strong> अक्षत से नवग्रह मंडल बनाएं।</li>
+                <li><strong>पूजन अर्पण:</strong> रोली, कुमकुम, चंदन, अक्षत, कमल पुष्प, माला, दूर्वा, धूप, नैवेद्य (खीर, बताशे, लड्डू) अर्पित करें।</li>
+                <li><strong>मुख्य दीप प्रज्वलन:</strong> सरसों के तेल या शुद्ध घी का चौमुखी दीपक प्रज्वलित कर लक्ष्मी जी के समक्ष रखें।</li>
+                <li><strong>आरती एवं क्षमा प्रार्थना:</strong> श्री गणेश आरती और लक्ष्मी जी की आरती गाकर परिवार के कल्याण की प्रार्थना करें।</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">भाग #5</span>
+            <span class="part-category">दीपदान रहस्य</span>
+        </div>
+        <h2 class="story-title">5. दीपदान का आध्यात्मिक रहस्य एवं महत्व</h2>
+        <div class="story-desc">
+            <p>दीपावली पर मिट्टी के दीपकों का विशेष महत्व है। मिट्टी का दीपक पंचतत्वों (पृथ्वी, जल, अग्नि, वायु और आकाश) का प्रतीक माना जाता है:</p>
+            <ul>
+                <li><strong>चौमुखी दीपक:</strong> घर के मुख्य द्वार पर दोनों ओर चौमुखी दीपक जलाने से चारों दिशाओं से सुख और सकारात्मक ऊर्जा का प्रवेश होता है।</li>
+                <li><strong>तुलसी जी के पास दीप:</strong> तुलसी के पौधे के समीप घी का दीपक जलाने से घर में शांति और सौभाग्य आता है।</li>
+                <li><strong>तिजोरी व रसोई में दीप:</strong> अन्न और धन के भंडार सदैव भरे रहें, इस कामना से दीप जलाया जाता है।</li>
+            </ul>
+        </div>
+        <div class="highlight-box">
+            दीपक हमें यह सिखाता है कि स्वयं जलकर भी दूसरों के जीवन में प्रकाश फैलाना ही सच्चा जीवन है।
+        </div>
+    </div>
+
+    <!-- Section 6: Mantras -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">भाग #6</span>
+            <span class="part-category">पावन मंत्र</span>
+        </div>
+        <h2 class="story-title">6. दीपावली महालक्ष्मी पावन मंत्र</h2>
+        <div class="story-desc">
+            <p>पूजन के समय इन दिव्य मंत्रों का श्रद्धापूर्वक जप करना चाहिए:</p>
+            
+            <div class="shloka-box">
+                ॐ श्रीं ह्रीं श्रीं कमले कमलालये प्रसीद प्रसीद।<br>
+                श्रीं ह्रीं श्रीं ॐ महालक्ष्म्यै नमः॥
+                <div class="shloka-meaning">
+                    <strong>अर्थ:</strong> हे कमल के पुष्प पर विराजमान, कमल नयनी महालक्ष्मी! आप मुझ पर प्रसन्न हों और अपनी असीम कृपा व सुख-समृद्धि प्रदान करें।
+                </div>
+            </div>
+
+            <div class="shloka-box">
+                शुभं करोति कल्याणमारोग्यं धनसंपदा।<br>
+                शत्रुबुद्धिविनाशाय दीपज्योतिर्नमोऽस्तुते॥
+                <div class="shloka-meaning">
+                    <strong>अर्थ:</strong> हे दीपक की पावन ज्योति! आप कल्याण करने वाली, आरोग्य, धन और संपत्ति देने वाली हैं। बुरी बुद्धि और अंधकार का नाश करने वाली दीपज्योति को मेरा नमन है।
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 7: FAQs -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">भाग #7</span>
+            <span class="part-category">प्रश्नोत्तर</span>
+        </div>
+        <h2 class="story-title">7. दीपावली से जुड़े महत्वपूर्ण प्रश्न (FAQ)</h2>
+        
+        <div class="faq-card">
+            <div class="faq-q">❓ प्रश्न 1: दीपावली की पूजा किस मुहूर्त में करनी चाहिए?</div>
+            <div class="faq-a">उत्तर: दीपावली पर लक्ष्मी पूजन प्रदोष काल और स्थिर लग्न (जैसे वृषभ लग्न) में करना सर्वश्रेष्ठ माना जाता है। स्थिर लग्न में पूजा करने से लक्ष्मी जी का घर में स्थायी वास होता है।</div>
+        </div>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ प्रश्न 2: लक्ष्मी पूजन में गणेश जी की मूर्ति किस ओर होनी चाहिए?</div>
+            <div class="faq-a">उत्तर: भगवान श्री गणेश को माता लक्ष्मी के बाईं ओर स्थापित करना चाहिए, क्योंकि वे माता लक्ष्मी के मानस पुत्र और विघ्नहर्ता देव हैं।</div>
+        </div>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ प्रश्न 3: दीपावली पर कितने दीपक जलाने चाहिए?</div>
+            <div class="faq-a">उत्तर: दीपावली की रात्रि में कम से कम 13, 21 या 26 दीपक जलाने का विधान है। मुख्य चौमुखी दीपक पूरी रात प्रज्वलित रहना चाहिए।</div>
+        </div>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ प्रश्न 4: मिट्टी के दीपक ही क्यों जलाए जाते हैं?</div>
+            <div class="faq-a">उत्तर: मिट्टी प्रकृति और पवित्रता का प्रतीक है। मिट्टी के दीये पर्यावरण के अनुकूल होते हैं और सनातन परंपरा में इन्हें शुद्धतम माना गया है।</div>
+        </div>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ प्रश्न 5: दीपावली का आध्यात्मिक संदेश क्या है?</div>
+            <div class="faq-a">उत्तर: दीपावली का मूल संदेश है कि हमें अपने भीतर के क्रोध, लोभ, अहंकार और अज्ञान रूपी अंधकार को त्यागकर प्रेम, क्षमा, ज्ञान और परोपकार का दीपक जलाना चाहिए।</div>
+        </div>
+    </div>
+
+    <div class="highlight-box" style="text-align: center; font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 30px;">
+        🪔 आप सभी को सपरिवार पावन दीपावली की हार्दिक शुभकामनाएँ! 🪔<br>
+        ॥ ॐ महालक्ष्म्यै नमः ॥
+    </div>
+
+</div>
+
+</body>
+</html>

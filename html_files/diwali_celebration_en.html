@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Diwali Celebration: The Divine Festival of Lights, Legends, Lakshmi Puja & Spiritual Wisdom - Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #991b1b;
+            --primary-dark: #7f1d1d;
+            --secondary: #c2410c;
+            --accent: #ea580c;
+            --gold: #d97706;
+            --gold-glow: #f59e0b;
+            --gold-light: #fffbeb;
+            --bg-color: #fdfaf6;
+            --card-bg: #ffffff;
+            --text-main: #27272a;
+            --text-muted: #71717a;
+            --border-color: #fed7aa;
+            --highlight-bg: #fffbf0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(153, 27, 27, 0.15);
+            display: block;
+            object-fit: cover;
+            border: 1.5px solid rgba(217, 119, 6, 0.4);
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, #991b1b, #7f1d1d, #450a0a);
+            color: white;
+            border-radius: 20px;
+            padding: 26px 20px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 28px rgba(153, 27, 27, 0.3);
+            border: 1.5px solid var(--gold-glow);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fef08a;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            border: 1px solid rgba(254, 240, 138, 0.35);
+        }
+
+        .header-card h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 25px;
+            line-height: 1.35;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+
+        .header-card .devotional-chant {
+            font-size: 15px;
+            font-weight: 700;
+            color: #fef08a;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-card p {
+            font-size: 14.5px;
+            opacity: 0.95;
+            line-height: 1.75;
+            color: #ffedd5;
+            text-align: justify;
+        }
+
+        /* Video Section specifically optimized for mobile devices */
+        .video-card {
+            background: linear-gradient(145deg, #18181b, #27272a, #09090b);
+            border-radius: 20px;
+            padding: 20px 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--gold-glow);
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .video-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .video-badge {
+            background: linear-gradient(135deg, var(--gold-glow), var(--secondary));
+            color: #18181b;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 14px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(245, 158, 11, 0.45);
+        }
+
+        .video-title {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            color: #fef08a;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .video-subtitle {
+            font-size: 13.5px;
+            color: #fed7aa;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        /* 9:16 mobile aspect ratio responsive container */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+            background: #000;
+            border: 2px solid rgba(245, 158, 11, 0.6);
+            aspect-ratio: 9 / 16;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 14px;
+            background: #000;
+        }
+
+        .video-caption {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #fde68a;
+            font-weight: 600;
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border-radius: 18px;
+            padding: 22px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 20px rgba(153, 27, 27, 0.06);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--secondary);
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .part-number {
+            background: var(--primary);
+            color: white;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .part-category {
+            font-size: 12px;
+            color: var(--secondary);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .story-title {
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            font-size: 20px;
+            line-height: 1.45;
+            margin-bottom: 14px;
+            border-bottom: 1.5px dashed #fed7aa;
+            padding-bottom: 10px;
+        }
+
+        .story-desc {
+            font-size: 14.5px;
+            color: var(--text-main);
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        .story-desc p {
+            margin-bottom: 12px;
+        }
+
+        .story-desc ul, .story-desc ol {
+            margin: 12px 0 16px 20px;
+        }
+
+        .story-desc li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--gold-glow);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin: 16px 0 8px 0;
+            font-size: 14px;
+            color: #78350f;
+            line-height: 1.75;
+            text-align: justify;
+            font-weight: 500;
+            border: 1px solid #fef3c7;
+            border-left: 4px solid var(--gold-glow);
+        }
+
+        .festival-days-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .day-card {
+            background: #fffdfa;
+            border: 1px solid #fed7aa;
+            border-radius: 14px;
+            padding: 14px 16px;
+            border-left: 4px solid var(--secondary);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .day-name {
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .day-tithi {
+            background: #fff7ed;
+            color: #c2410c;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 8px;
+        }
+
+        .day-desc {
+            font-size: 13.5px;
+            color: var(--text-main);
+            line-height: 1.65;
+        }
+
+        .shloka-box {
+            background: linear-gradient(135deg, #fffbeb, #fef3c7);
+            border: 1.5px solid #fde68a;
+            border-radius: 12px;
+            padding: 18px 16px;
+            margin: 16px 0;
+            font-size: 15px;
+            color: #78350f;
+            font-weight: 700;
+            line-height: 1.8;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.08);
+        }
+
+        .shloka-meaning {
+            font-size: 13.5px;
+            color: #78350f;
+            font-weight: 500;
+            text-align: justify;
+            margin-top: 10px;
+            line-height: 1.7;
+        }
+
+        .faq-card {
+            background: #fffdfa;
+            border: 1px solid #fed7aa;
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+        }
+
+        .faq-q {
+            font-family: 'Cinzel', serif;
+            font-size: 15px;
+            color: var(--primary);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-weight: 700;
+        }
+
+        .faq-a {
+            font-size: 14px;
+            color: var(--text-main);
+            line-height: 1.7;
+            text-align: justify;
+            padding-left: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero Banner Image -->
+    <img class="hero-banner" 
+         src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/diwali_banner.webp" 
+         onerror="this.onerror=null; this.src='diwali_banner.webp';" 
+         alt="Diwali Celebration: The Divine Festival of Lights">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <span class="app-tag">Bhavarth Festival Guide</span>
+        <h1>Diwali Celebration: The Divine Festival of Lights 🪔</h1>
+        <div class="devotional-chant">॥ Om Mahalakshmyai Cha Vidmahe Vishnupatnyai Cha Dheemahi Tanno Lakshmih Prachodayat ॥</div>
+        <p>The eternal victory of light over darkness, virtue over wickedness, and divine wisdom over ignorance. Explore the legendary return of Lord Shri Ram to Ayodhya, the emergence of Goddess Lakshmi, sacred Deep Daan traditions, and the five-day festival of divine prosperity.</p>
+    </div>
+
+    <!-- FEATURED MOBILE VIDEO PLAYER -->
+    <div class="video-card">
+        <div class="video-header">
+            <span class="video-badge">🎬 Sacred Video Celebration</span>
+        </div>
+        <h2 class="video-title">Ayodhya Deepotsav & Sacred Legend 🪔</h2>
+        <p class="video-subtitle">Watch the golden homecoming of Lord Shri Ram, radiant diyas of Ayodhya, and the divine celebration of light</p>
+        
+        <div class="video-wrapper">
+            <video 
+                id="diwaliVideo"
+                controls 
+                playsinline 
+                webkit-playsinline 
+                preload="auto"
+                poster="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/diwali_video_thumbnail.webp"
+            >
+                <source src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/video/diwali.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="video-caption">
+            ✨ Tap play to watch the festival celebration optimized for your mobile device
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Part #1</span>
+            <span class="part-category">Introduction</span>
+        </div>
+        <h2 class="story-title">1. Introduction & Significance of Diwali</h2>
+        <div class="story-desc">
+            <p>Diwali, also revered as <strong>Deepawali</strong>, is the most celebrated and spiritually significant festival in Sanatan Dharma. The word "Deepawali" originates from Sanskrit, translating directly to a <em>"row or array of lights"</em> (Deep = lamp, Awali = row).</p>
+            <p>Celebrated on the darkest Amavasya (new moon) night of the sacred month of Kartik, Diwali transforms pitch darkness into an ocean of golden luminescence. Millions of clay lamps (diyas) illuminate homes, courtyards, temples, and riverbanks.</p>
+            <p>At its core, Diwali delivers a universal truth: no matter how profound the darkness of ignorance, adversity, or despair may seem, even a solitary flickering flame of righteousness and truth holds the divine power to dispel it.</p>
+        </div>
+        <div class="highlight-box">
+            Diwali is not merely an external celebration of illuminations, but an inward awakening to ignite the inner flame of compassion, truth, and self-realization.
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Part #2</span>
+            <span class="part-category">Sacred Legends</span>
+        </div>
+        <h2 class="story-title">2. Eternal Legends Associated with Diwali</h2>
+        <div class="story-desc">
+            <p>Several monumental sacred epics intersect on the divine occasion of Diwali:</p>
+
+            <p><strong>1. The Homecoming of Lord Shri Ram:</strong><br>
+            According to the Ramayana, Maryada Purushottam Lord Shri Ram vanquished the demon king Ravana, concluding fourteen long years of exile. When Lord Ram, Mother Sita, and Lakshmana returned to their holy capital of Ayodhya, the overjoyed citizens welcomed them by illuminating the entire city with earthen ghee lamps. This historic reception instituted the tradition of Diwali.</p>
+
+            <p><strong>2. The Emergence of Goddess Mahalakshmi:</strong><br>
+            During the celestial churning of the cosmic ocean (Samudra Manthan), Goddess Mahalakshmi—the deity of wealth, grace, and spiritual abundance—manifested on Kartik Amavasya. She chose Lord Vishnu as her divine consort, making this night paramount for Lakshmi Puja.</p>
+
+            <p><strong>3. Liberation from Narakasura by Lord Krishna:</strong><br>
+            In the Dvapara Yuga, Lord Shri Krishna and Satyabhama defeated the tyrant demon Narakasura, liberating 16,100 captive souls and reaffirming the triumph of light over tyranny.</p>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Part #3</span>
+            <span class="part-category">The Five Festivals</span>
+        </div>
+        <h2 class="story-title">3. Panchotsav: The 5-Day Grand Festivity</h2>
+        <div class="story-desc">
+            <p>Diwali is commemorated across five consecutive days, each holding deep spiritual symbolism:</p>
+
+            <div class="festival-days-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">1. Dhanteras (Dhanvantari Jayanti)</span>
+                        <span class="day-tithi">Kartik Krishna Trayodashi</span>
+                    </div>
+                    <div class="day-desc">Celebrates Lord Dhanvantari, the physician of the gods who brought the nectar of immortality (Amrit). Devotees purchase precious metals, utensils, and light the southern Yamadeep.</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">2. Naraka Chaturdashi (Roop Chaudas / Chhoti Diwali)</span>
+                        <span class="day-tithi">Kartik Krishna Chaturdashi</span>
+                    </div>
+                    <div class="day-desc">Marks the destruction of Narakasura. The day emphasizes cleansing, spiritual purification, and lighting fourteen lamps at sunset.</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">3. Diwali (Lakshmi-Ganesha Puja)</span>
+                        <span class="day-tithi">Kartik Krishna Amavasya</span>
+                    </div>
+                    <div class="day-desc">The focal day of deep devotion. Auspicious evening worship of Goddess Lakshmi and Lord Ganesha brings lifelong peace, purity, and spiritual prosperity.</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">4. Govardhan Puja (Annakoot)</span>
+                        <span class="day-tithi">Kartik Shukla Pratipada</span>
+                    </div>
+                    <div class="day-desc">Commemorates Lord Krishna lifting Mount Govardhan on his little finger to shield the people of Vraja from torrential storms. Mountain-sized food offerings (Annakoot) are shared.</div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <span class="day-name">5. Bhai Dooj (Yama Dwitiya)</span>
+                        <span class="day-tithi">Kartik Shukla Dwitiya</span>
+                    </div>
+                    <div class="day-desc">A sacred festival honoring the eternal bond of affection between brothers and sisters, blessed by Lord Yama and the sacred river Yamuna.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Part #4</span>
+            <span class="part-category">Puja Rituals</span>
+        </div>
+        <h2 class="story-title">4. Step-by-Step Lakshmi-Ganesha Puja Vidhi</h2>
+        <div class="story-desc">
+            <p>Performing Lakshmi-Ganesha worship during the Pradosh Kaal or Sthir Lagna (Taurus ascendant) attracts lasting divine blessings:</p>
+            <ol>
+                <li><strong>Purification:</strong> Cleanse the sanctum and sprinkle holy Ganga water.</li>
+                <li><strong>Altar Preparation:</strong> Spread a pure red or saffron cloth on a clean wooden altar.</li>
+                <li><strong>Idol Placement:</strong> Place Lord Ganesha to the left of Goddess Lakshmi.</li>
+                <li><strong>Kalash Sthapana:</strong> Prepare a copper or silver pot filled with holy water, betel nut, coin, and mango leaves surmounted by a sacred coconut.</li>
+                <li><strong>Offerings:</strong> Offer kumkum, sandalwood paste, unbroken rice (akshat), fresh lotus flowers, durva grass, and sweets (kheer, batasha, modak).</li>
+                <li><strong>Primary Deepa:</strong> Illuminate a four-wick lamp (Choumukhi Diya) fueled with pure mustard oil or cow ghee.</li>
+                <li><strong>Aarti & Prayer:</strong> Sing the sacred Aarti of Lord Ganesha and Goddess Mahalakshmi followed by family prayers for peace and benevolence.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Part #5</span>
+            <span class="part-category">Deep Daan Wisdom</span>
+        </div>
+        <h2 class="story-title">5. Spiritual Significance of Deep Daan</h2>
+        <div class="story-desc">
+            <p>Clay lamps are formed of Mother Earth and united with water, fire, air, and ether—unifying all five primordial cosmic elements (Pancha Bhoota):</p>
+            <ul>
+                <li><strong>The Entrance:</strong> Placing diyas at the main entrance invites auspicious cosmic energies while dispelling negativity.</li>
+                <li><strong>Sacred Tulsi:</strong> Lighting a pure ghee lamp before the holy basil sanctifies household harmony.</li>
+                <li><strong>The Inner Flame:</strong> The outer lamp signifies the necessity to consume one's ego and radiate benevolence toward all beings.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Part #6</span>
+            <span class="part-category">Sacred Chants</span>
+        </div>
+        <h2 class="story-title">6. Divine Mantras for Diwali</h2>
+        <div class="story-desc">
+            <p>Chant these time-honored Sanskrit invocations during your evening prayer:</p>
+
+            <div class="shloka-box">
+                Om Shreem Hreem Shreem Kamale Kamalalaye Praseeda Praseeda।<br>
+                Shreem Hreem Shreem Om Mahalakshmyai Namah॥
+                <div class="shloka-meaning">
+                    <strong>Meaning:</strong> O Goddess Lakshmi, who resides upon the divine lotus! Bestow your supreme grace, peace, and auspicious abundance upon all beings.
+                </div>
+            </div>
+
+            <div class="shloka-box">
+                Shubham Karoti Kalyanam Aarogyam Dhanasampada।<br>
+                Shatrubuddhi Vinashaya Deepajyotir Namostute॥
+                <div class="shloka-meaning">
+                    <strong>Meaning:</strong> Salutations to the divine light of the lamp, which bestows auspiciousness, radiant health, and spiritual wealth, removing darkness and negative afflictions.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="story-card">
+        <div class="badge-row">
+            <span class="part-number">Part #7</span>
+            <span class="part-category">FAQs</span>
+        </div>
+        <h2 class="story-title">7. Frequently Asked Questions (FAQ)</h2>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ Q1: Why is Ganesha worshipped alongside Lakshmi on Diwali?</div>
+            <div class="faq-a">Answer: Wealth without intellect and wisdom can lead to ruin. Lord Ganesha bestows intellect (Buddhi) and eliminates obstacles, ensuring that wealth received from Goddess Lakshmi is utilized ethically and spiritually.</div>
+        </div>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ Q2: What is the significance of the Pradosh Kaal for Lakshmi Puja?</div>
+            <div class="faq-a">Answer: Pradosh Kaal occurs approximately 2.5 hours after sunset on Amavasya. When combined with a fixed ascendant (Sthir Lagna), worship ensures steady, enduring prosperity and peace.</div>
+        </div>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ Q3: How many diyas should ideally be lit?</div>
+            <div class="faq-a">Answer: Traditionally, a minimum of 13, 21, or 26 lamps are ignited, with the central four-faced lamp burning continuously through the auspicious night.</div>
+        </div>
+
+        <div class="faq-card">
+            <div class="faq-q">❓ Q4: What is the spiritual message of Diwali?</div>
+            <div class="faq-a">Answer: Diwali encourages every individual to conquer inner vices such as greed, anger, and ego, replacing them with compassion, truth, and devotion.</div>
+        </div>
+    </div>
+
+    <div class="highlight-box" style="text-align: center; font-size: 15.5px; font-weight: 700; color: var(--primary); margin-bottom: 30px;">
+        🪔 Wishing you and your loved ones a blessed and joyous Diwali! 🪔<br>
+        ॥ May Goddess Mahalakshmi Grace Your Life with Divine Light ॥
+    </div>
+
+</div>
+
+</body>
+</html>
