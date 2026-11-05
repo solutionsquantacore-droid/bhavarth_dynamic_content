@@ -112,6 +112,14 @@
     "enabled": false
   },
   {
+    "title_hindi": "धनतेरस का परिचय एवं महत्व",
+    "title": "Introduction and Significance of Dhanteras",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/dhanteras_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/dhanteras_hi.html",
+    "image_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/dhanteras_banner.webp",
+    "enabled": true
+  },
+  {
     "title_hindi": "दीपावली महापर्व – संपूर्ण उत्सव एवं पावन कथा",
     "title": "Diwali Celebration: The Divine Festival",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/diwali_celebration_en.html",
