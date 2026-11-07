@@ -128,6 +128,14 @@
     "enabled": true
   },
   {
+    "title_hindi": "श्री गोवर्धन पूजा – संपूर्ण पूजा विधि",
+    "title": "Shri Goverdhan Puja – Complete Puja Vidhi",
+    "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/goverdhan_en.html",
+    "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/goverdhan_hi.html",
+    "image_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/goverdhan_banner.webp",
+    "enabled": false
+  },
+  {
     "title_hindi": "श्री बद्रीनाथ धाम की दिव्य कथा",
     "title": "The Legend of Shree Badrinath",
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/badrinath_katha_en.html",
