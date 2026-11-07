@@ -117,7 +117,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/dhanteras_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/dhanteras_hi.html",
     "image_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/dhanteras_banner.webp",
-    "enabled": true
+    "enabled": false
   },
   {
     "title_hindi": "दीपावली महापर्व – संपूर्ण उत्सव एवं पावन कथा",
@@ -125,7 +125,7 @@
     "content_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/diwali_celebration_en.html",
     "content_url_hindi": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/html_files/diwali_celebration_hi.html",
     "image_url": "https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/diwali_banner.webp",
-    "enabled": false
+    "enabled": true
   },
   {
     "title_hindi": "श्री बद्रीनाथ धाम की दिव्य कथा",
