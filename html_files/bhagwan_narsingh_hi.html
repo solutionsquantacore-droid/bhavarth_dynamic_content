@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>भगवान नरसिंह की संपूर्ण कथा – भक्त प्रह्लाद की रक्षा और अधर्म पर धर्म की विजय | Bhavarth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #991b1b;
+            --primary-dark: #7f1d1d;
+            --primary-deep: #450a0a;
+            --secondary: #b45309;
+            --accent: #d97706;
+            --gold: #f59e0b;
+            --gold-glow: #fbbf24;
+            --gold-light: #fffbeb;
+            --gold-border: #fcd34d;
+            --bg-color: #fdfaf6;
+            --card-bg: #ffffff;
+            --text-main: #2b1810;
+            --text-muted: #6b5b53;
+            --border-color: #f5e5d5;
+            --highlight-bg: #fffbf0;
+            --success-bg: #f0fdf4;
+            --success-border: #86efac;
+            --success-text: #166534;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.85;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 26px rgba(153, 27, 27, 0.16);
+            display: block;
+            object-fit: cover;
+            border: 1.5px solid rgba(245, 158, 11, 0.45);
+        }
+
+        /* Header Card */
+        .header-card {
+            background: linear-gradient(135deg, #991b1b, #7f1d1d, #450a0a);
+            color: white;
+            border-radius: 20px;
+            padding: 26px 20px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 28px rgba(153, 27, 27, 0.28);
+            border: 1.5px solid var(--gold);
+        }
+
+        .header-card .app-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffeaa7;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 234, 167, 0.35);
+        }
+
+        .header-card h1 {
+            font-family: 'Yatra One', cursive;
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+
+        .header-card .devotional-chant {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fde047;
+            margin-bottom: 12px;
+            line-height: 1.6;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .header-card p {
+            font-size: 15px;
+            opacity: 0.96;
+            line-height: 1.75;
+            color: #fef3c7;
+            text-align: justify;
+        }
+
+        /* Content Card */
+        .content-card {
+            background-color: var(--card-bg);
+            border-radius: 18px;
+            padding: 22px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 6px 20px rgba(153, 27, 27, 0.06);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--secondary);
+            position: relative;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+
+        .part-number {
+            background: var(--primary);
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .part-category {
+            font-size: 13px;
+            color: var(--secondary);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .section-image {
+            width: 100%;
+            height: auto;
+            border-radius: 14px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            display: block;
+            object-fit: cover;
+        }
+
+        .section-title {
+            font-family: 'Yatra One', cursive;
+            color: var(--primary);
+            font-size: 22px;
+            line-height: 1.45;
+            margin-bottom: 14px;
+            border-bottom: 1.5px dashed var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .section-desc {
+            font-size: 15.5px;
+            color: var(--text-main);
+            line-height: 1.85;
+            text-align: justify;
+        }
+
+        .section-desc p {
+            margin-bottom: 12px;
+        }
+
+        .section-desc p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Highlight Notice Box */
+        .highlight-notice {
+            background: var(--gold-light);
+            border-left: 4px solid var(--gold);
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: 14.5px;
+            color: #78350f;
+            line-height: 1.7;
+            margin: 14px 0;
+        }
+
+        /* Dialog / Quote Box */
+        .dialogue-box {
+            background: #faf5ee;
+            border-left: 4px solid var(--secondary);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            font-style: italic;
+            color: #451a03;
+        }
+
+        .dialogue-speaker {
+            font-weight: 700;
+            color: var(--primary);
+            font-style: normal;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        /* Checklist / Grid */
+        .condition-list {
+            list-style: none;
+            margin: 14px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .condition-item {
+            background: #faf7f2;
+            border-radius: 10px;
+            padding: 10px 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            border: 1px solid #ebd9c8;
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        .condition-icon {
+            color: #d97706;
+            font-weight: bold;
+            font-size: 16px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* Mantra Highlight */
+        .mantra-box {
+            background: linear-gradient(135deg, #fffbeb, #fef3c7);
+            border: 1.5px solid var(--gold-border);
+            border-radius: 14px;
+            padding: 16px;
+            margin: 14px 0;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(217, 119, 6, 0.08);
+        }
+
+        .mantra-label {
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .mantra-text {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-deep);
+            line-height: 1.65;
+            margin-bottom: 8px;
+        }
+
+        .mantra-meaning {
+            font-size: 14px;
+            color: #78350f;
+            line-height: 1.7;
+            text-align: justify;
+            border-top: 1px dashed rgba(217, 119, 6, 0.25);
+            padding-top: 8px;
+            margin-top: 6px;
+        }
+
+        /* Teaching / Lesson Cards */
+        .teaching-card {
+            background: #fffdf9;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .teaching-num {
+            background: linear-gradient(135deg, var(--secondary), var(--gold));
+            color: white;
+            font-weight: 800;
+            font-size: 13px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .teaching-title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 15.5px;
+            margin-bottom: 3px;
+        }
+
+        .teaching-desc {
+            font-size: 14px;
+            color: var(--text-main);
+            line-height: 1.65;
+        }
+
+        /* Prayer Card */
+        .prayer-card {
+            background: linear-gradient(135deg, #7f1d1d, #991b1b, #b45309);
+            color: white;
+            border-radius: 20px;
+            padding: 26px 20px;
+            text-align: center;
+            margin: 24px 0;
+            border: 2px solid var(--gold);
+            box-shadow: 0 10px 28px rgba(153, 27, 27, 0.3);
+        }
+
+        .prayer-card h2 {
+            font-family: 'Yatra One', cursive;
+            font-size: 24px;
+            color: #fde047;
+            margin-bottom: 14px;
+        }
+
+        .prayer-card p {
+            font-size: 15.5px;
+            line-height: 1.8;
+            color: #fef3c7;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+
+        .prayer-salutation {
+            font-family: 'Yatra One', cursive;
+            font-size: 21px;
+            color: #ffffff;
+            margin-top: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 10px 10px 10px;
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .footer-tag {
+            font-weight: 700;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Hero Banner Image -->
+    <img class="hero-banner" 
+         src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/thumbnails/narsingh_bhagwan_banner.webp" 
+         onerror="this.onerror=null; this.src='images/narsingh_bhagwan_banner.webp';" 
+         alt="भगवान नरसिंह की संपूर्ण कथा – भक्त प्रह्लाद की रक्षा और अधर्म पर धर्म की विजय">
+
+    <!-- Header Card -->
+    <div class="header-card">
+        <div class="app-tag">॥ श्री नृसिंह अवतार • भक्तवत्सल भगवान ॥</div>
+        <h1>भगवान नरसिंह की संपूर्ण कथा – भक्त प्रह्लाद की रक्षा और अधर्म पर धर्म की विजय</h1>
+        <div class="devotional-chant">॥ ॐ नमो भगवते वासुदेवाय • ॐ नृसिंहाय नमः ॥</div>
+        <p>
+            भगवान नरसिंह भगवान विष्णु के चौथे अवतार माने जाते हैं। उन्होंने अपने परम भक्त प्रह्लाद की रक्षा करने और अत्याचारी हिरण्यकश्यप का अंत करने के लिए आधे मनुष्य और आधे सिंह का अद्भुत रूप धारण किया था। यह कथा हमें सिखाती है कि सच्ची भक्ति, विश्वास और धर्म की अंततः विजय होती है। भगवान अपने भक्त की रक्षा के लिए किसी भी रूप में प्रकट हो सकते हैं।
+        </p>
+    </div>
+
+    <!-- Section 1: हिरण्यकश्यप को मिला वरदान -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग १</span>
+            <span class="part-category">असुर राज की तपस्या</span>
+        </div>
+        <img class="section-image" 
+             src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/narsingh_bhagwan_2.webp" 
+             onerror="this.onerror=null; this.src='images/narsingh_bhagwan_2.webp';" 
+             alt="हिरण्यकश्यप को मिला वरदान - भगवान ब्रह्मा की तपस्या">
+        <h2 class="section-title">1. हिरण्यकश्यप को मिला वरदान</h2>
+        <div class="section-desc">
+            <p>
+                प्राचीन समय में हिरण्यकश्यप नाम का एक अत्यंत शक्तिशाली असुर राजा था। उसका भाई हिरण्याक्ष भगवान विष्णु के वराह अवतार द्वारा मारा गया था। इस कारण हिरण्यकश्यप भगवान विष्णु से बहुत घृणा करता था और अपने भाई की मृत्यु का बदला लेना चाहता था। इसके लिए उसने भगवान ब्रह्मा की कठोर तपस्या की।
+            </p>
+            <p>
+                उसकी कठोर तपस्या से प्रसन्न होकर ब्रह्माजी प्रकट हुए और वरदान माँगने को कहा। हिरण्यकश्यप ने अमर होने का वरदान माँगा, लेकिन ब्रह्माजी ने बताया कि इस संसार में जन्म लेने वाले प्रत्येक प्राणी की मृत्यु निश्चित है।
+            </p>
+            <p>
+                तब हिरण्यकश्यप ने बड़ी चतुराई से ऐसा वरदान माँगा कि:
+            </p>
+            <ul class="condition-list">
+                <li class="condition-item"><span class="condition-icon">✦</span><span>उसकी मृत्यु <strong>न किसी मनुष्य</strong> से हो, <strong>न किसी पशु</strong> से।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>उसकी मृत्यु <strong>न दिन में</strong> हो, <strong>न रात में</strong>।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>उसकी मृत्यु <strong>न घर के अंदर</strong> हो, <strong>न घर के बाहर</strong>।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>उसकी मृत्यु <strong>न धरती पर</strong> हो, <strong>न आकाश में</strong>।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>उसकी मृत्यु <strong>न किसी अस्त्र</strong> से हो, <strong>न किसी शस्त्र</strong> से।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>उसे <strong>न कोई देवता</strong>, <strong>न दानव</strong> और <strong>न ही कोई अन्य जीव</strong> मार सके।</span></li>
+            </ul>
+            <div class="highlight-notice">
+                ब्रह्माजी ने उसे यह वरदान दे दिया। इस वरदान को पाकर हिरण्यकश्यप स्वयं को अजेय, अमर और संपूर्ण जगत का सबसे शक्तिशाली स्वामी समझने लगा।
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: भक्त प्रह्लाद का जन्म -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग २</span>
+            <span class="part-category">परम भक्त का प्राकट्य</span>
+        </div>
+        <img class="section-image" 
+             src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/narsingh_bhagwan_3.webp" 
+             onerror="this.onerror=null; this.src='images/narsingh_bhagwan_3.webp';" 
+             alt="भक्त प्रह्लाद का जन्म एवं भगवान विष्णु की अनन्य भक्ति">
+        <h2 class="section-title">2. भक्त प्रह्लाद का जन्म</h2>
+        <div class="section-desc">
+            <p>
+                कुछ समय बाद हिरण्यकश्यप के घर एक दिव्य पुत्र का जन्म हुआ, जिसका नाम प्रह्लाद रखा गया। प्रह्लाद बचपन से ही भगवान विष्णु के परम भक्त थे। वे हर समय भगवान विष्णु के पावन नाम का जप करते रहते थे।
+            </p>
+            <p>
+                यह बात हिरण्यकश्यप को बिल्कुल पसंद नहीं थी, क्योंकि वह स्वयं को भगवान कहलवाना चाहता था और प्रजा पर अत्याचार करके अपनी पूजा करवाता था। उसने प्रह्लाद को समझाने और असुर स्वभाव सिखाने के लिए अपने कुलगुरुओं के पास भेजा, लेकिन प्रह्लाद ने वहाँ भी भगवान विष्णु की अनन्य भक्ति करना नहीं छोड़ा।
+            </p>
+            <div class="dialogue-box">
+                <span class="dialogue-speaker">भक्त प्रह्लाद का उद्घोष:</span>
+                "भगवान विष्णु ही संपूर्ण सृष्टि के पालनकर्ता, सर्वशक्तिमान और सर्वोच्च परमात्मा हैं। उनके अतिरिक्त कोई अन्य ईश्वर नहीं है।"
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: हिरण्यकश्यप ने प्रह्लाद को दी अनेक यातनाएँ -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग ३</span>
+            <span class="part-category">यातनाएँ एवं दिव्य रक्षा</span>
+        </div>
+        <img class="section-image" 
+             src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/narsingh_bhagwan_4.webp" 
+             onerror="this.onerror=null; this.src='images/narsingh_bhagwan_4.webp';" 
+             alt="हिरण्यकश्यप द्वारा प्रह्लाद को यातनाएँ एवं भगवान विष्णु द्वारा रक्षा">
+        <h2 class="section-title">3. हिरण्यकश्यप ने प्रह्लाद को दी अनेक यातनाएँ</h2>
+        <div class="section-desc">
+            <p>
+                हिरण्यकश्यप अपने ही पुत्र की विष्णु भक्ति से अत्यंत क्रोधित हो गया। उसने प्रह्लाद को भगवान विष्णु की भक्ति छोड़ने के लिए अनेक प्रकार की अमानवीय यातनाएँ दीं:
+            </p>
+            <ul class="condition-list">
+                <li class="condition-item"><span class="condition-icon">१.</span><span>प्रह्लाद को <strong>ऊँचे पहाड़ की चोटी</strong> से नीचे गहरी खाई में फेंक दिया गया।</span></li>
+                <li class="condition-item"><span class="condition-icon">२.</span><span>उन्हें काल-कोठरी में <strong>विषैले साँपों</strong> के बीच छोड़ दिया गया।</span></li>
+                <li class="condition-item"><span class="condition-icon">३.</span><span>मदमस्त <strong>हाथियों के पैरों तले</strong> कुचलवाने का प्रयास किया गया।</span></li>
+                <li class="condition-item"><span class="condition-icon">४.</span><span>उन्हें प्राणघातक <strong>हलाहल विष</strong> पिलाने का प्रयास किया गया।</span></li>
+                <li class="condition-item"><span class="condition-icon">५.</span><span>उन्हें धधकती <strong>अग्नि में जलाने</strong> की चेष्टा की गई।</span></li>
+            </ul>
+            <div class="highlight-notice">
+                लेकिन हर बार भगवान विष्णु की असीम कृपा से प्रह्लाद का बाल भी बाँका नहीं हुआ और वे पूर्णतः सुरक्षित बच गए। प्रह्लाद का विश्वास कभी नहीं डगमगाया; वे प्रत्येक परिस्थिति में भगवान विष्णु का स्मरण करते रहे।
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: होलिका और प्रह्लाद की अग्नि परीक्षा -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग ४</span>
+            <span class="part-category">अग्नि परीक्षा • होलिका दहन</span>
+        </div>
+        <img class="section-image" 
+             src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/narsingh_bhagwan_5.webp" 
+             onerror="this.onerror=null; this.src='images/narsingh_bhagwan_5.webp';" 
+             alt="होलिका और प्रह्लाद की अग्नि परीक्षा - होलिका दहन">
+        <h2 class="section-title">4. होलिका और प्रह्लाद की अग्नि परीक्षा</h2>
+        <div class="section-desc">
+            <p>
+                जब कोई भी उपाय काम न आया, तब हिरण्यकश्यप ने अपनी बहन होलिका की सहायता ली। होलिका को वरदान प्राप्त था कि अग्नि उसे कभी जला नहीं सकती। हिरण्यकश्यप ने एक षड्यंत्र रचा कि होलिका प्रह्लाद को अपनी गोद में लेकर धधकती अग्नि की चिता में बैठ जाए, जिससे प्रह्लाद जलकर भस्म हो जाए और होलिका सुरक्षित बच जाए।
+            </p>
+            <p>
+                होलिका प्रह्लाद को गोद में लेकर धधकती चिता में बैठ गई। प्रह्लाद ने शांत भाव से आँखें मूँद लीं और <em>"ॐ नमो नारायणाय"</em> का जप करने लगे। तभी ईश्वरीय चमत्कार हुआ—तेज पवन चली और होलिका का रक्षा-वस्त्र उड़कर प्रह्लाद पर आ गिरा। भगवान विष्णु की कृपा से प्रह्लाद सुरक्षित रहे और दुष्ट होलिका उसी अग्नि में जलकर भस्म हो गई।
+            </p>
+            <div class="highlight-notice">
+                इसी पावन घटना की स्मृति में प्रतिवर्ष होली के पर्व से एक दिन पूर्व <strong>होलिका दहन</strong> मनाया जाता है, जो यह संदेश देता है कि बुराई चाहे कितनी भी प्रबल हो, सत्य और धर्म की अग्नि परीक्षा में विजय सदैव ईश्वर के भक्त की ही होती है।
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: भगवान नरसिंह का अद्भुत अवतार -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग ५</span>
+            <span class="part-category">स्तंभ से प्राकट्य</span>
+        </div>
+        <img class="section-image" 
+             src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/narsingh_bhagwan_6.webp" 
+             onerror="this.onerror=null; this.src='images/narsingh_bhagwan_6.webp';" 
+             alt="भगवान नरसिंह का अद्भुत अवतार - खंभे से प्राकट्य">
+        <h2 class="section-title">5. भगवान नरसिंह का अद्भुत अवतार</h2>
+        <div class="section-desc">
+            <p>
+                होलिका की मृत्यु के बाद हिरण्यकश्यप का क्रोध अपनी चरम सीमा पर पहुँच चुका था। एक दिन उसने राजसभा में प्रह्लाद को ललकारते हुए पूछा:
+            </p>
+            <div class="dialogue-box">
+                <span class="dialogue-speaker">हिरण्यकश्यप:</span>
+                "मूर्ख बालक! तू जिस विष्णु की निरंतर पूजा करता है, वह कहाँ है? क्या वह मेरे इस राजमहल में भी उपस्थित है?"
+            </div>
+            <div class="dialogue-box">
+                <span class="dialogue-speaker">भक्त प्रह्लाद:</span>
+                "हाँ पिताजी! भगवान विष्णु सर्वव्यापी हैं। वे इस संसार के कण-कण, तृण-तृण में विराजमान हैं।"
+            </div>
+            <p>
+                हिरण्यकश्यप ने पास खड़े राजमहल के एक विशाल पाषाण स्तंभ की ओर इशारा करते हुए क्रोध से दहाड़ लगाई: <em>"तो क्या तेरा भगवान इस निर्जीव स्तंभ में भी विद्यमान है?"</em>
+            </p>
+            <p>
+                प्रह्लाद ने हाथ जोड़कर अत्यंत विनम्रता और अटल विश्वास से कहा: <strong>"हाँ पिताजी, भगवान इस स्तंभ में भी साक्षात उपस्थित हैं।"</strong>
+            </p>
+            <p>
+                यह सुनकर हिरण्यकश्यप आपे से बाहर हो गया और उसने अपनी भारी गदा से उस स्तंभ पर भीषण प्रहार किया। तभी उस स्तंभ से एक प्रलयंकारी, ब्रह्मांडीय गर्जना हुई और स्तंभ को चीरते हुए भगवान विष्णु का अत्यंत दिव्य और अद्भुत रूप प्रकट हुआ।
+            </p>
+            <div class="highlight-notice">
+                उनका शरीर विशाल मनुष्य जैसा था, लेकिन मुख और अयाल गर्जना करते हुए सिंह का था। वे आधे मनुष्य और आधे सिंह के रूप में प्रकट हुए। इसीलिए सनातन धर्म में उन्हें <strong>भगवान नरसिंह (नृसिंह)</strong> कहा जाता है।
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6: भगवान नरसिंह ने हिरण्यकश्यप का वध किया -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग ६</span>
+            <span class="part-category">अधर्म का संहार</span>
+        </div>
+        <img class="section-image" 
+             src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/narsingh_bhagwan_7.webp" 
+             onerror="this.onerror=null; this.src='images/narsingh_bhagwan_7.webp';" 
+             alt="भगवान नरसिंह द्वारा हिरण्यकश्यप का वध">
+        <h2 class="section-title">6. भगवान नरसिंह ने हिरण्यकश्यप का वध किया</h2>
+        <div class="section-desc">
+            <p>
+                भगवान नरसिंह ने पलक झपकते ही पापी हिरण्यकश्यप को दबोच लिया और उसे खींचकर राजमहल की देहरी (चौखट) पर ले आए। उस समय गोधूलि वेला यानी संध्या का समय था, जो न दिन था और न रात।
+            </p>
+            <p>
+                भगवान नरसिंह ने उसे अपनी जाँघों पर लिटाया और अपने सिंह रूपी तीक्ष्ण नाखूनों से उसका वक्षस्थल चीरकर उसका वध कर दिया।
+            </p>
+            <p>
+                इस प्रकार हिरण्यकश्यप का अंत उसके ही माँगे हुए वरदान की एक-एक शर्त का मान रखते हुए हुआ:
+            </p>
+            <ul class="condition-list">
+                <li class="condition-item"><span class="condition-icon">✓</span><span><strong>न मनुष्य, न पशु:</strong> भगवान का रूप आधा मनुष्य और आधा सिंह था।</span></li>
+                <li class="condition-item"><span class="condition-icon">✓</span><span><strong>न दिन, न रात:</strong> वध का समय गोधूलि संध्या काल था।</span></li>
+                <li class="condition-item"><span class="condition-icon">✓</span><span><strong>न घर के अंदर, न बाहर:</strong> वध महल की चौखट (देहरी) पर हुआ।</span></li>
+                <li class="condition-item"><span class="condition-icon">✓</span><span><strong>न धरती पर, न आकाश में:</strong> उसे अपनी जाँघों पर रखकर मारा गया।</span></li>
+                <li class="condition-item"><span class="condition-icon">✓</span><span><strong>न अस्त्र, न शस्त्र:</strong> उसका संहार अपने तीखे दिव्य नाखूनों से किया गया।</span></li>
+            </ul>
+            <div class="highlight-notice">
+                इस प्रकार भगवान ने अपने परम भक्त प्रह्लाद की रक्षा की, ब्रह्माजी के वरदान की मर्यादा रखी और संसार से अधर्म एवं आतंक का अंत किया।
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 7: भगवान नरसिंह का क्रोध शांत होना -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग ७</span>
+            <span class="part-category">भक्ति की विजय • राज्याभिषेक</span>
+        </div>
+        <img class="section-image" 
+             src="https://solutionsquantacore-droid.github.io/bhavarth_dynamic_content/images/narsingh_bhagwan_8.webp" 
+             onerror="this.onerror=null; this.src='images/narsingh_bhagwan_8.webp';" 
+             alt="भगवान नरसिंह का क्रोध शांत होना एवं भक्त प्रह्लाद को आशीर्वाद">
+        <h2 class="section-title">7. भगवान नरसिंह का क्रोध शांत होना</h2>
+        <div class="section-desc">
+            <p>
+                हिरण्यकश्यप का वध करने के उपरांत भी भगवान नरसिंह का रौद्र क्रोध शांत नहीं हो रहा था। उनकी भयंकर गर्जना और ज्वालामुख रूप को देखकर इंद्र, ब्रह्मा, शिव सहित समस्त देवता भयभीत हो गए। कोई भी उनके समीप जाने का साहस नहीं कर पा रहा था।
+            </p>
+            <p>
+                तब ब्रह्माजी ने बाल भक्त प्रह्लाद से आगे बढ़कर भगवान नरसिंह को शांत करने का विनम्र अनुरोध किया। प्रह्लाद निडर होकर भगवान के श्रीचरणों में साष्टांग प्रणाम कर प्रेमपूर्वक उनकी स्तुति करने लगे।
+            </p>
+            <p>
+                अपने अनन्य और निष्कलंक भक्त को सामने देखकर भगवान नरसिंह का समस्त क्रोध क्षणभर में वात्सल्य और अपार प्रेम में बदल गया। उन्होंने अपनी गोद में प्रह्लाद को उठा लिया, उन्हें अपने हृदय से लगाया और परम आशीर्वाद दिया।
+            </p>
+            <div class="highlight-notice">
+                इसके उपरांत भक्त प्रह्लाद का राज्याभिषेक किया गया और उन्होंने संपूर्ण प्रजा का धर्म, न्याय और प्रेमपूर्वक पालन किया।
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 8: भगवान नरसिंह की कथा से मिलने वाली शिक्षाएँ -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग ८</span>
+            <span class="part-category">आध्यात्मिक शिक्षाएँ</span>
+        </div>
+        <h2 class="section-title">8. भगवान नरसिंह की कथा से मिलने वाली शिक्षाएँ</h2>
+        <div class="section-desc">
+            <p style="margin-bottom: 14px;">
+                भगवान नरसिंह और भक्त प्रह्लाद का यह पावन प्रसंग जीवन में कई अमूल्य आध्यात्मिक और नैतिक शिक्षाएँ प्रदान करता है:
+            </p>
+            
+            <div class="teaching-card">
+                <div class="teaching-num">१</div>
+                <div>
+                    <div class="teaching-title">भक्ति की सर्वोच्च शक्ति</div>
+                    <div class="teaching-desc">सच्ची श्रद्धा, निष्ठा और ईश्वर पर अटूट विश्वास से भक्त प्रत्येक कठिन संकट और परीक्षा में अडिग और सुरक्षित रह सकता है।</div>
+                </div>
+            </div>
+
+            <div class="teaching-card">
+                <div class="teaching-num">२</div>
+                <div>
+                    <div class="teaching-title">अहंकार और अत्याचार का निश्चित अंत</div>
+                    <div class="teaching-desc">चाहे कोई कितना भी शक्तिशाली, वरदानी या साधन-संपन्न क्यों न हो, अहंकार और अधर्म का पतन अवश्यंभावी है।</div>
+                </div>
+            </div>
+
+            <div class="teaching-card">
+                <div class="teaching-num">३</div>
+                <div>
+                    <div class="teaching-title">भगवान सर्वव्यापी हैं</div>
+                    <div class="teaching-desc">परमात्मा केवल मंदिरों तक सीमित नहीं हैं, वे सृष्टि के कण-कण, प्रत्येक जीव और हर परिस्थिति में साक्षात उपस्थित हैं।</div>
+                </div>
+            </div>
+
+            <div class="teaching-card">
+                <div class="teaching-num">४</div>
+                <div>
+                    <div class="teaching-title">भक्त की रक्षा का ईश्वरीय वचन</div>
+                    <div class="teaching-desc">भगवान अपने शरणागत भक्त की रक्षा के लिए नियमों को साधे रखते हुए किसी भी दिव्य रूप में प्रकट हो सकते हैं।</div>
+                </div>
+            </div>
+
+            <div class="teaching-card">
+                <div class="teaching-num">५</div>
+                <div>
+                    <div class="teaching-title">सत्य और धर्म की सनातन विजय</div>
+                    <div class="teaching-desc">अधर्म भले ही कुछ समय के लिए हावी दिखे, परंतु अंततः सनातन सत्य और धर्म की ही पूर्ण विजय होती है।</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 9: भगवान नरसिंह के प्रसिद्ध मंत्र -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग ९</span>
+            <span class="part-category">कल्याणकारी मंत्र</span>
+        </div>
+        <h2 class="section-title">9. भगवान नरसिंह के प्रसिद्ध मंत्र</h2>
+        <div class="section-desc">
+            <p>
+                भगवान नरसिंह के इन दिव्य मंत्रों का नियमित जप करने से समस्त प्रकार के भय, संकट, शत्रु बाधा, नकारात्मक ऊर्जा और अकाल मृत्यु का भय समाप्त हो जाता है:
+            </p>
+
+            <!-- Bija Mantra -->
+            <div class="mantra-box">
+                <div class="mantra-label">॥ नरसिंह बीज मंत्र ॥</div>
+                <div class="mantra-text">ॐ क्ष्रौं नमो भगवते नरसिंहाय॥</div>
+                <div class="mantra-meaning">
+                    <strong>अर्थ:</strong> हे सर्वशक्तिमान, भय-विनाशक भगवान नरसिंह! मैं आपको श्रद्धापूर्वक बारंबार नमन करता हूँ। मुझ पर अपनी कृपा बनाए रखें।
+                </div>
+            </div>
+
+            <!-- Pranam Mantra -->
+            <div class="mantra-box">
+                <div class="mantra-label">॥ भगवान नरसिंह महाप्रणाम मंत्र ॥</div>
+                <div class="mantra-text">
+                    उग्रं वीरं महाविष्णुं ज्वलन्तं सर्वतोमुखम्।<br>
+                    नृसिंहं भीषणं भद्रं मृत्युमृत्युं नमाम्यहम्॥
+                </div>
+                <div class="mantra-meaning">
+                    <strong>अर्थ:</strong> जो अत्यंत उग्र, परम पराक्रमी, साक्षात महाविष्णु, प्रज्वलित तेज से युक्त, सर्वतोमुख (सर्वव्यापी), दुष्टों के लिए भीषण किंतु भक्तों के लिए परम कल्याणकारी और मृत्यु के भी मृत्यु हैं—ऐसे करुणामय भगवान नृसिंह को मैं नमन करता हूँ।
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 10: नरसिंह जयंती का महत्व -->
+    <div class="content-card">
+        <div class="badge-row">
+            <span class="part-number">भाग १०</span>
+            <span class="part-category">पर्व एवं पूजा विधि</span>
+        </div>
+        <h2 class="section-title">10. नरसिंह जयंती का महत्व</h2>
+        <div class="section-desc">
+            <p>
+                भगवान नरसिंह का प्राकट्य <strong>वैशाख मास के शुक्ल पक्ष की चतुर्दशी तिथि</strong> को गोधूलि वेला में हुआ था। इस पावन तिथि को प्रतिवर्ष <strong>नरसिंह जयंती</strong> के रूप में बड़े श्रद्धा-भाव से मनाया जाता है।
+            </p>
+            <p>
+                इस पावन दिन पर श्रद्धालु एवं भक्तगण:
+            </p>
+            <ul class="condition-list">
+                <li class="condition-item"><span class="condition-icon">✦</span><span>भगवान नरसिंह और माता लक्ष्मी की षोडशोपचार विधि से पूजा-अर्चना करते हैं।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>दिनभर व्रत एवं उपवास रखकर संध्या समय पूजा के बाद व्रत का पारण करते हैं।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>नरसिंह बीज मंत्र एवं कवच का पाठ कर रक्षा की प्रार्थना करते हैं।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>भगवान विष्णु और भक्त प्रह्लाद की पावन कथा का श्रवण एवं मनन करते हैं।</span></li>
+                <li class="condition-item"><span class="condition-icon">✦</span><span>जरूरतमंद, निर्धन लोगों को अन्न, वस्त्र और शीतल जल का दान करते हैं।</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Katha ka Saar / Prayer Card -->
+    <div class="prayer-card">
+        <h2>✨ कथा का पावन सार ✨</h2>
+        <p>
+            जब बाल भक्त प्रह्लाद ने पूर्ण निष्ठा से कहा कि "भगवान हर जगह मौजूद हैं", तब भगवान नरसिंह ने निर्जीव पाषाण स्तंभ से प्रकट होकर यह सिद्ध कर दिया कि परमात्मा अपने सच्चे भक्तों के विश्वास को कभी व्यर्थ नहीं जाने देते।
+        </p>
+        <p>
+            जिस प्रकार प्रभु ने प्रह्लाद की प्रत्येक संकट में रक्षा की, उसी प्रकार वे समस्त शरणागत जीवों का उद्धार करते हैं।
+        </p>
+        <div class="prayer-salutation">
+            ॥ जय श्री लक्ष्मी नरसिंह भगवान! ॥<br>
+            ॥ जय भक्त प्रह्लाद! ॥
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p class="footer-tag">भावार्थ – सनातन संस्कृति, पर्व एवं ज्ञान का पावन संगम</p>
+        <p>© 2026 Quantocore Solutions • All Rights Reserved</p>
+    </div>
+
+</div>
+
+</body>
+</html>
